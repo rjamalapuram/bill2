@@ -1,0 +1,201 @@
+<oj-vb-fragment id="page-header" bridge="[[vbBridge]]" name="page-header">
+  <oj-vb-fragment-param name="title" value="Invoices Overview"></oj-vb-fragment-param>
+  <template slot="actions">
+     <div class="oj-flex-item oj-sm-12 oj-md-3">
+                   <oj-button label="Done"
+             chroming="callToAction" on-oj-action="[[$listeners.buttonAction6]]">
+             
+           </oj-button>
+    </div>
+  </template>
+</oj-vb-fragment>
+<div class="oj-flex">
+  <oj-toolbar chroming="solid" class="oj-flex-item oj-sm-12 oj-md-12"></oj-toolbar>
+</div>
+<div class="oj-flex">
+  <oj-toolbar chroming="solid" class="oj-flex-item oj-sm-12 oj-md-12"></oj-toolbar>
+</div>
+<div class="oj-flex">
+  <div class="oj-flex oj-flex-item oj-sm-12 oj-md-12">
+    <div class="oj-flex-item oj-sm-12 oj-md-2"></div>
+    <div class="oj-flex-item oj-sm-12 oj-md-3">
+       <oj-button label="Add Adjustments" class="oj-button-lg" on-oj-action="[[$listeners.buttonAction3]]"
+         chroming="callToAction">
+           </oj-button>
+    </div>
+    <div class="oj-flex-item oj-sm-12 oj-md-3">
+             <oj-button label="Generate Draft Invoice" class="oj-button-lg" chroming="callToAction"
+               on-oj-action="[[$listeners.buttonAction4]]">
+           </oj-button>
+    </div>
+    <div class="oj-flex-item oj-sm-12 oj-md-1"></div>
+    <div class="oj-flex-item oj-sm-12 oj-md-3">
+                   <oj-button label="Generate G702 Report" class="oj-button-lg"
+             chroming="callToAction" on-oj-action="[[$listeners.buttonAction7]]">
+           </oj-button>
+    </div>
+  </div>
+</div>
+<div class="oj-flex">
+  <oj-toolbar chroming="solid" class="oj-flex-item oj-sm-12 oj-md-12"></oj-toolbar>
+</div>
+<div class="oj-flex">
+  <oj-toolbar chroming="solid" class="oj-flex-item oj-sm-12 oj-md-12"></oj-toolbar>
+</div>
+<div class="oj-flex">
+  <div class="oj-flex-item oj-sm-12 oj-md-12">
+    <oj-form-layout class="oj-formlayout-full-width" columns="4" max-columns="4">
+      <oj-input-text label-hint="Invoice Number" readonly="true" value="{{ $variables.invoice_number }}"></oj-input-text>
+      <oj-input-text label-hint="Organization Name" readonly="true" value="{{ $variables.org_name }}"></oj-input-text>
+      <oj-input-text label-hint="Project Name" readonly="true" value="{{ $variables.project_name }}"></oj-input-text>
+      <oj-input-text label-hint="Invoice Status" readonly="true" value="{{ $variables.invoice_status }}"></oj-input-text>
+      <oj-input-text label-hint="Bill To" readonly="true" value="{{ $variables.bill_to }}"></oj-input-text>
+      <oj-input-text label-hint="Contract Number" readonly="true" value="{{ $variables.contract_number }}"></oj-input-text>
+      <oj-input-text label-hint="Project Number" readonly="true" value="{{ $variables.project_number }}"></oj-input-text>
+    </oj-form-layout>
+  </div>
+</div>
+<div class="oj-flex">
+  <div class="oj-flex-item oj-sm-12 oj-md-1"></div>
+  <div class="oj-panel oj-flex-item oj-sm-12 oj-md-10 oj-selected" hidden="true">
+    <div class="oj-flex">
+      <h6 class="oj-header oj-flex-item oj-sm-12 oj-md-6">Pending Adjustments</h6>
+    </div>
+    <div class="oj-flex">
+      <oj-toolbar chroming="solid" class="oj-flex-item oj-sm-12 oj-md-12"></oj-toolbar>
+    </div>
+    <div class="oj-flex">
+      <oj-table scroll-policy="loadMoreOnScroll" class="oj-flex-item oj-sm-12 oj-md-12"
+        columns='[  {    "headerText": "Source Name",    "field": "sourcename"  },  {    "headerText": "Source Reference",    "field": "sourcereference"  },  {    "headerText": "Contract Number",    "field": "contractnumber"  },  {    "headerText": "Contract Line Number",    "field": "contractlinenumber"  },  {    "headerText": "Business Unit Name",    "field": "businessunitname"  },  {    "headerText": "Contract Type Name",    "field": "contracttypename"  },  {    "headerText": "Event Type Name",    "field": "eventtypename"  },  {    "headerText": "Event Description",    "field": "eventdescription"  },  {    "headerText": "Bill Transaction Amount",    "field": "billtrnsamount"  },  {    "headerText": "Event Id",    "field": "eventid"  }]'
+        data="[[ $variables.pendingAdjustmentsADP ]]" id="adjustmentTable"></oj-table>
+    </div>
+    <div class="oj-flex">
+      <oj-toolbar chroming="solid" class="oj-flex-item oj-sm-12 oj-md-12"></oj-toolbar>
+    </div>
+  </div>
+</div>
+<div class="oj-flex">
+  <oj-toolbar chroming="solid" class="oj-flex-item oj-sm-12 oj-md-12"></oj-toolbar>
+</div>
+<div class="oj-flex">
+  <oj-toolbar chroming="solid" class="oj-flex-item oj-sm-12 oj-md-12"></oj-toolbar>
+</div>
+<div class="oj-flex">
+  <div class="oj-flex-item oj-sm-12 oj-md-1"></div>
+  <div class="oj-panel oj-flex-item oj-sm-12 oj-md-10 oj-panel-shadow-lg oj-selected">
+    <div class="oj-flex">
+      <h6 class="oj-header oj-flex-item oj-sm-12 oj-md-4">Invoice Lines</h6>
+    </div>
+    <div class="oj-flex">
+      <oj-toolbar chroming="solid" class="oj-flex-item oj-sm-12 oj-md-12"></oj-toolbar>
+    </div>
+    <div class="oj-flex">
+      <oj-table
+        columns='[  {    "headerText": "Details",    "field": "",    "template": "action",    "sortable": "disabled"  },  {    "headerText": "Invoice Number",    "field": "INVOICE_NUM"  },  {    "headerText": "Invoice Line Number",    "field": "INVOICE_LINE_NUMBER"  },  {    "headerText": "Contract Line Number",    "field": "CONTRACT_LINE_NUMBER"  },  {    "headerText": "Description Of Work",    "field": "DESCRIPTION_OF_WORK"  },  {    "headerText": "Invoice Line Description",    "field": "LINE_DESCRIPTION"  },  {    "headerText": "Scheduled Value",    "field": "SCHEDULED_VALUE"  },  {    "headerText": "Invoice Amount",    "field": "INVOICE_AMOUNT"  }]'
+        class="oj-flex-item oj-sm-12 oj-md-12" data="[[ $flow.variables.invoiceLinesADP ]]"
+        scroll-policy="loadMoreOnScroll" scroll-policy-options='{"fetchSize": 5, "maxCount": 100, "scroller": "table"}'
+        selection-mode.column="none" selection-mode.row="single">
+          <template slot="action">
+          <span style="cursor:pointer;font-size:18px" class="oj-ux-ico-information" on-click="[[$listeners.iconClick]]"></span>
+        </template>
+        </oj-table>
+    </div>
+  </div>
+</div>
+<div class="oj-flex">
+  <oj-toolbar chroming="solid" class="oj-flex-item oj-sm-12 oj-md-12"></oj-toolbar>
+</div>
+<div class="oj-flex">
+  <oj-toolbar chroming="solid" class="oj-flex-item oj-sm-12 oj-md-12"></oj-toolbar>
+</div>
+<div class="oj-flex">
+  <div class="oj-flex-item oj-sm-12 oj-md-1"></div>
+  <div class="oj-panel oj-flex-item oj-sm-12 oj-md-10 oj-panel-shadow-lg oj-selected">
+    <div class="oj-flex">
+      <oj-tab-bar edge="top" id="oj-tab-bar-716633815-1" selection="{{$variables.ojTabBar7166338151SelectedItem}}"
+        class="oj-flex-item oj-sm-12 oj-md-4">
+      <ul>
+          <li id="oj-tab-bar-716633815-1-tab-1">
+          <a href="#" id="oj-tab-bar-716633815-1-tab-1-tab" aria-controls="oj-tab-bar-716633815-1-tab-1-panel">Transaction Details</a>
+          </li>
+          <li id="oj-tab-bar-716633815-1-tab-2">
+          <a href="#" id="oj-tab-bar-716633815-1-tab-2-tab" aria-controls="oj-tab-bar-716633815-1-tab-2-panel">Event Details</a>
+          </li>
+      </ul>
+      </oj-tab-bar>
+    </div>
+    <div class="oj-flex">
+      <oj-switcher value="[[$variables.ojTabBar7166338151SelectedItem]]" id="oj-switcher-716633815-1"
+        class="oj-flex-item oj-sm-12 oj-md-12">
+      <div slot="oj-tab-bar-716633815-1-tab-1" id="oj-tab-bar-716633815-1-tab-1-panel"
+        aria-labelledby="oj-tab-bar-716633815-1-tab-1-tab" role="tabpanel">
+          <div class="oj-flex">
+          <div class="oj-flex-item oj-sm-12 oj-md-1"></div>
+          <h5 class="oj-header oj-flex-item oj-sm-12 oj-md-11">Transaction Details</h5>
+          </div>
+          <div class="oj-flex">
+          <oj-table scroll-policy="loadMoreOnScroll" class="oj-flex-item oj-sm-12 oj-md-12"
+            data="[[ $variables.tableADP ]]"
+            columns='[  {    "headerText": "Expenditure Item",    "field": "EXPENDITURE_ITEM"  },  {    "headerText": "Transaction Id",    "field": "TRANSACTION_ID"  },  {    "headerText": "Project Number",    "field": "PROJECT_NUMBER"  },  {    "headerText": "Task Number",    "field": "TASK_NUMBER"  },  {    "headerText": "Quantity",    "field": "QUANTITY"  },  {    "headerText": "Bill Rate",    "field": "BILL_RATE"  },  {    "headerText": "Original Bill Amount",    "field": "ORIGINAL_BILL_AMOUNT"  },  {    "headerText": "Retention Bill Amount",    "field": "RETENTION_BILL_AMOUNT"  },  {    "headerText": "Bill Currency",    "field": "BILL_CURRENCY"  }]'></oj-table>
+          </div>
+      </div>
+      <div slot="oj-tab-bar-716633815-1-tab-2" id="oj-tab-bar-716633815-1-tab-2-panel"
+        aria-labelledby="oj-tab-bar-716633815-1-tab-2-tab" role="tabpanel">
+          <div class="oj-flex">
+          <div class="oj-flex-item oj-sm-12 oj-md-1"></div>
+          <h5 class="oj-header oj-flex-item oj-sm-12 oj-md-11">Event Details</h5>
+          </div>
+          <div class="oj-flex">
+          <oj-table scroll-policy="loadMoreOnScroll" class="oj-flex-item oj-sm-12 oj-md-12"
+            data="[[$variables.getEVENTDISTRIBUTIONS1GetEventDistributionsListSDP]]"
+            columns='[  {    "headerText": "Event Number",    "field": "eventNumber"  },  {    "headerText": "Project Number",    "field": "projectNumber"  },  {    "headerText": "Source Name",    "field": "sourceName"  },  {    "headerText": "Source Reference",    "field": "sourceReference"  },  {    "headerText": "Event Id",    "field": "eventId"  },  {    "headerText": "Transaction Amount",    "field": "transactionAmount"  },  {    "headerText": "Transaction Currency",    "field": "transactionCurrency"  }]'></oj-table>
+          </div>
+      </div>
+      </oj-switcher>
+    </div>
+  </div>
+</div>
+<div class="oj-flex">
+<oj-dialog dialog-title="Dialog" id="oj-dialog-716633815-2" style="width: 80%;" cancel-behavior="escape"
+  resize-behavior="resizable">
+  <div slot="footer">
+    <oj-button on-oj-action="[[$listeners.buttonAction5]]">Close</oj-button>
+  </div>
+</oj-dialog>
+<oj-dialog dialog-title="Dialog" id="oj-dialog-716633815-1" style="max-width: 80%; width: 80%;">
+  <div slot="body">
+    <div class="oj-flex">
+      <div class="oj-flex-item oj-sm-12 oj-md-4"></div>
+      <h6 class="oj-header oj-flex-item oj-sm-12 oj-md-6">Add Manual Adjustments</h6>
+    </div>
+    <oj-form-layout class="oj-formlayout-full-width" columns="3" max-columns="3">
+      <oj-input-text label-hint="Business Unit" value="{{ $variables.businessUnit }}" readonly="true"></oj-input-text>
+      <oj-input-text label-hint="Source Name" on-value-changed="[[$listeners.inputTextValue]]" required="true"></oj-input-text>
+      <oj-input-text label-hint="Source Reference" required="true" on-value-changed="[[$listeners.inputTextValue2]]"></oj-input-text>
+      <oj-input-text label-hint="Contract Number" value="{{ $variables.contract_number }}" readonly="true"></oj-input-text>
+      <oj-input-text label-hint="Contract Type Name" value="{{ $variables.contractTypeName }}" readonly="true"></oj-input-text>
+      <oj-select-single label-hint="Contract Line Number"
+        data="[[$variables.getCONTRACTSLINESLOV1GetContractLinesListSDP]]" item-text="lineNumber"
+        on-value-item-changed="[[$listeners.selectValueItem]]" required="true"></oj-select-single>
+      <oj-input-text label-hint="Project Number" value="{{ $variables.project_number }}" readonly="true"></oj-input-text>
+      <oj-input-text label-hint="Task number" value="{{ $variables.taskNumber }}" readonly="true"></oj-input-text>
+      <oj-select-single label-hint="Event Type Name" item-text="EventTypeName"
+        on-value-item-changed="[[$listeners.selectValueItem2]]" data="[[$variables.get1113185EventTypesLOVListSDP2]]"></oj-select-single>
+      <oj-input-text label-hint="Event Description" readonly="true" value="{{ $variables.eventDescription }}"
+        id="desc_input"></oj-input-text>
+      <oj-select-single label-hint="Percentage of"></oj-select-single>
+      <oj-input-number label-hint="Percentage"></oj-input-number>
+      <oj-input-text label-hint="Currency"></oj-input-text>
+      <oj-input-number label-hint="Computed Amount from Percent"></oj-input-number>
+      <oj-input-number label-hint="Bill Transaction Amount" on-value-changed="[[$listeners.inputNumberValue]]"
+        required="true"></oj-input-number>
+    </oj-form-layout>
+  </div>
+  <div slot="footer">
+    <oj-button on-oj-action="[[$listeners.buttonAction]]">Submit</oj-button>
+    <oj-button label="Close" on-oj-action="[[$listeners.buttonAction2]]"></oj-button>
+  </div>
+</oj-dialog>
+
+
+

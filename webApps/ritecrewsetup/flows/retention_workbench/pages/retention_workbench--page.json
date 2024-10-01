@@ -1,0 +1,490 @@
+{
+  "title": "retention_workbench ",
+  "description": "",
+  "variables": {
+    "billTrnsAmount": {
+      "type": "number"
+    },
+    "buName": {
+      "type": "string"
+    },
+    "completionDate": {
+      "type": "string"
+    },
+    "contract_id_for_update": {
+      "type": "string"
+    },
+    "contractId": {
+      "type": "string"
+    },
+    "contractNumber": {
+      "type": "string"
+    },
+    "contractSearch": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "contractrecord"
+      }
+    },
+    "contractTypeName": {
+      "type": "string"
+    },
+    "eventDescription": {
+      "type": "string"
+    },
+    "eventTypeName": {
+      "type": "string"
+    },
+    "get1113185EventTypesLOVListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "GenerateDraftInvoice/get11_13_18_05EventTypesLOV",
+        "keyAttributes": "EventTypeName",
+        "itemsPath": "items",
+        "responseType": "get1113185EventTypesLOVResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "EventTypeName"
+          ]
+        }
+      }
+    },
+    "getCONTRACTSEARCH1ExtractContractSearchDetails2ListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "icsEndpoint/getCONTRACT_SEARCH1_0ExtractContractSearchDetails2",
+        "keyAttributes": "contractLineId",
+        "itemsPath": "retValues",
+        "responseType": "getCONTRACTSEARCH1ExtractContractSearchDetails2Response"
+      }
+    },
+    "getCONTRACTSLINESLOV1GetContractLinesListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "icsEndpoint/getCONTRACTS_LINES_LOV1_0GetContractLines",
+        "keyAttributes": "lineNumber",
+        "itemsPath": "",
+        "responseType": "getCONTRACTSLINESLOV1GetContractLinesResponse",
+        "uriParameters": {
+          "p_contract_id": "{{ $variables.contractId }}"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "lineNumber"
+          ]
+        }
+      }
+    },
+    "getCONTRACTSLINESLOV1GetContractLinesListSDP2": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "icsEndpoint/getCONTRACTS_LINES_LOV1_0GetContractLines",
+        "keyAttributes": "lineNumber",
+        "itemsPath": "",
+        "responseType": "getCONTRACTSLINESLOV1GetContractLinesResponse2",
+        "uriParameters": {
+          "p_contract_id": "{{ $variables.contractId }}"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "lineNumber"
+          ]
+        }
+      }
+    },
+    "getCONTRACTSLOV1GetContracts2ListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "icsEndpoint/getCONTRACTS_LOV1_0GetContracts2",
+        "keyAttributes": "contractNumber",
+        "itemsPath": "items",
+        "responseType": "getCONTRACTSLOV1GetContracts2Response",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "contractNumber"
+          ]
+        },
+        "filterCriterion": {
+          "op": "$co",
+          "attribute": "contractNumber",
+          "value": "{{ $variables.searchString }}"
+        }
+      }
+    },
+    "getPROJECTSLOV1GetProjectsLOVListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "icsEndpoint/getPROJECTS_LOV1_0GetProjectsLOV",
+        "keyAttributes": "project_number",
+        "itemsPath": "",
+        "responseType": "getPROJECTSLOV1GetProjectsLOVResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "project_number"
+          ]
+        }
+      }
+    },
+    "lineId": {
+      "type": "string"
+    },
+    "lineIdForUpdate": {
+      "type": "string"
+    },
+    "lineNumber": {
+      "type": "string"
+    },
+    "lineNumberDialog": {
+      "type": "string"
+    },
+    "percentage": {
+      "type": "number"
+    },
+    "percentageOfListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "businessObjects/getall_PercentageOf",
+        "keyAttributes": "percentageOf",
+        "itemsPath": "items",
+        "responseType": "getallPercentageOfResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "percentageOf"
+          ]
+        }
+      }
+    },
+    "projectId": {
+      "type": "string"
+    },
+    "projectNumber": {
+      "type": "string"
+    },
+    "searchString": {
+      "type": "string"
+    },
+    "selectedIndex": {
+      "type": "string"
+    },
+    "showSpinner": {
+      "type": "boolean"
+    },
+    "SourceName": {
+      "type": "string"
+    },
+    "sourceRef": {
+      "type": "string"
+    }
+
+  },
+  "metadata": {},
+  "types": {
+    "@decorators.get1113185EventTypesLOVResponse": {
+      "endpoint": "get11_13_18_05EventTypesLOV",
+      "service": "GenerateDraftInvoice",
+      "path": "response"
+    },
+    "@decorators.getallPercentageOfResponse": {
+      "endpoint": "getall_PercentageOf",
+      "service": "businessObjects",
+      "path": "response"
+    },
+    "@decorators.getCONTRACTSEARCH1ExtractContractSearchDetails2Response": {
+      "endpoint": "getCONTRACT_SEARCH1_0ExtractContractSearchDetails2",
+      "service": "icsEndpoint",
+      "path": "response"
+    },
+    "@decorators.getCONTRACTSLINESLOV1GetContractLinesResponse": {
+      "endpoint": "getCONTRACTS_LINES_LOV1_0GetContractLines",
+      "service": "icsEndpoint",
+      "path": "response"
+    },
+    "@decorators.getCONTRACTSLINESLOV1GetContractLinesResponse2": {
+      "endpoint": "getCONTRACTS_LINES_LOV1_0GetContractLines",
+      "service": "icsEndpoint",
+      "path": "response"
+    },
+    "@decorators.getCONTRACTSLOV1GetContracts2Response": {
+      "endpoint": "getCONTRACTS_LOV1_0GetContracts2",
+      "service": "icsEndpoint",
+      "path": "response"
+    },
+    "@decorators.getPROJECTSLOV1GetProjectsLOVResponse": {
+      "endpoint": "getPROJECTS_LOV1_0GetProjectsLOV",
+      "service": "icsEndpoint",
+      "path": "response"
+    },
+    "contractrecord": {
+      "amountToBillThisPeriod": "number",
+      "contractId": "string",
+      "contractItem": "string",
+      "contractLineId": "string",
+      "contractNumber": "string",
+      "description": "string",
+      "percentBilled": "number",
+      "previouslyBilledAmount": "number",
+      "retainageAmount": "number",
+      "retainageBalance": "number",
+      "retainageHeld": "number",
+      "retentionPercentage": "number",
+      "revisedContractAmount": "number",
+      "totalBilled": "number"
+    },
+    "get1113185EventTypesLOVResponse": {
+      "items": [
+        {
+          "Description": "string",
+          "EventTypeId": "number",
+          "EventTypeName": "string"
+        }
+      ]
+    },
+    "getallPercentageOfResponse": {
+      "items": [
+        {
+          "percentageOf": "string"
+        }
+      ]
+    },
+    "getCONTRACTSEARCH1ExtractContractSearchDetails2Response": {
+      "retValues": [
+        {
+          "amountToBillThisPeriod": "number",
+          "contractItem": "string",
+          "contractLineId": "string",
+          "contractNumber": "string",
+          "description": "string",
+          "percentBilled": "number",
+          "previouslyBilledAmount": "number",
+          "retainageAmount": "number",
+          "retainageBalance": "number",
+          "retainageHeld": "number",
+          "retentionPercentage": "number",
+          "revisedContractAmount": "number",
+          "totalBilled": "number"
+        }
+      ]
+    },
+    "getCONTRACTSLINESLOV1GetContractLinesResponse": [
+      {
+        "lineId": "number",
+        "lineNumber": "string"
+      }
+    ],
+    "getCONTRACTSLINESLOV1GetContractLinesResponse2": [
+      {
+        "lineId": "number",
+        "lineNumber": "string"
+      }
+    ],
+    "getCONTRACTSLOV1GetContracts2Response": {
+      "items": [
+        {
+          "contractId": "number",
+          "contractNumber": "string"
+        }
+      ]
+    },
+    "getPROJECTSLOV1GetProjectsLOVResponse": [
+      {
+        "project_id": "number",
+        "project_number": "string"
+      }
+    ]
+  },
+  "eventListeners": {
+    "buttonAction": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain"
+        }
+      ]
+    },
+    "buttonAction2": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain1"
+        }
+      ]
+    },
+    "buttonAction3": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain2"
+        }
+      ]
+    },
+    "buttonAction4": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain3"
+        }
+      ]
+    },
+    "buttonAction5": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain6"
+        }
+      ]
+    },
+    "buttonAction6": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain7"
+        }
+      ]
+    },
+    "iconClick": {
+      "chains": [
+        {
+          "chain": "IconClickChain",
+          "parameters": {
+            "key": "{{ $current.key }}",
+            "index": "{{ $current.index }}",
+            "current": "{{ $current }}"
+          }
+        }
+      ]
+    },
+    "inputDateValue": {
+      "chains": [
+        {
+          "chain": "InputDateValueChangeChain",
+          "parameters": {
+            "value": "{{ $event.detail.value }}"
+          }
+        }
+      ]
+    },
+    "inputNumberValue": {
+      "chains": [
+        {
+          "chain": "InputNumberValueChangeChain",
+          "parameters": {
+            "value": "{{ $event.detail.value }}"
+          }
+        }
+      ]
+    },
+    "inputNumberValue2": {
+      "chains": [
+        {
+          "chain": "InputNumberValueChangeChain1",
+          "parameters": {
+            "value": "{{ $event.detail.value }}"
+          }
+        }
+      ]
+    },
+    "inputTextValue": {
+      "chains": [
+        {
+          "chain": "InputTextValueChangeChain",
+          "parameters": {
+            "value": "{{ $event.detail.value }}"
+          }
+        }
+      ]
+    },
+    "selectValueItem": {
+      "chains": [
+        {
+          "chain": "SelectValueItemChangeChain",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}",
+            "value": "'value'"
+          }
+        }
+      ]
+    },
+    "selectValueItem2": {
+      "chains": [
+        {
+          "chain": "SelectValueItemChangeChain1",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem3": {
+      "chains": [
+        {
+          "chain": "SelectValueItemChangeChain2",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem5": {
+      "chains": [
+        {
+          "chain": "SelectValueItemChangeChain4",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    }
+
+  },
+  "imports": {
+    "components": {
+      "oj-button": {
+        "path": "ojs/ojbutton"
+      },
+      "oj-dialog": {
+        "path": "ojs/ojdialog"
+      },
+      "oj-drawer-layout": {
+        "path": "ojs/ojdrawerlayout"
+      },
+      "oj-form-layout": {
+        "path": "ojs/ojformlayout"
+      },
+      "oj-input-date": {
+        "path": "ojs/ojdatetimepicker"
+      },
+      "oj-input-number": {
+        "path": "ojs/ojinputnumber"
+      },
+      "oj-input-text": {
+        "path": "ojs/ojinputtext"
+      },
+      "oj-sample-export-data": {
+        "path": "oj-sample/export-data/loader"
+      },
+      "oj-select-single": {
+        "path": "ojs/ojselectsingle"
+      },
+      "oj-table": {
+        "path": "ojs/ojtable"
+      },
+      "oj-toolbar": {
+        "path": "ojs/ojtoolbar"
+      }
+
+   },
+    "modules": {
+      "ojValidationDateTime": {
+        "path": "ojs/ojvalidation-datetime"
+      },
+      "ojValidationNumber": {
+        "path": "ojs/ojvalidation-number"
+      }
+    }
+  },
+  "@dt": {
+    "iconClass": "vbdt-dynamic-icon-10-icoCanvasPageSvg"
+  }
+}

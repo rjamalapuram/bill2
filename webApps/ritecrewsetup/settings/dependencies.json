@@ -1,0 +1,34 @@
+{
+  "component-dependencies": {
+    "oj-sp": {
+      "version": "2407.0.0",
+      "components": {
+        "smart-select-single": "2407.0.0",
+        "general-drawer-template": "2407.0.0",
+        "canvas-page": "2407.0.0",
+        "dynamic-foldout-page": "2407.0.0",
+        "guided-process-drawer-template": "2407.0.0",
+        "general-overview-page": "2407.0.0",
+        "advanced-create-edit": "2407.0.0"
+      }
+    },
+    "oj-sample": {
+      "version": "8.0.0",
+      "components": {
+        "export-data": "8.0.0"
+      }
+    },
+    "oj-dyn": {
+      "version": "16.0.11",
+      "components": {
+        "container": "16.0.11"
+      }
+    },
+    "oj-dynamic": {
+      "version": "16.0.11",
+      "components": {
+        "form": "16.0.11"
+      }
+    }
+  }
+}

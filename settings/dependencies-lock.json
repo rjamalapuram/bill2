@@ -1,0 +1,93 @@
+{
+  "component-dependencies": {
+    "oj-sample": {
+      "version": "8.0.0",
+      "components": {
+        "utils": "8.0.0",
+        "export-data": "8.0.0"
+      }
+    },
+    "oj-sp": {
+      "version": "2407.0.0",
+      "components": {
+
+        "data-switcher": "2407.0.0",
+        "header-general-overview": "2407.0.0",
+        "general-overview-page": "2407.0.0",
+        "fa-css": "2407.0.0",
+        "data-management-page": "2407.0.0",
+        "smart-select-single": "2407.0.0",
+        "messages-toast": "2407.0.0",
+        "message-unsaved-changes": "2407.0.0",
+        "empty-state": "2407.0.0",
+        "header-navigation": "2407.0.0",
+        "overflow": "2407.0.0",
+        "general-drawer-template": "2407.0.0",
+        "smart-search-page": "2407.0.0",
+        "common": "2407.0.0",
+        "collection-container": "2407.0.0",
+        "guided-process-drawer-template": "2407.0.0",
+        "collection-detail-page": "2407.0.0",
+        "header-create-edit": "2407.0.0",
+        "internal-resources": "2407.0.0",
+        "analytics-canvas": "2407.0.0",
+        "css-additions": "2407.0.0",
+        "message-banner-unsaved-changes": "2407.0.0",
+        "timestamp": "2407.0.0",
+        "list-item-template": "2407.0.0",
+        "common-util": "2407.0.0",
+        "common-strings": "2407.0.0",
+        "primary-action-feedback": "2407.0.0",
+        "dynamic-foldout-page": "2407.0.0",
+        "header-welcome-banner": "2407.0.0",
+        "create-edit-drawer-template": "2407.0.0",
+        "collection-detail-page-pattern": "2407.0.0",
+        "advanced-create-edit-pattern": "2407.0.0",
+        "welcome-page": "2407.0.0",
+        "advanced-create-edit": "2407.0.0",
+        "data-provider": "2407.0.0",
+        "filter-chip": "2407.0.0",
+        "guided-process": "2407.0.0",
+        "smart-filters": "2407.0.0",
+        "item-overview-page": "2407.0.0",
+        "smart-filter-search": "2407.0.0",
+        "simple-create-edit": "2407.0.0",
+        "detail-panel": "2407.0.0",
+        "canvas-page": "2407.0.0",
+        "smart-filter-search-pattern": "2407.0.0",
+        "dashboard-landing-page": "2407.0.0",
+        "general-overview-page-pattern": "2407.0.0"
+
+      }
+    },
+    "oj-oacp": {
+      "version": "2407.0.0",
+      "components": {
+        "pubsub": "2407.0.0"
+      }
+    },
+    "oj-oars": {
+      "version": "2407.0.0",
+      "components": {
+        "resource": "2407.0.0"
+      }
+    },
+    "oj-dynamic": {
+      "version": "16.0.11",
+      "components": {
+        "shared": "16.0.11",
+        "form": "16.0.11",
+        "utils": "16.0.11",
+        "bind-field": "16.0.11",
+        "providers": "16.0.11"
+      }
+    },
+    "oj-dyn": {
+      "version": "16.0.11",
+      "components": {
+        "container": "16.0.11",
+        "bind-section": "16.0.11"
+      }
+    }
+  }
+}

@@ -1,0 +1,877 @@
+{
+    "RowCount": "218",
+    "BusinessUnits": [
+        {
+            "bu_id": "300000347908106",
+            "bu_name": "112BU"
+        },
+        {
+            "bu_id": "300000310224221",
+            "bu_name": "ABC Business Unit"
+        },
+        {
+            "bu_id": "300000276171685",
+            "bu_name": "ABC1"
+        },
+        {
+            "bu_id": "300000308250197",
+            "bu_name": "ACC_BUSINESSUNIT"
+        },
+        {
+            "bu_id": "300000914674014",
+            "bu_name": "ANAND_BU"
+        },
+        {
+            "bu_id": "300000293108734",
+            "bu_name": "ASL Canada BU1"
+        },
+        {
+            "bu_id": "300000293108728",
+            "bu_name": "ASL USA BU1"
+        },
+        {
+            "bu_id": "300000293108731",
+            "bu_name": "ASL USA BU2"
+        },
+        {
+            "bu_id": "300000219208529",
+            "bu_name": "AU Council Business Unit"
+        },
+        {
+            "bu_id": "300001385993198",
+            "bu_name": "Abc_am_bu3"
+        },
+        {
+            "bu_id": "300001385992647",
+            "bu_name": "Abc_auto_bu1"
+        },
+        {
+            "bu_id": "300001386263383",
+            "bu_name": "Abc_bank_bu4"
+        },
+        {
+            "bu_id": "300001386263483",
+            "bu_name": "Abc_sw_bu6"
+        },
+        {
+            "bu_id": "300001386263433",
+            "bu_name": "Abc_tech_bu5"
+        },
+        {
+            "bu_id": "300001385993133",
+            "bu_name": "Abc_tx_bu2"
+        },
+        {
+            "bu_id": "300001498633695",
+            "bu_name": "Ajay Business Unit"
+        },
+        {
+            "bu_id": "300000124184209",
+            "bu_name": "Algeria Business Unit"
+        },
+        {
+            "bu_id": "300000255541788",
+            "bu_name": "Anitha"
+        },
+        {
+            "bu_id": "300001027437417",
+            "bu_name": "Appu_BU"
+        },
+        {
+            "bu_id": "300000123913057",
+            "bu_name": "Argentina Business Unit"
+        },
+        {
+            "bu_id": "300000047826661",
+            "bu_name": "Australia Business Unit"
+        },
+        {
+            "bu_id": "300000116771530",
+            "bu_name": "Austria Business Unit"
+        },
+        {
+            "bu_id": "300000327093179",
+            "bu_name": "BAG BUSINESS UNIT"
+        },
+        {
+            "bu_id": "300000310755261",
+            "bu_name": "BESCOM BAN BU"
+        },
+        {
+            "bu_id": "300000310755264",
+            "bu_name": "BESCOM HYD BU"
+        },
+        {
+            "bu_id": "300000596016380",
+            "bu_name": "BU3"
+        },
+        {
+            "bu_id": "300000116771630",
+            "bu_name": "Bahrain Business Unit"
+        },
+        {
+            "bu_id": "300000105578322",
+            "bu_name": "Belgium Business Unit"
+        },
+        {
+            "bu_id": "300000866180612",
+            "bu_name": "Bharath BU"
+        },
+        {
+            "bu_id": "300000103055704",
+            "bu_name": "Brazil Business Unit"
+        },
+        {
+            "bu_id": "300000293111842",
+            "bu_name": "CARE VISION BU"
+        },
+        {
+            "bu_id": "300000298775582",
+            "bu_name": "CAS BUSINESS UNIT"
+        },
+        {
+            "bu_id": "300000314809940",
+            "bu_name": "CHJ_BU"
+        },
+        {
+            "bu_id": "300000325923660",
+            "bu_name": "CITI Business Unit"
+        },
+        {
+            "bu_id": "300000914106728",
+            "bu_name": "COSTING BU"
+        },
+        {
+            "bu_id": "300000299203445",
+            "bu_name": "CSC US Business Unit"
+        },
+        {
+            "bu_id": "300000049671153",
+            "bu_name": "Canada Business Unit"
+        },
+        {
+            "bu_id": "300000318696341",
+            "bu_name": "Charan BU"
+        },
+        {
+            "bu_id": "300000123650589",
+            "bu_name": "Chile Business Unit"
+        },
+        {
+            "bu_id": "300000047826657",
+            "bu_name": "China Business Unit"
+        },
+        {
+            "bu_id": "300000123774676",
+            "bu_name": "Colombia Business Unit"
+        },
+        {
+            "bu_id": "300000124171704",
+            "bu_name": "Czech Business Unit"
+        },
+        {
+            "bu_id": "300001001730256",
+            "bu_name": "DEMO-INR-BUSINESS UNIT"
+        },
+        {
+            "bu_id": "300000271883241",
+            "bu_name": "DPW"
+        },
+        {
+            "bu_id": "300000305666879",
+            "bu_name": "DVB_BusinessUnit1"
+        },
+        {
+            "bu_id": "300000300888125",
+            "bu_name": "Dell BU1"
+        },
+        {
+            "bu_id": "300001001713088",
+            "bu_name": "Demo AU"
+        },
+        {
+            "bu_id": "300001001713082",
+            "bu_name": "Demo India"
+        },
+        {
+            "bu_id": "300001001713085",
+            "bu_name": "Demo USA"
+        },
+        {
+            "bu_id": "300000105492815",
+            "bu_name": "Denmark Business Unit"
+        },
+        {
+            "bu_id": "300000251792980",
+            "bu_name": "ERP"
+        },
+        {
+            "bu_id": "300000322475648",
+            "bu_name": "ERPTREE BPO"
+        },
+        {
+            "bu_id": "300000116771680",
+            "bu_name": "Estonia Business Unit"
+        },
+        {
+            "bu_id": "300000313957177",
+            "bu_name": "FOX PAYROLL UNIT "
+        },
+        {
+            "bu_id": "300000313957123",
+            "bu_name": "FOX _BU 1"
+        },
+        {
+            "bu_id": "300000217229393",
+            "bu_name": "Federal US Business Unit"
+        },
+        {
+            "bu_id": "300000132179374",
+            "bu_name": "Fin Svcs UK Business Unit"
+        },
+        {
+            "bu_id": "300000132179348",
+            "bu_name": "Fin Svcs US Business Unit"
+        },
+        {
+            "bu_id": "300000105647741",
+            "bu_name": "Finland Business Unit"
+        },
+        {
+            "bu_id": "300000047568131",
+            "bu_name": "France Business Unit"
+        },
+        {
+            "bu_id": "300000303444146",
+            "bu_name": "GG AU BU"
+        },
+        {
+            "bu_id": "300000303444143",
+            "bu_name": "GG CA BU"
+        },
+        {
+            "bu_id": "300000303444152",
+            "bu_name": "GG DE BU"
+        },
+        {
+            "bu_id": "300000303444149",
+            "bu_name": "GG NL BU"
+        },
+        {
+            "bu_id": "300000303444140",
+            "bu_name": "GG UK BU"
+        },
+        {
+            "bu_id": "300000303444137",
+            "bu_name": "GG US BU"
+        },
+        {
+            "bu_id": "300000048608425",
+            "bu_name": "Germany Business Unit"
+        },
+        {
+            "bu_id": "300000124181993",
+            "bu_name": "Greece Business Unit"
+        },
+        {
+            "bu_id": "300000868712175",
+            "bu_name": "HAMEED_BU"
+        },
+        {
+            "bu_id": "300000078974743",
+            "bu_name": "Healthcare US Business Unit"
+        },
+        {
+            "bu_id": "300000047902202",
+            "bu_name": "Hong Kong Business Unit"
+        },
+        {
+            "bu_id": "300000116771655",
+            "bu_name": "Hungary Business Unit"
+        },
+        {
+            "bu_id": "300000312116795",
+            "bu_name": "IBM Business Unit"
+        },
+        {
+            "bu_id": "300000365450972",
+            "bu_name": "IKEA BUSINESS UNIT"
+        },
+        {
+            "bu_id": "300000280179720",
+            "bu_name": "INTELLI Canada BU1"
+        },
+        {
+            "bu_id": "300000280179714",
+            "bu_name": "INTELLI USA BU1"
+        },
+        {
+            "bu_id": "300000280179717",
+            "bu_name": "INTELLI USA BU2"
+        },
+        {
+            "bu_id": "300000334647774",
+            "bu_name": "ISB BUSINESS UNIT"
+        },
+        {
+            "bu_id": "300000304107048",
+            "bu_name": "India Business Unit"
+        },
+        {
+            "bu_id": "300000047826665",
+            "bu_name": "India Business Unit 01"
+        },
+        {
+            "bu_id": "300000123998588",
+            "bu_name": "Indonesia Business Unit"
+        },
+        {
+            "bu_id": "300001386895630",
+            "bu_name": "Info_sw_bu1"
+        },
+        {
+            "bu_id": "300000103055365",
+            "bu_name": "Ireland Business Unit"
+        },
+        {
+            "bu_id": "300000126234057",
+            "bu_name": "Israel Business Unit"
+        },
+        {
+            "bu_id": "300000277822278",
+            "bu_name": "Italy"
+        },
+        {
+            "bu_id": "300000048608417",
+            "bu_name": "Italy Business Unit"
+        },
+        {
+            "bu_id": "300000287658627",
+            "bu_name": "JAN BU"
+        },
+        {
+            "bu_id": "300001095977190",
+            "bu_name": "JIO_CA"
+        },
+        {
+            "bu_id": "300001095977196",
+            "bu_name": "JIO_DELHI"
+        },
+        {
+            "bu_id": "300001095977193",
+            "bu_name": "JIO_HYD"
+        },
+        {
+            "bu_id": "300001095977187",
+            "bu_name": "JIO_NY"
+        },
+        {
+            "bu_id": "300001444155145",
+            "bu_name": "JabWeMet BU"
+        },
+        {
+            "bu_id": "300000047826669",
+            "bu_name": "Japan Business Unit"
+        },
+        {
+            "bu_id": "300000592315367",
+            "bu_name": "KAAPAN_BU"
+        },
+        {
+            "bu_id": "300000324862045",
+            "bu_name": "KKM Business Unit"
+        },
+        {
+            "bu_id": "300000310697127",
+            "bu_name": "KMM Business Unit"
+        },
+        {
+            "bu_id": "300000304064651",
+            "bu_name": "KarthikRite BU01"
+        },
+        {
+            "bu_id": "300000105647677",
+            "bu_name": "Kazakhstan Business Unit"
+        },
+        {
+            "bu_id": "300000116771555",
+            "bu_name": "Kuwait Business Unit"
+        },
+        {
+            "bu_id": "300000866187696",
+            "bu_name": "LALU GROUP LALU BU BU"
+        },
+        {
+            "bu_id": "300000866185530",
+            "bu_name": "LALU UK BU"
+        },
+        {
+            "bu_id": "300000866187613",
+            "bu_name": "LALU US BU"
+        },
+        {
+            "bu_id": "300000251793557",
+            "bu_name": "LUCKY"
+        },
+        {
+            "bu_id": "300000116771705",
+            "bu_name": "Latvia Business Unit"
+        },
+        {
+            "bu_id": "300000325318751",
+            "bu_name": "Level Business Unit"
+        },
+        {
+            "bu_id": "300000116771730",
+            "bu_name": "Liechtenstein Business Unit"
+        },
+        {
+            "bu_id": "300000116771755",
+            "bu_name": "Lithuania Business Unit"
+        },
+        {
+            "bu_id": "300000126298397",
+            "bu_name": "Luxembourg Business Unit"
+        },
+        {
+            "bu_id": "300000314791672",
+            "bu_name": "MG BU1"
+        },
+        {
+            "bu_id": "300000314791723",
+            "bu_name": "MG BU2"
+        },
+        {
+            "bu_id": "300000105647550",
+            "bu_name": "Malaysia Business Unit"
+        },
+        {
+            "bu_id": "300000079037580",
+            "bu_name": "Mexico Business Unit"
+        },
+        {
+            "bu_id": "300000312584760",
+            "bu_name": "Mohan RS Business Unit"
+        },
+        {
+            "bu_id": "300000129610421",
+            "bu_name": "Morocco Business Unit"
+        },
+        {
+            "bu_id": "300000048608429",
+            "bu_name": "Netherlands Business Unit"
+        },
+        {
+            "bu_id": "300000105006286",
+            "bu_name": "New Zealand Business Unit"
+        },
+        {
+            "bu_id": "300000116771580",
+            "bu_name": "Norway Business Unit"
+        },
+        {
+            "bu_id": "300000336343406",
+            "bu_name": "OCI BUSINESS UNIT"
+        },
+        {
+            "bu_id": "300000293111861",
+            "bu_name": "ORION BU"
+        },
+        {
+            "bu_id": "300000301911652",
+            "bu_name": "Oak Canada BU1"
+        },
+        {
+            "bu_id": "300000301911646",
+            "bu_name": "Oak USA BU1"
+        },
+        {
+            "bu_id": "300000301911649",
+            "bu_name": "Oak USA BU2"
+        },
+        {
+            "bu_id": "300000116771780",
+            "bu_name": "Oman Business Unit"
+        },
+        {
+            "bu_id": "300000918032950",
+            "bu_name": "Oracle BU"
+        },
+        {
+            "bu_id": "300000297727474",
+            "bu_name": "PAVAN CO"
+        },
+        {
+            "bu_id": "300000304082198",
+            "bu_name": "PP BUSSINESS UNIT"
+        },
+        {
+            "bu_id": "300000287238566",
+            "bu_name": "PP Business Unit"
+        },
+        {
+            "bu_id": "300000251792799",
+            "bu_name": "PPM BU"
+        },
+        {
+            "bu_id": "300000304145347",
+            "bu_name": "PPPM BU"
+        },
+        {
+            "bu_id": "300000126317911",
+            "bu_name": "Pakistan Business Unit"
+        },
+        {
+            "bu_id": "300000126304804",
+            "bu_name": "Philippines Business Unit"
+        },
+        {
+            "bu_id": "300000048716580",
+            "bu_name": "Poland Business Unit"
+        },
+        {
+            "bu_id": "300000123786588",
+            "bu_name": "Portugal Business Unit"
+        },
+        {
+            "bu_id": "300000324181775",
+            "bu_name": "Priyatham BU"
+        },
+        {
+            "bu_id": "300001389178129",
+            "bu_name": "Pro_bu1"
+        },
+        {
+            "bu_id": "300001389178181",
+            "bu_name": "Pro_bu2"
+        },
+        {
+            "bu_id": "300000078974768",
+            "bu_name": "Progress UK Business Unit"
+        },
+        {
+            "bu_id": "300000075888561",
+            "bu_name": "Progress US Business Unit"
+        },
+        {
+            "bu_id": "300000116771805",
+            "bu_name": "Qatar Business Unit"
+        },
+        {
+            "bu_id": "300000916055850",
+            "bu_name": "R2771 Business Unit"
+        },
+        {
+            "bu_id": "300000314751824",
+            "bu_name": "RAM BU"
+        },
+        {
+            "bu_id": "300001001703639",
+            "bu_name": "REX_BU"
+        },
+        {
+            "bu_id": "300000306971494",
+            "bu_name": "RITE10_BU"
+        },
+        {
+            "bu_id": "300000307061531",
+            "bu_name": "RITE_10_BU"
+        },
+        {
+            "bu_id": "300000313876693",
+            "bu_name": "RT Houston Shared Services BU"
+        },
+        {
+            "bu_id": "300000322863243",
+            "bu_name": "Rapthadu_St.Vincent_school_BU"
+        },
+        {
+            "bu_id": "300000325319168",
+            "bu_name": "Rite Business Unit"
+        },
+        {
+            "bu_id": "300000356883078",
+            "bu_name": "Rite PPM BU"
+        },
+        {
+            "bu_id": "300000310359834",
+            "bu_name": "Rite Soft BU"
+        },
+        {
+            "bu_id": "300000310363551",
+            "bu_name": "Rite Soft RS BU"
+        },
+        {
+            "bu_id": "300000304106907",
+            "bu_name": "RitesKarthik BU"
+        },
+        {
+            "bu_id": "300000126304829",
+            "bu_name": "Romania Business Unit"
+        },
+        {
+            "bu_id": "300000048608421",
+            "bu_name": "Russia Business Unit"
+        },
+        {
+            "bu_id": "300000301911946",
+            "bu_name": "SAB CAN Health Services"
+        },
+        {
+            "bu_id": "300000301911940",
+            "bu_name": "SAB US Consulting Services"
+        },
+        {
+            "bu_id": "300000301911937",
+            "bu_name": "SAB US Financial Services"
+        },
+        {
+            "bu_id": "300000301911943",
+            "bu_name": "SAB US Media Services"
+        },
+        {
+            "bu_id": "300000304162318",
+            "bu_name": "SAJI Business Unit"
+        },
+        {
+            "bu_id": "300000287562727",
+            "bu_name": "SAS BU"
+        },
+        {
+            "bu_id": "300000325344218",
+            "bu_name": "SBEC Business Unit"
+        },
+        {
+            "bu_id": "300000048608413",
+            "bu_name": "Saudi Arabia Business Unit"
+        },
+        {
+            "bu_id": "300000047902198",
+            "bu_name": "Singapore Business Unit"
+        },
+        {
+            "bu_id": "300000123795674",
+            "bu_name": "South Africa Business Unit"
+        },
+        {
+            "bu_id": "300000103055995",
+            "bu_name": "South Korea Business Unit"
+        },
+        {
+            "bu_id": "300000048716576",
+            "bu_name": "Spain Business Unit"
+        },
+        {
+            "bu_id": "300000186345961",
+            "bu_name": "Supremo CH Business Unit"
+        },
+        {
+            "bu_id": "300000180010546",
+            "bu_name": "Supremo US Business Unit"
+        },
+        {
+            "bu_id": "300000048716584",
+            "bu_name": "Sweden Business Unit"
+        },
+        {
+            "bu_id": "300000105578390",
+            "bu_name": "Switzerland Business Unit"
+        },
+        {
+            "bu_id": "300000395728553",
+            "bu_name": "Sync Business Unit"
+        },
+        {
+            "bu_id": "300000314773435",
+            "bu_name": "TCS US Business Unit"
+        },
+        {
+            "bu_id": "300000287592077",
+            "bu_name": "TRENDILLA Canada BU1"
+        },
+        {
+            "bu_id": "300000287592071",
+            "bu_name": "TRENDILLA USA BU1"
+        },
+        {
+            "bu_id": "300000287592074",
+            "bu_name": "TRENDILLA USA BU2"
+        },
+        {
+            "bu_id": "300000105431848",
+            "bu_name": "Taiwan Business Unit"
+        },
+        {
+            "bu_id": "300001385780289",
+            "bu_name": "Tata Power"
+        },
+        {
+            "bu_id": "300001385780239",
+            "bu_name": "Tata Steel"
+        },
+        {
+            "bu_id": "300001385780133",
+            "bu_name": "Tata coffee"
+        },
+        {
+            "bu_id": "300001389178127",
+            "bu_name": "Tcs_motors"
+        },
+        {
+            "bu_id": "300000324572909",
+            "bu_name": "TestRite Business Unit"
+        },
+        {
+            "bu_id": "300000126313049",
+            "bu_name": "Thailand Business Unit"
+        },
+        {
+            "bu_id": "300000325343855",
+            "bu_name": "Thanvi BU"
+        },
+        {
+            "bu_id": "300000123827898",
+            "bu_name": "Turkey Business Unit"
+        },
+        {
+            "bu_id": "300000116771605",
+            "bu_name": "UAE Business Unit"
+        },
+        {
+            "bu_id": "300000047498175",
+            "bu_name": "UK Business Unit"
+        },
+        {
+            "bu_id": "300000136439946",
+            "bu_name": "US INS Business Unit"
+        },
+        {
+            "bu_id": "300000046987012",
+            "bu_name": "US1 Business Unit"
+        },
+        {
+            "bu_id": "300000176102880",
+            "bu_name": "US1 External Learning"
+        },
+        {
+            "bu_id": "300000087957781",
+            "bu_name": "US2 Business Unit"
+        },
+        {
+            "bu_id": "300000304144696",
+            "bu_name": "US4 Business Unit"
+        },
+        {
+            "bu_id": "300000105647613",
+            "bu_name": "Ukraine Business Unit"
+        },
+        {
+            "bu_id": "300000277822045",
+            "bu_name": "United Kingdom"
+        },
+        {
+            "bu_id": "300000186845781",
+            "bu_name": "University AU Business Unit"
+        },
+        {
+            "bu_id": "300000093962136",
+            "bu_name": "University US Business Unit"
+        },
+        {
+            "bu_id": "300000385697628",
+            "bu_name": "VOLKS_BU"
+        },
+        {
+            "bu_id": "300000126322020",
+            "bu_name": "Venezuela Business Unit"
+        },
+        {
+            "bu_id": "300000126317723",
+            "bu_name": "Viet Nam Business Unit"
+        },
+        {
+            "bu_id": "300000124087100",
+            "bu_name": "Vision E and C Business Unit"
+        },
+        {
+            "bu_id": "300000111055917",
+            "bu_name": "Vision Retail Business Unit"
+        },
+        {
+            "bu_id": "300000279111613",
+            "bu_name": "WGB Business Unit"
+        },
+        {
+            "bu_id": "300000313975018",
+            "bu_name": "WOOF _BU"
+        },
+        {
+            "bu_id": "300001384344065",
+            "bu_name": "Walamart Cloud solutions_BU1_BENG"
+        },
+        {
+            "bu_id": "300001384344165",
+            "bu_name": "Walamart Mobile Application BU3-HYD"
+        },
+        {
+            "bu_id": "300001384344115",
+            "bu_name": "Wlamart AI -BU2-Mumbai "
+        },
+        {
+            "bu_id": "300000262284372",
+            "bu_name": "World Crane Services FZE"
+        },
+        {
+            "bu_id": "300000306473959",
+            "bu_name": "XPS Canada BU1"
+        },
+        {
+            "bu_id": "300000306473953",
+            "bu_name": "XPS USA BU1"
+        },
+        {
+            "bu_id": "300000306473956",
+            "bu_name": "XPS USA BU2"
+        },
+        {
+            "bu_id": "300000240527547",
+            "bu_name": "XRSS.BUSINESSUNIT.001"
+        },
+        {
+            "bu_id": "300000322641649",
+            "bu_name": "Ximpe BU1"
+        },
+        {
+            "bu_id": "300000322641967",
+            "bu_name": "Ximpe BU2"
+        },
+        {
+            "bu_id": "300000285819758",
+            "bu_name": "Xyz India BU"
+        },
+        {
+            "bu_id": "300000255542531",
+            "bu_name": "chetan"
+        },
+        {
+            "bu_id": "300000276200775",
+            "bu_name": "sunny"
+        },
+        {
+            "bu_id": "300001389206989",
+            "bu_name": "tcs_chemicals"
+        },
+        {
+            "bu_id": "300000554907427",
+            "bu_name": "thanu_BU"
+        },
+        {
+            "bu_id": "300001496584365",
+            "bu_name": "tt_bu"
+        },
+        {
+            "bu_id": "300000217435697",
+            "bu_name": "zzzzProgress UK BU"
+        }
+    ]
+}

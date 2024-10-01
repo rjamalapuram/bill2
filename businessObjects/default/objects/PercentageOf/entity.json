@@ -1,0 +1,63 @@
+{
+    "fields": [
+        {
+            "type": "number",
+            "name": "id",
+            "internal": false,
+            "key": true,
+            "oid": "79274209-d206-4e7e-a259-50c65413a512",
+            "required": true,
+            "unique": true,
+            "displayLabel": "Id"
+        },
+        {
+            "type": "datetime",
+            "name": "creationDate",
+            "internal": false,
+            "oid": "d443b73e-657c-461e-ba12-625d2e14a454",
+            "displayLabel": "Created",
+            "historyType": "timeCreated"
+        },
+        {
+            "type": "datetime",
+            "name": "lastUpdateDate",
+            "internal": false,
+            "oid": "24eed41b-2c5a-4159-b112-971a26c584d0",
+            "displayLabel": "Last Updated",
+            "historyType": "timeUpdated"
+        },
+        {
+            "type": "string",
+            "name": "createdBy",
+            "internal": false,
+            "oid": "6a2b867f-e53d-485d-87f0-e7011f0128cc",
+            "displayLabel": "Created By",
+            "historyType": "createdBy"
+        },
+        {
+            "type": "string",
+            "name": "lastUpdatedBy",
+            "internal": false,
+            "oid": "1b6ec1c3-1420-4105-8476-15c432b53758",
+            "displayLabel": "Last Updated By",
+            "historyType": "updatedBy"
+        },
+        {
+            "type": "number",
+            "name": "versionNumber",
+            "internal": false,
+            "oid": "492f2439-fff0-4ae1-8c06-e59ee49ad50d",
+            "displayLabel": "Version Number",
+            "historyType": "versionNumber"
+        },
+        {
+            "type": "string",
+            "name": "percentageOf",
+            "oid": "d9db914d-783b-4fce-8dc3-7e65cf4d954c",
+            "displayLabel": "percentageOf"
+        }
+    ],
+    "name": "PercentageOf",
+    "oid": "e67808cc-711a-4c02-899a-cfcbde46a5a6",
+    "displayLabel": "Percentage Of"
+}

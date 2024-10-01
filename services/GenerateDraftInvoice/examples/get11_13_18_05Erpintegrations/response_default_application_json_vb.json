@@ -1,0 +1,37 @@
+{
+    "OperationName": "submitESSJobRequest",
+    "DocumentId": null,
+    "DocumentContent": null,
+    "FileName": null,
+    "ContentType": null,
+    "FileType": null,
+    "DocumentAccount": null,
+    "Comments": null,
+    "ProcessName": null,
+    "LoadRequestId": null,
+    "JobPackageName": "/oracle/apps/ess/projects/billing/workarea/invoice/",
+    "JobDefName": "InvoiceGenerationJob",
+    "ReqstId": "8552486",
+    "RequestStatus": null,
+    "JobName": null,
+    "ParameterList": null,
+    "NotificationCode": null,
+    "CallbackURL": null,
+    "JobOptions": null,
+    "StatusCode": null,
+    "ESSParameters": "Oak USA BU1,300000301911646,EX,Y,Y,#NULL,#NULL,#NULL,#NULL,#NULL,#NULL,300001514986862,1036,#NULL,#NULL,#NULL,#NULL,#NULL,#NULL,#NULL,#NULL,#NULL,#NULL,N,#NULL,#NULL,#NULL,#NULL,#NULL,Y,DETAIL,N,#NULL,#NULL,#NULL,ALL,1,#NULL,#NULL",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/erpintegrations/submitESSJobRequest",
+            "name": "erpintegrations",
+            "kind": "item"
+        },
+        {
+            "rel": "canonical",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/erpintegrations/submitESSJobRequest",
+            "name": "erpintegrations",
+            "kind": "item"
+        }
+    ]
+}

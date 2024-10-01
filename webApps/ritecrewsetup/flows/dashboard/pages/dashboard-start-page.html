@@ -1,0 +1,43 @@
+<oj-vb-fragment id="page-header" bridge="[[vbBridge]]" name="page-header">
+  <oj-vb-fragment-param name="title" value="Dashboard"></oj-vb-fragment-param>
+  <template slot="actions">
+    <oj-button label="Done" chroming="callToAction" on-oj-action="[[$listeners.buttonAction2]]" class="oj-button-sm"></oj-button>
+  </template>
+</oj-vb-fragment>
+<div class="oj-flex">
+  <oj-toolbar chroming="solid" class="oj-flex-item oj-sm-12 oj-md-12"></oj-toolbar>
+</div>
+<div class="oj-flex">
+  <div class="oj-flex-item oj-sm-12 oj-md-12">
+    <oj-form-layout class="oj-formlayout-full-width" columns="2" max-columns="2">
+      <oj-select-single label-hint="Contract Number" item-text="contractNumber"
+        on-value-item-changed="[[$listeners.selectValueItem]]"
+        data="[[$variables.getCOMSUMMITSUMMITALLCONTRACTSLOVSUMMIT1GetContractsListSDP]]"></oj-select-single>
+       <oj-button label="Search" class="oj-button-lg"
+             chroming="callToAction" on-oj-action="[[$listeners.buttonAction]]">
+              <span class="oj-ux-ico-search" slot="startIcon"></span>
+           </oj-button>
+    </oj-form-layout>
+  </div>
+</div>
+<div class="oj-flex">
+  <oj-toolbar chroming="solid" class="oj-flex-item oj-sm-12 oj-md-12"></oj-toolbar>
+</div>
+<div class="oj-flex">
+  <oj-chart type="bar" class="oj-sm-flex-initial oj-flex-item oj-sm-12 oj-md-12" data="[[ $variables.DataADP ]]"
+    id="chart" x-axis.title="Contract Line / Item" y-axis.title="Amount (USD)" animation-on-data-change="auto"
+    animation-on-display="auto">
+    <template slot="itemTemplate">
+      <oj-chart-item series-id="[[ $variables.DataADP.data[$current.index].series ]]"
+        group-id="[[ [    $variables.DataADP.data[$current.index].group] ]]" value="{{$current.data.value}}"></oj-chart-item>
+    </template>
+    <template slot="seriesTemplate">
+      <oj-chart-series></oj-chart-series>
+    </template>
+    <template slot="groupTemplate">
+      <oj-chart-group></oj-chart-group>
+    </template>
+  </oj-chart>
+</div>
+
+

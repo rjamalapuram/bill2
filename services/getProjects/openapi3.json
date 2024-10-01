@@ -1,0 +1,920 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "FscmRestApi",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "vb-catalog://backends/fscmRestApi",
+            "description": "FscmRestApi"
+        }
+    ],
+    "paths": {
+        "/11.13.18.05/projects": {
+            "get": {
+                "operationId": "get11_13_18_05Projects",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Get11_13_18_05Projects"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/get11_13_18_05Projects/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany",
+                    "queryParameters": {
+                        "limit": "10000"
+                    }
+                }
+            }
+        },
+        "/11.13.18.05/projectLaborResources?q=ProjectRoleName='Project Manager'": {
+            "get": {
+                "operationId": "get11_13_18_05ProjectLaborResources",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Get11_13_18_05ProjectLaborResources"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/get11_13_18_05ProjectLaborResources/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany",
+                    "queryParameters": {
+                        "q": "ProjectRoleName='Project Manager'"
+                    }
+                }
+            }
+        },
+        "/11.13.18.05/projectOrganizationsLOV": {
+            "get": {
+                "operationId": "get11_13_18_05ProjectOrganizationsLOV",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Get11_13_18_05ProjectOrganizationsLOV"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/get11_13_18_05ProjectOrganizationsLOV/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Get11_13_18_05Projects": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "AllowCapitalizedInterestFlag": {
+                                    "type": "boolean"
+                                },
+                                "AllowCrossChargeFlag": {
+                                    "type": "boolean"
+                                },
+                                "AssetAllocationMethodCode": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "BillingFlag": {
+                                    "type": "boolean",
+                                    "nullable": true
+                                },
+                                "BurdenScheduleId": {
+                                    "type": "integer"
+                                },
+                                "BurdenScheduleFixedDate": {
+                                    "nullable": true
+                                },
+                                "BurdenScheduleName": {
+                                    "type": "string"
+                                },
+                                "BurdeningFlag": {
+                                    "type": "boolean",
+                                    "nullable": true
+                                },
+                                "BusinessUnitId": {
+                                    "type": "integer"
+                                },
+                                "BusinessUnitName": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "CapitalEventProcessingMethodCode": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "CapitalizableFlag": {
+                                    "type": "boolean",
+                                    "nullable": true
+                                },
+                                "CIntRateSchName": {
+                                    "nullable": true
+                                },
+                                "CIntStopDate": {
+                                    "nullable": true
+                                },
+                                "CIntRateSchId": {
+                                    "nullable": true
+                                },
+                                "CrossChargeLaborFlag": {
+                                    "type": "boolean"
+                                },
+                                "CrossChargeNonLaborFlag": {
+                                    "type": "boolean"
+                                },
+                                "CurrencyConvRateType": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "CurrencyConvDateTypeCode": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "CurrencyConvDate": {
+                                    "nullable": true
+                                },
+                                "EnableBudgetaryControlFlag": {
+                                    "type": "boolean",
+                                    "nullable": true
+                                },
+                                "ExternalProjectId": {
+                                    "nullable": true
+                                },
+                                "HoursPerDay": {
+                                    "type": "integer"
+                                },
+                                "IncludeNotesInKPINotificationsFlag": {
+                                    "type": "boolean",
+                                    "nullable": true
+                                },
+                                "IntegrationApplicationCode": {
+                                    "nullable": true
+                                },
+                                "IntegrationProjectReference": {
+                                    "nullable": true
+                                },
+                                "KPINotificationEnabledFlag": {
+                                    "type": "boolean",
+                                    "nullable": true
+                                },
+                                "LaborTpFixedDate": {
+                                    "nullable": true
+                                },
+                                "LaborTpSchedule": {
+                                    "type": "string"
+                                },
+                                "LaborTpScheduleId": {
+                                    "type": "integer"
+                                },
+                                "LegalEntityId": {
+                                    "type": "integer"
+                                },
+                                "LegalEntityName": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "NlTransferPriceFixedDate": {
+                                    "nullable": true
+                                },
+                                "NlTransferPriceSchedule": {
+                                    "type": "string"
+                                },
+                                "NlTransferPriceScheduleId": {
+                                    "type": "integer"
+                                },
+                                "NumberAttr01": {
+                                    "nullable": true
+                                },
+                                "NumberAttr02": {
+                                    "nullable": true
+                                },
+                                "NumberAttr03": {
+                                    "nullable": true
+                                },
+                                "NumberAttr04": {
+                                    "nullable": true
+                                },
+                                "NumberAttr05": {
+                                    "nullable": true
+                                },
+                                "NumberAttr06": {
+                                    "nullable": true
+                                },
+                                "NumberAttr07": {
+                                    "nullable": true
+                                },
+                                "NumberAttr08": {
+                                    "nullable": true
+                                },
+                                "NumberAttr09": {
+                                    "nullable": true
+                                },
+                                "NumberAttr10": {
+                                    "nullable": true
+                                },
+                                "OwningOrganizationId": {
+                                    "type": "integer"
+                                },
+                                "OwningOrganizationName": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "PlanningProjectFlag": {
+                                    "type": "boolean",
+                                    "nullable": true
+                                },
+                                "ProjectCalendarId": {
+                                    "type": "integer"
+                                },
+                                "ProjectCalendarName": {
+                                    "type": "string"
+                                },
+                                "ProjectCode01": {
+                                    "nullable": true
+                                },
+                                "ProjectCode02": {
+                                    "nullable": true
+                                },
+                                "ProjectCode03": {
+                                    "nullable": true
+                                },
+                                "ProjectCode04": {
+                                    "nullable": true
+                                },
+                                "ProjectCode05": {
+                                    "nullable": true
+                                },
+                                "ProjectCode06": {
+                                    "nullable": true
+                                },
+                                "ProjectCode07": {
+                                    "nullable": true
+                                },
+                                "ProjectCode08": {
+                                    "nullable": true
+                                },
+                                "ProjectCode09": {
+                                    "nullable": true
+                                },
+                                "ProjectCode10": {
+                                    "nullable": true
+                                },
+                                "ProjectCode11": {
+                                    "nullable": true
+                                },
+                                "ProjectCode12": {
+                                    "nullable": true
+                                },
+                                "ProjectCode13": {
+                                    "nullable": true
+                                },
+                                "ProjectCode14": {
+                                    "nullable": true
+                                },
+                                "ProjectCode15": {
+                                    "nullable": true
+                                },
+                                "ProjectCode16": {
+                                    "nullable": true
+                                },
+                                "ProjectCode17": {
+                                    "nullable": true
+                                },
+                                "ProjectCode18": {
+                                    "nullable": true
+                                },
+                                "ProjectCode19": {
+                                    "nullable": true
+                                },
+                                "ProjectCode20": {
+                                    "nullable": true
+                                },
+                                "ProjectCode21": {
+                                    "nullable": true
+                                },
+                                "ProjectCode22": {
+                                    "nullable": true
+                                },
+                                "ProjectCode23": {
+                                    "nullable": true
+                                },
+                                "ProjectCode24": {
+                                    "nullable": true
+                                },
+                                "ProjectCode25": {
+                                    "nullable": true
+                                },
+                                "ProjectCode26": {
+                                    "nullable": true
+                                },
+                                "ProjectCode27": {
+                                    "nullable": true
+                                },
+                                "ProjectCode28": {
+                                    "nullable": true
+                                },
+                                "ProjectCode29": {
+                                    "nullable": true
+                                },
+                                "ProjectCode30": {
+                                    "nullable": true
+                                },
+                                "ProjectCode31": {
+                                    "nullable": true
+                                },
+                                "ProjectCode32": {
+                                    "nullable": true
+                                },
+                                "ProjectCode33": {
+                                    "nullable": true
+                                },
+                                "ProjectCode34": {
+                                    "nullable": true
+                                },
+                                "ProjectCode35": {
+                                    "nullable": true
+                                },
+                                "ProjectCode36": {
+                                    "nullable": true
+                                },
+                                "ProjectCode37": {
+                                    "nullable": true
+                                },
+                                "ProjectCode38": {
+                                    "nullable": true
+                                },
+                                "ProjectCode39": {
+                                    "nullable": true
+                                },
+                                "ProjectCode40": {
+                                    "nullable": true
+                                },
+                                "ProjectCurrencyCode": {
+                                    "type": "string"
+                                },
+                                "ProjectDescription": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "ProjectEndDate": {
+                                    "type": "string"
+                                },
+                                "ProjectId": {
+                                    "type": "integer"
+                                },
+                                "ProjectLedgerCurrencyCode": {
+                                    "type": "string"
+                                },
+                                "ProjectManagerEmail": {
+                                    "type": "string"
+                                },
+                                "ProjectManagerName": {
+                                    "type": "string"
+                                },
+                                "ProjectManagerResourceId": {
+                                    "type": "integer"
+                                },
+                                "ProjectName": {
+                                    "type": "string"
+                                },
+                                "ProjectNumber": {
+                                    "type": "string"
+                                },
+                                "ProjectPlanViewAccessCode": {
+                                    "type": "string"
+                                },
+                                "ProjectPriorityCode": {
+                                    "nullable": true
+                                },
+                                "ProjectStartDate": {
+                                    "type": "string"
+                                },
+                                "ProjectStatus": {
+                                    "type": "string"
+                                },
+                                "ProjectStatusCode": {
+                                    "type": "string"
+                                },
+                                "ProjectTypeId": {
+                                    "type": "integer"
+                                },
+                                "ProjectTypeName": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "ProjectUnitId": {
+                                    "type": "integer"
+                                },
+                                "ProjectUnitName": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "ScheduleTypeCode": {
+                                    "type": "string"
+                                },
+                                "ServiceType": {
+                                    "nullable": true
+                                },
+                                "ServiceTypeCode": {
+                                    "nullable": true
+                                },
+                                "SourceApplicationCode": {
+                                    "nullable": true
+                                },
+                                "SourceProjectReference": {
+                                    "nullable": true
+                                },
+                                "SourceTemplateId": {
+                                    "type": "integer",
+                                    "nullable": true
+                                },
+                                "SourceTemplateName": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "SponsoredFlag": {
+                                    "type": "boolean",
+                                    "nullable": true
+                                },
+                                "TextAttr01": {
+                                    "nullable": true
+                                },
+                                "TextAttr02": {
+                                    "nullable": true
+                                },
+                                "TextAttr03": {
+                                    "nullable": true
+                                },
+                                "TextAttr04": {
+                                    "nullable": true
+                                },
+                                "TextAttr05": {
+                                    "nullable": true
+                                },
+                                "TextAttr06": {
+                                    "nullable": true
+                                },
+                                "TextAttr07": {
+                                    "nullable": true
+                                },
+                                "TextAttr08": {
+                                    "nullable": true
+                                },
+                                "TextAttr09": {
+                                    "nullable": true
+                                },
+                                "TextAttr10": {
+                                    "nullable": true
+                                },
+                                "TextAttr11": {
+                                    "nullable": true
+                                },
+                                "TextAttr12": {
+                                    "nullable": true
+                                },
+                                "TextAttr13": {
+                                    "nullable": true
+                                },
+                                "TextAttr14": {
+                                    "nullable": true
+                                },
+                                "TextAttr15": {
+                                    "nullable": true
+                                },
+                                "TextAttr16": {
+                                    "nullable": true
+                                },
+                                "TextAttr17": {
+                                    "nullable": true
+                                },
+                                "TextAttr18": {
+                                    "nullable": true
+                                },
+                                "TextAttr19": {
+                                    "nullable": true
+                                },
+                                "TextAttr20": {
+                                    "nullable": true
+                                },
+                                "TransactionControlFlag": {
+                                    "type": "boolean",
+                                    "nullable": true
+                                },
+                                "WorkplanTemplateId": {
+                                    "nullable": true
+                                },
+                                "WorkplanTemplateName": {
+                                    "nullable": true
+                                },
+                                "WorkType": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "WorkTypeId": {
+                                    "type": "integer",
+                                    "nullable": true
+                                },
+                                "CreationDate": {
+                                    "type": "string"
+                                },
+                                "CreatedBy": {
+                                    "type": "string"
+                                },
+                                "LastUpdateDate": {
+                                    "type": "string"
+                                },
+                                "LastUpdatedBy": {
+                                    "type": "string"
+                                },
+                                "links": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "rel": {
+                                                "type": "string"
+                                            },
+                                            "href": {
+                                                "type": "string"
+                                            },
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "kind": {
+                                                "type": "string"
+                                            },
+                                            "properties": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "changeIndicator": {
+                                                        "type": "string"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "kind": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "Get11_13_18_05ProjectLaborResources": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "ProjectId": {
+                                    "type": "integer"
+                                },
+                                "ProjectName": {
+                                    "type": "string"
+                                },
+                                "ProjectNumber": {
+                                    "type": "string"
+                                },
+                                "ProjectRoleId": {
+                                    "type": "integer"
+                                },
+                                "DefaultStaffingOwnerFlag": {
+                                    "nullable": true
+                                },
+                                "ResourceId": {
+                                    "type": "integer"
+                                },
+                                "ProjectRoleName": {
+                                    "type": "string"
+                                },
+                                "ProjectResourceAssignmentId": {
+                                    "type": "integer"
+                                },
+                                "CreatedBy": {
+                                    "type": "string"
+                                },
+                                "CreationDate": {
+                                    "type": "string"
+                                },
+                                "LastUpdatedBy": {
+                                    "type": "string"
+                                },
+                                "LastUpdateDate": {
+                                    "type": "string"
+                                },
+                                "Allocation": {
+                                    "type": "integer"
+                                },
+                                "LaborEffort": {
+                                    "type": "integer"
+                                },
+                                "AssignmentStatusCode": {
+                                    "type": "string"
+                                },
+                                "AssignmentStatus": {
+                                    "type": "string"
+                                },
+                                "LaborBillRate": {
+                                    "type": "integer"
+                                },
+                                "LaborCostRate": {
+                                    "type": "integer"
+                                },
+                                "FromDate": {
+                                    "type": "string"
+                                },
+                                "ToDate": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "ProjResourceId": {
+                                    "type": "integer"
+                                },
+                                "ProjectCurrencyCode": {
+                                    "type": "string"
+                                },
+                                "BillablePercent": {
+                                    "nullable": true
+                                },
+                                "BillablePercentReasonCode": {
+                                    "nullable": true
+                                },
+                                "AssignmentTypeCode": {
+                                    "nullable": true
+                                },
+                                "AssignmentType": {
+                                    "nullable": true
+                                },
+                                "BillablePercentReason": {
+                                    "nullable": true
+                                },
+                                "CalendarId": {
+                                    "type": "integer"
+                                },
+                                "ScheduleHoursType": {
+                                    "type": "string"
+                                },
+                                "DailyHours": {
+                                    "type": "integer"
+                                },
+                                "SundayHours": {
+                                    "nullable": true
+                                },
+                                "MondayHours": {
+                                    "nullable": true
+                                },
+                                "TuesdayHours": {
+                                    "nullable": true
+                                },
+                                "WednesdayHours": {
+                                    "nullable": true
+                                },
+                                "ThursdayHours": {
+                                    "nullable": true
+                                },
+                                "FridayHours": {
+                                    "nullable": true
+                                },
+                                "SaturdayHours": {
+                                    "nullable": true
+                                },
+                                "WeeklyHours": {
+                                    "nullable": true
+                                },
+                                "Name": {
+                                    "type": "string"
+                                },
+                                "Email": {
+                                    "type": "string"
+                                },
+                                "Reason": {
+                                    "nullable": true
+                                },
+                                "links": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "rel": {
+                                                "type": "string"
+                                            },
+                                            "href": {
+                                                "type": "string"
+                                            },
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "kind": {
+                                                "type": "string"
+                                            },
+                                            "properties": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "changeIndicator": {
+                                                        "type": "string"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "kind": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "Get11_13_18_05ProjectOrganizationsLOV": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "OrganizationName": {
+                                    "type": "string"
+                                },
+                                "OrganizationId": {
+                                    "type": "integer"
+                                },
+                                "BusinessUnitId": {
+                                    "type": "integer"
+                                },
+                                "FromDate": {
+                                    "type": "string"
+                                },
+                                "ToDate": {
+                                    "type": "string"
+                                },
+                                "ActiveStatusFlag": {
+                                    "type": "boolean"
+                                },
+                                "ProjectOrganizationType": {
+                                    "type": "string"
+                                },
+                                "links": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "rel": {
+                                                "type": "string"
+                                            },
+                                            "href": {
+                                                "type": "string"
+                                            },
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "kind": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "kind": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

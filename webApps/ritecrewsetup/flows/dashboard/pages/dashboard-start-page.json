@@ -1,0 +1,141 @@
+{
+  "title": "",
+  "description": "",
+  "variables": {
+    "contractId": {
+      "type": "string"
+    },
+    "contractNumber": {
+      "type": "string"
+    },
+    "DataADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "barChartData"
+      }
+    },
+    "getCOMSUMMITSUMMITALLCONTRACTSLOVSUMMIT1GetContractsListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "getContracts/getCOM_SUMMIT_SUMMIT_ALLCONTRACTS_LOV_SUMMIT1_0GetContracts",
+        "keyAttributes": "contractNumber",
+        "itemsPath": "items",
+        "responseType": "getCOMSUMMITSUMMITALLCONTRACTSLOVSUMMIT1GetContractsResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "contractNumber"
+          ]
+        }
+      }
+    },
+    "getCONTRACTSLOV1GetContracts2ListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "icsEndpoint/getCONTRACTS_LOV1_0GetContracts2",
+        "keyAttributes": "contractNumber",
+        "itemsPath": "items",
+        "responseType": "getCONTRACTSLOV1GetContracts2Response",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "contractNumber"
+          ]
+        }
+      }
+    }
+
+  },
+  "metadata": {},
+  "types": {
+    "@decorators.getCOMSUMMITSUMMITALLCONTRACTSLOVSUMMIT1GetContractsResponse": {
+      "endpoint": "getCOM_SUMMIT_SUMMIT_ALLCONTRACTS_LOV_SUMMIT1_0GetContracts",
+      "service": "getContracts",
+      "path": "response"
+    },
+    "@decorators.getCONTRACTSLOV1GetContracts2Response": {
+      "endpoint": "getCONTRACTS_LOV1_0GetContracts2",
+      "service": "icsEndpoint",
+      "path": "response"
+    },
+    "barChartData": {
+      "group": "string",
+      "id": "number",
+      "series": "string",
+      "value": "number"
+    },
+    "getCOMSUMMITSUMMITALLCONTRACTSLOVSUMMIT1GetContractsResponse": {
+      "items": [
+        {
+          "contractId": "number",
+          "contractNumber": "string"
+        }
+      ]
+    },
+    "getCONTRACTSLOV1GetContracts2Response": {
+      "items": [
+        {
+          "contractId": "number",
+          "contractNumber": "string"
+        }
+      ]
+    }
+
+  },
+  "eventListeners": {
+    "buttonAction": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain"
+        }
+      ]
+    },
+    "buttonAction2": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain1"
+        }
+      ]
+    },
+    "selectValueItem": {
+      "chains": [
+        {
+          "chain": "SelectValueItemChangeChain",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    }
+
+  },
+  "imports": {
+    "components": {
+      "oj-button": {
+        "path": "ojs/ojbutton"
+      },
+      "oj-chart": {
+        "path": "ojs/ojchart"
+      },
+      "oj-chart-group": {
+        "path": "ojs/ojchart"
+      },
+      "oj-chart-item": {
+        "path": "ojs/ojchart"
+      },
+      "oj-chart-series": {
+        "path": "ojs/ojchart"
+      },
+      "oj-form-layout": {
+        "path": "ojs/ojformlayout"
+      },
+      "oj-select-single": {
+        "path": "ojs/ojselectsingle"
+      },
+      "oj-toolbar": {
+        "path": "ojs/ojtoolbar"
+      }
+
+   }
+  }
+}

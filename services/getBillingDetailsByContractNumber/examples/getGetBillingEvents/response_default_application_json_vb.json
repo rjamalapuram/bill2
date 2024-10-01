@@ -1,0 +1,50 @@
+{
+    "items": [
+        {
+            "eventid": 108890,
+            "sourcename": "Rest1",
+            "sourcereference": "Rest1",
+            "contracttypename": "Oak_Contract",
+            "contractnumber": "1032",
+            "contractlinenumber": "1",
+            "eventtypename": "OAK_Adjustments",
+            "eventdescription": "Oak_Adjustments",
+            "businessunitname": "Oak_USA_BU1",
+            "billtrnsamount": 100
+        },
+        {
+            "eventid": 108890,
+            "sourcename": "Rest1",
+            "sourcereference": "Rest1",
+            "contracttypename": "Oak_Contract",
+            "contractnumber": "1032",
+            "contractlinenumber": "1",
+            "eventtypename": "OAK_Adjustments",
+            "eventdescription": "Oak_Adjustments",
+            "businessunitname": "Oak_USA_BU1",
+            "billtrnsamount": 100
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 2,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/getBillingEvents?p_contract_number=1032"
+        },
+        {
+            "rel": "edit",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/getBillingEvents?p_contract_number=1032"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/getBillingEvents?p_contract_number=1032"
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+[
+    {
+        "invoice_id": 100002703122669,
+        "invoice_number": "2",
+        "status": "DRAFT",
+        "contract_number": "5555",
+        "project_number": "1042",
+        "invoice_date": "2024-08-13T00:00:00.000+00:00",
+        "invice_amount": "25950",
+        "bill_to": "OAK_NEW_CUSTOMER",
+        "project_name": "5555",
+        "organization_name": "OAK_FIN"
+    },
+    {
+        "invoice_id": 100002702193465,
+        "invoice_number": "1",
+        "status": "TRANSFERRED",
+        "contract_number": "5555",
+        "project_number": "1042",
+        "invoice_date": "2024-08-12T00:00:00.000+00:00",
+        "invice_amount": "27750",
+        "bill_to": "OAK_NEW_CUSTOMER",
+        "project_name": "5555",
+        "organization_name": "OAK_FIN"
+    }
+]

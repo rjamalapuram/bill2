@@ -1,0 +1,117 @@
+{
+    "fields": [
+        {
+            "type": "number",
+            "name": "id",
+            "internal": false,
+            "key": true,
+            "oid": "60e0548d-9564-4e7f-9e68-7abdb5aed499",
+            "unique": true,
+            "displayLabel": "Id"
+        },
+        {
+            "type": "datetime",
+            "name": "creationDate",
+            "internal": false,
+            "oid": "78811898-276a-4312-b388-71f0c4fa5380",
+            "displayLabel": "Created",
+            "historyType": "timeCreated"
+        },
+        {
+            "type": "datetime",
+            "name": "lastUpdateDate",
+            "internal": false,
+            "oid": "81fabf30-2271-4821-9384-25585b972bd7",
+            "displayLabel": "Last Updated",
+            "historyType": "timeUpdated"
+        },
+        {
+            "type": "string",
+            "name": "createdBy",
+            "internal": false,
+            "oid": "6a606bba-c0a9-4f8d-bce9-4ce966f920d7",
+            "displayLabel": "Created By",
+            "historyType": "createdBy"
+        },
+        {
+            "type": "string",
+            "name": "lastUpdatedBy",
+            "internal": false,
+            "oid": "24963c2c-2763-4768-ad8e-0752bef2a565",
+            "displayLabel": "Last Updated By",
+            "historyType": "updatedBy"
+        },
+        {
+            "type": "number",
+            "name": "versionNumber",
+            "internal": false,
+            "oid": "5f547218-6c20-444b-8e7a-7b543ed96e80",
+            "displayLabel": "Version Number",
+            "historyType": "versionNumber"
+        },
+        {
+            "type": "string",
+            "name": "sourceName",
+            "oid": "b3072d63-8924-409c-91af-ca5705eaa8c8",
+            "displayLabel": "Source Name"
+        },
+        {
+            "type": "string",
+            "name": "sourceReference",
+            "oid": "a136a68d-8daa-4594-9835-44b5e94dead5",
+            "displayLabel": "Source Reference"
+        },
+        {
+            "type": "string",
+            "name": "contractTypeName",
+            "oid": "cdb05393-9e32-4411-9500-eea9afba60e0",
+            "displayLabel": "Contract Type Name"
+        },
+        {
+            "type": "string",
+            "name": "contractNumber",
+            "oid": "f6afc98a-fb56-4fb9-b3b8-7a2aa6194340",
+            "displayLabel": "Contract Number",
+            "required": true
+        },
+        {
+            "type": "string",
+            "name": "contractLineNumber",
+            "oid": "0b56d342-d8dc-4164-82dc-f84774586e19",
+            "displayLabel": "Contract Line Number"
+        },
+        {
+            "type": "string",
+            "name": "eventTypeName",
+            "oid": "1343dbfd-23a3-41f5-88d7-708cad687b2f",
+            "displayLabel": "Event Type Name"
+        },
+        {
+            "type": "string",
+            "name": "eventDescription",
+            "oid": "fc3922b1-3254-4bde-aab9-dbbad3120a0d",
+            "displayLabel": "Event Description"
+        },
+        {
+            "type": "string",
+            "name": "businessUnitName",
+            "oid": "f7f720ef-ac9a-48b7-bbb5-84c6812d28b0",
+            "displayLabel": "Business Unit Name"
+        },
+        {
+            "type": "string",
+            "name": "billTransactionAmount",
+            "oid": "7d9256e5-c49b-46fc-b795-adc2200efe2e",
+            "displayLabel": "Bill Transaction Amount"
+        },
+        {
+            "type": "string",
+            "name": "eventId",
+            "oid": "b388447b-25d8-4b0d-b304-cf6f03d47a63",
+            "displayLabel": "Event Id"
+        }
+    ],
+    "name": "AdjustmentTable",
+    "oid": "c6d90643-1009-40b8-81a5-ea5aa125fb32",
+    "displayLabel": "Adjustment Table"
+}

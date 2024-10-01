@@ -1,0 +1,67 @@
+{
+  "id": "crew-time-defaults",
+  "description": "Flow main",
+  "defaultPage": "invoice_list",
+  "services": {},
+  "types": {
+    "InvoiceLines": {
+      "CONTRACT_LINE_NUMBER": "string",
+      "CONTRACT_NUMBER": "string",
+      "DESCRIPTION_OF_WORK": "string",
+      "ID": "string",
+      "INVOICE_AMOUNT": "string",
+      "INVOICE_ID": "string",
+      "INVOICE_LINE_ID": "string",
+      "INVOICE_LINE_NUMBER": "string",
+      "INVOICE_NUM": "string",
+      "LINE_DESCRIPTION": "string",
+      "SCHEDULED_VALUE": "string"
+    },
+    "invoiceListObject": {
+      "bill_to": "string",
+      "contract_number": "string",
+      "invice_amount": "string",
+      "invoice_date": "string",
+      "invoice_id": "string",
+      "invoice_number": "string",
+      "organization_name": "string",
+      "project_name": "string",
+      "project_number": "string",
+      "status": "string"
+
+    }
+
+  },
+  "variables": {
+    "bu": {
+      "type": "string"
+    },
+    "contract_id_selected": {
+      "type": "string"
+    },
+    "flow_bu_id": {
+      "type": "string"
+    },
+    "invoiceLinesADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "InvoiceLines"
+      }
+    },
+    "invoiceList": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "invoiceListObject"
+      }
+    },
+    "selectedIndex": {
+      "type": "number"
+    }
+
+  },
+  "security": {
+    "access": {
+      "requiresAuthentication": false
+    }
+  }
+}

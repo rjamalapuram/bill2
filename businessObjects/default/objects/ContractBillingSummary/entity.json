@@ -1,0 +1,99 @@
+{
+    "fields": [
+        {
+            "type": "number",
+            "name": "id",
+            "internal": false,
+            "key": true,
+            "oid": "cb8d8f15-bdd0-45e3-8550-06b5cd5fd3b1",
+            "required": true,
+            "unique": true,
+            "displayLabel": "Id"
+        },
+        {
+            "type": "datetime",
+            "name": "creationDate",
+            "internal": false,
+            "oid": "3127079c-fd98-4d53-9bee-97a29bcd1d3c",
+            "displayLabel": "Created",
+            "historyType": "timeCreated"
+        },
+        {
+            "type": "datetime",
+            "name": "lastUpdateDate",
+            "internal": false,
+            "oid": "e56288ed-4625-4a72-9123-4f76581f19a8",
+            "displayLabel": "Last Updated",
+            "historyType": "timeUpdated"
+        },
+        {
+            "type": "string",
+            "name": "createdBy",
+            "internal": false,
+            "oid": "bfe29281-3a1f-4ab4-b572-134ff101a703",
+            "displayLabel": "Created By",
+            "historyType": "createdBy"
+        },
+        {
+            "type": "string",
+            "name": "lastUpdatedBy",
+            "internal": false,
+            "oid": "fa26df31-1036-4b3a-a741-aeffb94e1199",
+            "displayLabel": "Last Updated By",
+            "historyType": "updatedBy"
+        },
+        {
+            "type": "number",
+            "name": "versionNumber",
+            "internal": false,
+            "oid": "a310ba34-820c-45ec-a06d-86285219d16d",
+            "displayLabel": "Version Number",
+            "historyType": "versionNumber"
+        },
+        {
+            "type": "string",
+            "name": "lineNumber",
+            "oid": "24c16292-7f98-41aa-ad10-a42e68c011b0",
+            "displayLabel": "Line Number"
+        },
+        {
+            "type": "string",
+            "name": "description",
+            "oid": "0371f0d7-7a5c-4157-bebc-fcffd896f5c4",
+            "displayLabel": "Description"
+        },
+        {
+            "type": "number",
+            "name": "scheduledValue",
+            "oid": "b574b212-00a6-47be-8b7b-be2900619917",
+            "displayLabel": "Scheduled Value"
+        },
+        {
+            "type": "number",
+            "name": "workCompletedFromPreviousAppli",
+            "oid": "63743131-8144-494b-93d8-5713c68aef3b",
+            "displayLabel": "Work Completed From Previous Application"
+        },
+        {
+            "type": "number",
+            "name": "workCompletedThisPeriod",
+            "oid": "ec97ef0a-dba3-4683-9ba2-71a4c2d3f4c6",
+            "displayLabel": "Work Completed this Period"
+        },
+        {
+            "type": "number",
+            "name": "materialsPresentlyStored",
+            "oid": "6eeef758-c659-44a1-b8eb-3a458669d227",
+            "displayLabel": "Materials Presently Stored"
+        },
+        {
+            "type": "number",
+            "name": "totalCompleted",
+            "oid": "6cd31ec1-f50a-4e16-a126-52c62dbbb746",
+            "displayLabel": "Total Completed"
+        }
+    ],
+    "name": "ContractBillingSummary",
+    "oid": "c4fe1b99-5a22-42da-b5a0-775955962ca9",
+    "displayLabel": "Contract Billing Summary"
+}

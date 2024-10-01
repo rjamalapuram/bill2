@@ -1,0 +1,69 @@
+<oj-vb-fragment id="page-header" bridge="[[vbBridge]]" name="page-header">
+  <oj-vb-fragment-param name="title" value="Retention Workbench"></oj-vb-fragment-param>
+  <template slot="actions">
+  </template>
+</oj-vb-fragment>
+<div class="oj-flex">
+  <oj-toolbar chroming="solid" class="oj-flex-item oj-sm-12 oj-md-12"></oj-toolbar>
+</div>
+<div class="oj-flex">
+  <div class="oj-flex-item oj-sm-12 oj-md-1"></div>
+  <div class="oj-panel oj-flex-item oj-sm-12 oj-md-10">
+    <div class="oj-flex">
+      <oj-toolbar chroming="solid" class="oj-flex-item oj-sm-12 oj-md-12"></oj-toolbar>
+    </div>
+    <div class="oj-flex">
+      <div class="oj-flex-item oj-sm-12 oj-md-12">
+        <oj-form-layout class="oj-formlayout-full-width oj-md-padding-5x" direction="column" max-columns="4"
+          columns="4">
+          <oj-select-single label-hint="Business Unit" data="[[$variables.getGLDITC001LOVBUSINESSUNITS1ListSDP]]"
+            item-text="bu_name" on-value-item-changed="[[$listeners.selectValueItem]]"></oj-select-single>
+          <oj-select-single label-hint="Contract Number" data="[[$variables.getGLDITC001LOVPPMCONTRACTS1ListSDP]]"
+            item-text="contract_display" on-value-item-changed="[[$listeners.selectValueItem2]]"></oj-select-single>
+          <oj-select-single label-hint="Project Number" data="[[$variables.getPROJECTSLOVBU1GetProjectsLOVBUListSDP]]"
+            item-text="project_number"></oj-select-single>
+          <oj-select-single label-hint="Invoice Status" data="[[$variables.invoiceStatusListSDP]]"
+            item-text="invoiceStatus"></oj-select-single>
+        </oj-form-layout>
+      </div>
+    </div>
+    <div class="oj-flex">
+      <div class="oj-flex-item oj-sm-12 oj-md-12">
+        <oj-form-layout columns="4" max-columns="4" class="oj-md-padding-5x">
+          <oj-input-date label-hint="Invoice Date">
+          </oj-input-date>
+        </oj-form-layout>
+      </div>
+    </div>
+    <div class="oj-flex">
+      <div class="oj-flex-item oj-sm-12 oj-md-9"></div>
+      <div class="oj-flex-item oj-sm-12 oj-md-2">
+         <oj-button label="Search" class="oj-button-lg" on-oj-action="[[$listeners.buttonAction]]"
+             chroming="callToAction">
+              <span class="oj-ux-ico-search" slot="startIcon"></span>
+           </oj-button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="oj-flex">
+  <div class="oj-flex-item oj-sm-12 oj-md-12"></div>
+</div>
+<div class="oj-flex">
+  <oj-toolbar id="oj-toolbar-for-invoiceListTable" chroming="solid" class="oj-flex-item oj-sm-12 oj-md-12">
+  </oj-toolbar>
+</div>
+<div class="oj-flex">
+  <oj-table scroll-policy="loadMoreOnScroll" class="oj-flex-item oj-sm-12 oj-md-12"
+    columns='[  {    "headerText": "Invoice Number",    "field": "invoice_number"  },  {    "headerText": "Status",    "field": "status"  },  {    "headerText": "Contract Number",    "field": "contract_number"  },  {    "headerText": "Project Number",    "field": "project_number"  },  {    "headerText": "Invoice Date",    "field": "invoice_date"  },  {    "headerText": "Amount",    "field": "invice_amount"  },  {    "headerText": "Action",    "field": "",    "sortable": "disabled",    "template": "action"  }]'
+    id="invoiceListTable" selection-mode.row="single" selection-mode.column="none"
+    on-first-selected-row-changed="[[ $listeners.invoiceListTableSelection ]]"
+    horizontal-grid-visible="enabled" vertical-grid-visible="enabled" data="[[ $variables.invoicesList ]]">
+            <template slot="action">
+          <span style="cursor:pointer;font-size:18px" on-click="[[$listeners.iconClick]]"
+            class="oj-ux-ico-arrow-circle-right"></span>
+        </template>
+        </oj-table>
+</div>
+
+

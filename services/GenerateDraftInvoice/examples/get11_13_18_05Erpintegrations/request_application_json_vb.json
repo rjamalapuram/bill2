@@ -1,0 +1,6 @@
+{
+        "OperationName":"submitESSJobRequest",
+        "JobPackageName":"/oracle/apps/ess/projects/billing/workarea/invoice/",
+        "JobDefName":"InvoiceGenerationJob",
+        "ESSParameters":"Oak USA BU1,300000301911646,EX,Y,Y,#NULL,#NULL,#NULL,#NULL,#NULL,#NULL,300001514986862,1036,#NULL,#NULL,#NULL,#NULL,#NULL,#NULL,#NULL,#NULL,#NULL,#NULL,N,#NULL,#NULL,#NULL,#NULL,#NULL,Y,DETAIL,N,#NULL,#NULL,#NULL,ALL,1,#NULL,#NULL"
+}

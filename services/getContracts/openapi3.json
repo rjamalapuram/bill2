@@ -1,0 +1,592 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Ic Api",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "vb-catalog://backends/summit_project"
+        }
+    ],
+    "paths": {
+        "/COM_SUMMIT_SUMMIT_ALL/CONTRACTS_LOV_SUMMIT/1.0/getContracts": {
+            "get": {
+                "operationId": "getCOM_SUMMIT_SUMMIT_ALLCONTRACTS_LOV_SUMMIT1_0GetContracts",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetCOM_SUMMIT_SUMMIT_ALLCONTRACTS_LOV_SUMMIT1_0GetContracts"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getCOM_SUMMIT_SUMMIT_ALLCONTRACTS_LOV_SUMMIT1_0GetContracts/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/COM_SUMMIT_SUMMIT_ALL/CONTRACT_LINES_LOV_SUMMIT/1.0/getContractLines": {
+            "get": {
+                "operationId": "getCOM_SUMMIT_SUMMIT_ALLCONTRACT_LINES_LOV_SUMMIT1_0GetContractLines2",
+                "parameters": [
+                    {
+                        "name": "p_contract_id",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetCOM_SUMMIT_SUMMIT_ALLCONTRACT_LINES_LOV_SUMMIT1_0GetContractLines"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getCOM_SUMMIT_SUMMIT_ALLCONTRACT_LINES_LOV_SUMMIT1_0GetContractLines2/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany",
+                    "queryParameters": {}
+                }
+            }
+        },
+        "/COM_SUMMIT_SUMMIT_ALL/PROJECTMANAGERLO_SUMMIT/1.0/getProjectManagers": {
+            "get": {
+                "operationId": "getCOM_SUMMIT_SUMMIT_ALLPROJECTMANAGERLO_SUMMIT1_0GetProjectManagers2",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetCOM_SUMMIT_SUMMIT_ALLPROJECTMANAGERLO_SUMMIT1_0GetProjectManagers"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getCOM_SUMMIT_SUMMIT_ALLPROJECTMANAGERLO_SUMMIT1_0GetProjectManagers2/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/COM_SUMMIT_SUMMIT_ALL/CONTRACT_SEARCH_SUMMIT/1.0/extractContractSearchDetails": {
+            "get": {
+                "operationId": "getCOM_SUMMIT_SUMMIT_ALLCONTRACT_SEARCH_SUMMIT1_0ExtractContractSearchDetails2",
+                "parameters": [
+                    {
+                        "name": "p_org_id",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "p_service_type",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "p_contract_id",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "x-vb": {}
+                    },
+                    {
+                        "name": "p_resource_id",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+{
+                        "name": "p_project_id",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "p_billing_due_date",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetCOM_SUMMIT_SUMMIT_ALLCONTRACT_SEARCH_SUMMIT1_0ExtractContractSearchDetails"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getCOM_SUMMIT_SUMMIT_ALLCONTRACT_SEARCH_SUMMIT1_0ExtractContractSearchDetails2/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/COM_SUMMIT_SUMMIT_ALL/GENERATE_AIA_REPORT_SUMMIT/1.0/getG702Report": {
+            "get": {
+                "operationId": "getCOM_SUMMIT_SUMMIT_ALLGENERATE_AIA_REPORT_SUMMIT1_0GetG702Report",
+                "parameters": [
+                    {
+                        "name": "p_contract_number",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "p_period_name",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Default response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetCOM_SUMMIT_SUMMIT_ALLGENERATE_AIA_REPORT_SUMMIT1_0GetG702Report"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "externalValue": "./examples/getCOM_SUMMIT_SUMMIT_ALLGENERATE_AIA_REPORT_SUMMIT1_0GetG702Report/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/COM_SUMMIT_SUMMIT_ALL/RETENTIONCONTRAC_SUMMIT/1.0/extractRevenueAmounts": {
+            "get": {
+                "operationId": "getCOM_SUMMIT_SUMMIT_ALLRETENTIONCONTRAC_SUMMIT1_0ExtractRevenueAmounts",
+                "parameters": [
+                    {
+                        "name": "p_contract_id",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "p_contract_line_id",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "p_project_id",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Default response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetCOM_SUMMIT_SUMMIT_ALLRETENTIONCONTRAC_SUMMIT1_0ExtractRevenueAmounts"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "externalValue": "./examples/getCOM_SUMMIT_SUMMIT_ALLRETENTIONCONTRAC_SUMMIT1_0ExtractRevenueAmounts/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/COM_SUMMIT_SUMMIT_ALL/CONTRACT_AND_LINE_DETAILS/1.0/getContractAndLineDetails": {
+            "get": {
+                "operationId": "getCONTRACT_AND_LINE_DETAILS1_0GetContractAndLineDetails",
+                "parameters": [
+                    {
+                        "name": "p_contract_number",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "p_line_number",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Default response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetCONTRACT_AND_LINE_DETAILS1_0GetContractAndLineDetails"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "externalValue": "./examples/getCONTRACT_AND_LINE_DETAILS1_0GetContractAndLineDetails/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/COM_SUMMIT_SUMMIT_ALL/INSERTDFFS_SUMMIT/1.0/insertDFFValues": {
+            "post": {
+                "operationId": "postCOM_SUMMIT_SUMMIT_ALLINSERTDFFS_SUMMIT1_0InsertDFFValues",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/PostCOM_SUMMIT_SUMMIT_ALLINSERTDFFS_SUMMIT1_0InsertDFFValuesRequest"
+                            },
+                            "examples": {
+                                "vb": {
+                                    "externalValue": "./examples/postCOM_SUMMIT_SUMMIT_ALLINSERTDFFS_SUMMIT1_0InsertDFFValues/request_application_json_vb.json"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "default": {
+                        "description": "Default response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/PostCOM_SUMMIT_SUMMIT_ALLINSERTDFFS_SUMMIT1_0InsertDFFValuesResponse"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "externalValue": "./examples/postCOM_SUMMIT_SUMMIT_ALLINSERTDFFS_SUMMIT1_0InsertDFFValues/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "GetCOM_SUMMIT_SUMMIT_ALLCONTRACTS_LOV_SUMMIT1_0GetContracts": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "contractId": {
+                                    "type": "integer"
+                                },
+                                "contractNumber": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "count": {
+                        "type": "integer"
+                    }
+                }
+            },
+            "GetCOM_SUMMIT_SUMMIT_ALLCONTRACT_LINES_LOV_SUMMIT1_0GetContractLines": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "lineId": {
+                            "type": "integer"
+                        },
+                        "lineNumber": {
+                            "type": "string"
+                        }
+                    }
+                }
+            },
+            "GetCOM_SUMMIT_SUMMIT_ALLPROJECTMANAGERLO_SUMMIT1_0GetProjectManagers": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "resourceId": {
+                                    "type": "integer"
+                                },
+                                "managerName": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "count": {
+                        "type": "integer"
+                    }
+                }
+            },
+            "GetCOM_SUMMIT_SUMMIT_ALLCONTRACT_SEARCH_SUMMIT1_0ExtractContractSearchDetails": {
+                "type": "object",
+                "properties": {
+                    "totalRetCount": {
+                        "type": "integer"
+                    },
+                    "retValues": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "projectNumber": {
+                                    "type": "string"
+                                },
+                                "contractNumber": {
+                                    "type": "string"
+                                },
+                                "contractId": {
+                                    "type": "string"
+                                },
+                                "contractLineId": {
+                                    "type": "string"
+                                },
+                                "contractItem": {
+                                    "type": "string"
+                                },
+                                "description": {
+                                    "type": "string"
+                                },
+                                "revisedContractAmount": {
+                                    "type": "integer"
+                                },
+                                "previouslyBilledAmount": {
+                                    "type": "integer"
+                                },
+                                "amountToBillThisPeriod": {
+                                    "type": "integer"
+                                },
+                                "totalBilled": {
+                                    "type": "integer"
+                                },
+                                "percentBilled": {
+                                    "type": "integer"
+                                },
+                                "retainageHeld": {
+                                    "type": "integer"
+                                },
+                                "retentionPercentage": {
+                                    "type": "integer"
+                                },
+                                "retainageAmount": {
+                                    "type": "integer"
+                                },
+                                "retainageBalance": {
+                                    "type": "integer"
+                                },
+                                "customer": {
+                                    "type": "string"
+                                },
+                                "customerContact": {
+                                    "type": "string"
+                                },
+                                "billingFreq": {
+                                    "type": "string"
+                                },
+                                "billingPortal": {
+                                    "type": "string"
+                                },
+                                "totalBudgetedcosts": {
+                                    "type": "integer"
+                                },
+                                "totalCostToDate": {
+                                    "type": "integer"
+                                },
+                                "totalCommittedCosts": {
+                                    "type": "integer"
+                                },
+                                "contractTypeName": {
+                                    "type": "string"
+                                },
+                                "totalRevisedContractAmount": {
+                                    "type": "integer"
+                                },
+                                "totalPreviouslyBilledAmount": {
+                                    "type": "integer"
+                                },
+                                "totalAmountToBeBilled": {
+                                    "type": "integer"
+                                },
+                                "totalRetainageBalance": {
+                                    "type": "number"
+                                }
+
+                            }
+                        }
+                    }
+                }
+            },
+            "GetCOM_SUMMIT_SUMMIT_ALLGENERATE_AIA_REPORT_SUMMIT1_0GetG702Report": {
+                "type": "object",
+                "properties": {
+                    "fileBase64Content": {
+                        "type": "string"
+                    }
+                }
+            },
+            "GetCOM_SUMMIT_SUMMIT_ALLRETENTIONCONTRAC_SUMMIT1_0ExtractRevenueAmounts": {
+                "type": "object",
+                "properties": {
+                    "totalRetCount": {
+                        "type": "integer"
+                    },
+                    "retValues": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "contractNumber": {
+                                    "type": "string"
+                                },
+                                "lineNumber": {
+                                    "type": "string"
+                                },
+                                "projectNumber": {
+                                    "type": "string"
+                                },
+                                "retentionPercentage": {
+                                    "type": "string"
+                                },
+                                "workCompleted": {
+                                    "type": "string"
+                                },
+                                "materialsStored": {
+                                    "type": "string"
+                                },
+                                "totalCompleted": {
+                                    "type": "string"
+                                },
+                                "retainageAmount": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetCONTRACT_AND_LINE_DETAILS1_0GetContractAndLineDetails": {
+                "type": "object",
+                "properties": {
+                    "contractId": {
+                        "type": "string"
+                    },
+                    "lineId": {
+                        "type": "string"
+                    }
+                }
+            },
+            "PostCOM_SUMMIT_SUMMIT_ALLINSERTDFFS_SUMMIT1_0InsertDFFValuesRequest": {
+                "type": "object",
+                "properties": {
+                    "mode": {
+                        "type": "string"
+                    },
+                    "maxRetention": {
+                        "type": "integer"
+                    },
+                    "projectCompletionThresholdPercentage": {
+                        "type": "integer"
+                    },
+                    "contract_id": {
+                        "type": "string"
+                    },
+                    "contract_line_id": {
+                        "type": "string"
+                    },
+                    "retentionPercentage": {
+                        "type": "integer"
+                    }
+                }
+            },
+            "PostCOM_SUMMIT_SUMMIT_ALLINSERTDFFS_SUMMIT1_0InsertDFFValuesResponse": {
+                "type": "object",
+                "properties": {
+                    "message": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}

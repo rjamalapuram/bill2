@@ -1,0 +1,87 @@
+{
+    "fields": [
+        {
+            "type": "number",
+            "name": "id",
+            "internal": false,
+            "key": true,
+            "oid": "7516685a-9844-46a5-a076-8e8fa8d75afe",
+            "required": true,
+            "unique": true,
+            "displayLabel": "Id"
+        },
+        {
+            "type": "datetime",
+            "name": "creationDate",
+            "internal": false,
+            "oid": "214ff7e0-4de1-45b8-9698-1453f34a7c91",
+            "displayLabel": "Created",
+            "historyType": "timeCreated"
+        },
+        {
+            "type": "datetime",
+            "name": "lastUpdateDate",
+            "internal": false,
+            "oid": "735a28f8-ff85-4f96-b6ad-2fd556225836",
+            "displayLabel": "Last Updated",
+            "historyType": "timeUpdated"
+        },
+        {
+            "type": "string",
+            "name": "createdBy",
+            "internal": false,
+            "oid": "f4d5e289-8694-44fc-a6a0-b82630b7cd42",
+            "displayLabel": "Created By",
+            "historyType": "createdBy"
+        },
+        {
+            "type": "string",
+            "name": "lastUpdatedBy",
+            "internal": false,
+            "oid": "190970e9-9ddb-4b65-9b91-f7613a0d0799",
+            "displayLabel": "Last Updated By",
+            "historyType": "updatedBy"
+        },
+        {
+            "type": "number",
+            "name": "versionNumber",
+            "internal": false,
+            "oid": "cd6e059e-ca92-4162-a0c7-7c0c59441c43",
+            "displayLabel": "Version Number",
+            "historyType": "versionNumber"
+        },
+        {
+            "type": "string",
+            "name": "contractNumber",
+            "oid": "125a5667-2bd8-4b60-8323-f9c581155064",
+            "displayLabel": "Contract Number"
+        },
+        {
+            "type": "string",
+            "name": "lineNumber",
+            "oid": "c2c9e801-e07c-4370-8435-fddda2a70b7c",
+            "displayLabel": "Line Number"
+        },
+        {
+            "type": "string",
+            "name": "retentionPercentage",
+            "oid": "b341c1b8-8f85-48de-96b8-704d8b71f855",
+            "displayLabel": "Retention Percentage"
+        },
+        {
+            "type": "string",
+            "name": "maxRetention",
+            "oid": "42a56c76-8efa-4e59-9b96-88fca9d3fa71",
+            "displayLabel": "Max Retention"
+        },
+        {
+            "type": "string",
+            "name": "retentionType",
+            "oid": "7a291385-918e-42e1-b76e-d23f278807cd",
+            "displayLabel": "Retention Type"
+        }
+    ],
+    "name": "RetentionSetup",
+    "oid": "94e62376-9634-4166-8683-19d30b4893b3",
+    "displayLabel": "Retention Setup"
+}

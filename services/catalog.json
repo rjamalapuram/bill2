@@ -1,0 +1,139 @@
+{
+    "backends": {
+        "ics": {
+            "serviceType": "ics",
+            "description": "casey.brown",
+            "servers": [
+                {
+                    "url": "vb-catalog://backends.tenant/ics",
+                    "description": "Overridden Integration Server",
+                    "x-vb": {
+                        "authentication": {
+                            "authenticated": {
+                                "type": "basic",
+                                "credentials": "vb_a32a43c7-7047-4ada-89bd-9e6f0e6c1a1d"
+                            },
+                            "anonymous": {
+                                "type": "basic",
+                                "credentials": "vb_6cab0ebc-5127-4e97-8ae9-14ff99602415"
+                            }
+                        },
+                        "anonymousAccess": true
+                    }
+                }
+            ]
+        },
+        "TimeRite_Ords": {
+            "servers": [
+                {
+                    "url": "http://129.158.228.138:8080/ords/timerite/timerite",
+                    "description": "Ords Timerite",
+                    "x-vb": {
+                        "forceProxy": "cors"
+                    }
+                }
+            ]
+        },
+        "vbprocess": {
+            "serviceType": "vbprocess",
+            "servers": [
+                {
+                    "url": "vb-catalog://backends.tenant/vbprocess",
+                    "description": "Player Target Server",
+                    "x-vb": {
+                        "headers": {
+                            "pcs_mode": "dev"
+                        }
+                    }
+                },
+                {
+                    "url": "vb-catalog://backends.tenant/vbprocess",
+                    "description": "Default Target Server",
+                    "x-vb": {}
+                }
+            ]
+        },
+        "fa": {
+            "serviceType": "fa-base",
+            "description": "Oracle Cloud Applications",
+            "servers": [
+                {
+                    "url": "vb-catalog://backends.tenant/fa",
+                    "description": "Overridden Default Server",
+                    "x-vb": {
+                        "authentication": {
+                            "authenticated": {
+                                "type": "basic",
+                                "credentials": "vb_445060a6-521a-4340-b95a-14ac96d6feab"
+                            }
+                        }
+                    }
+                },
+                {
+                    "url": "vb-catalog://backends.tenant/fa",
+                    "description": "Default Server",
+                    "x-vb": {
+                        "authentication": {
+                            "authenticated": {
+                                "type": "basic",
+                                "credentials": "vb_4b815100-ab93-47ab-a839-0eca3265bef8"
+                            }
+                        },
+                        "anonymousAccess": false
+                    }
+                }
+            ]
+        },
+        "ords_for_Retention_Module": {
+            "servers": [
+                {
+                    "url": "http://129.158.228.138:8080/ords/timerite/timerite",
+                    "description": "Ords Timerite"
+                }
+            ]
+        },
+        "summit_project": {
+            "description": "integration Project with summit Data",
+            "servers": [
+                {
+                    "url": "https://riteoicdev-idjm2yj32zav-ia.integration.us-ashburn-1.ocp.oraclecloud.com/ic/api/integration/v2/flows/rest/project",
+                    "description": "Ic Api",
+                    "x-vb": {
+                        "authentication": {
+                            "authenticated": {
+                                "type": "basic",
+                                "credentials": "vb_9f357c4f-4961-47e9-9acb-8b2e13e7edb6"
+                            },
+                            "anonymous": {
+                                "type": "basic",
+                                "credentials": "vb_7a2b31be-196b-4f26-b41d-b8d176c050f1"
+                            }
+                        },
+                        "anonymousAccess": true
+                    }
+                }
+            ]
+        },
+        "summit_saas": {
+            "servers": [
+                {
+                    "url": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com",
+                    "description": "FscmRestApi 11.13.18.05",
+                    "x-vb": {
+                        "authentication": {
+                            "authenticated": {
+                                "type": "basic",
+                                "credentials": "vb_5fb9e0a0-d48c-4ac9-9e6a-ce7c1d0658a9"
+                            },
+                            "anonymous": {
+                                "type": "basic",
+                                "credentials": "vb_2b64846e-315b-41e3-8aed-d8ce120f72ee"
+                            }
+                        },
+                        "anonymousAccess": true
+                    }
+                }
+            ]
+        }
+      }
+}

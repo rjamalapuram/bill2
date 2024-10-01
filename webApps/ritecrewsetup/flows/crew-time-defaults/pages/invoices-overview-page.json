@@ -1,0 +1,591 @@
+{
+  "title": "",
+  "description": "",
+  "variables": {
+    "bill_to": {
+      "type": "string"
+    },
+    "BillTrnsAmount": {
+      "type": "number"
+    },
+    "businessUnit": {
+      "type": "string"
+    },
+    "contract_line_number": {
+      "type": "string"
+    },
+    "contract_number": {
+      "type": "string"
+    },
+    "contractNumberDialog": {
+      "type": "string"
+    },
+    "contractTypeName": {
+      "type": "string"
+    },
+    "eventDescription": {
+      "type": "string"
+    },
+    "eventDists": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "eventDist"
+      }
+    },
+    "eventId": {
+      "type": "number"
+    },
+    "eventTypeName": {
+      "type": "string"
+    },
+    "get1113185EventTypesLOVListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "GenerateDraftInvoice/get11_13_18_05EventTypesLOV",
+        "keyAttributes": "EventTypeName",
+        "itemsPath": "items",
+        "responseType": "get1113185EventTypesLOVResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "EventTypeName"
+          ]
+        }
+      }
+    },
+    "get1113185EventTypesLOVListSDP2": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "GenerateDraftInvoice/get11_13_18_05EventTypesLOV",
+        "keyAttributes": "EventTypeName",
+        "itemsPath": "items",
+        "responseType": "get1113185EventTypesLOVResponse2",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "EventTypeName"
+          ]
+        }
+      }
+    },
+    "getCONTRACTSLINESLOV1GetContractLinesListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "icsEndpoint/getCONTRACTS_LINES_LOV1_0GetContractLines",
+        "keyAttributes": "lineNumber",
+        "itemsPath": "",
+        "responseType": "getCONTRACTSLINESLOV1GetContractLinesResponse2",
+        "uriParameters": {
+          "p_contract_id": "{{ $flow.variables.contract_id_selected }}"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "lineNumber"
+          ]
+        }
+      }
+    },
+    "getEVENTDISTRIBUTIONS1GetEventDistributionsListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "icsEndpoint/getEVENT_DISTRIBUTIONS1_0GetEventDistributions",
+        "keyAttributes": "eventId",
+        "itemsPath": "",
+        "responseType": "getEVENTDISTRIBUTIONS1GetEventDistributionsResponse"
+      }
+    },
+    "getGetBillingEventsListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "getBillingDetailsByContractNumber/getGetBillingEvents",
+        "keyAttributes": "sourcereference",
+        "itemsPath": "items",
+        "responseType": "getGetBillingEventsResponse",
+        "uriParameters": {
+          "p_contract_number": "{{ $variables.contract_number }}"
+        }
+      }
+    },
+    "getINVOICELINESDATA1GetInvoiceLines2ListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "icsEndpoint/getINVOICE_LINES_DATA1_0GetInvoiceLines2",
+        "keyAttributes": "INVOICE_LINE_ID",
+        "itemsPath": "",
+        "responseType": "getINVOICELINESDATA1GetInvoiceLines2Response"
+      }
+    },
+    "getINVOICELINESDISTRIBUTI1GetInvoiceDistributionsListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "icsEndpoint/getINVOICE_LINES_DISTRIBUTI1_0GetInvoiceDistributions",
+        "keyAttributes": "TRANSACTION_ID",
+        "itemsPath": "",
+        "responseType": "getINVOICELINESDISTRIBUTI1GetInvoiceDistributionsResponse"
+      }
+    },
+    "getINVOICELINESDISTRIBUTI1GetInvoiceDistributionsListSDP2": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "icsEndpoint/getINVOICE_LINES_DISTRIBUTI1_0GetInvoiceDistributions",
+        "keyAttributes": "TRANSACTION_ID",
+        "itemsPath": "",
+        "responseType": "getINVOICELINESDISTRIBUTI1GetInvoiceDistributionsResponse2"
+      }
+    },
+    "hidePanelFlag": {
+      "type": "boolean",
+      "defaultValue": true
+    },
+    "invoice_amount": {
+      "type": "string"
+    },
+    "invoice_number": {
+      "type": "string"
+    },
+    "invoice_status": {
+      "type": "string"
+    },
+    "invoiceLinesListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "businessObjects/getall_InvoiceLines",
+        "keyAttributes": "id",
+        "itemsPath": "items",
+        "responseType": "getallInvoiceLinesResponse"
+      }
+    },
+    "ojTabBar7166338151SelectedItem": {
+      "type": "string",
+      "defaultValue": "oj-tab-bar-716633815-1-tab-1"
+    },
+    "org_name": {
+      "type": "string"
+    },
+    "payload": {
+      "type": "object"
+    },
+    "pendingAdjustmentsADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "pendingAdjustment"
+      }
+    },
+    "project_name": {
+      "type": "string"
+    },
+    "project_number": {
+      "type": "string"
+    },
+    "requestId": {
+      "type": "string"
+    },
+    "selectedVal": {
+      "type": "string"
+    },
+    "selectInvoiceLineId": {
+      "type": "string"
+    },
+    "showGenerateInvoice": {
+      "type": "boolean"
+    },
+    "sIndex": {
+      "type": "number"
+    },
+    "source_name": {
+      "type": "string"
+    },
+    "sourceName": {
+      "type": "string"
+    },
+    "sourceReference": {
+      "type": "string"
+    },
+    "tableADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "invoiceDistribution"
+      }
+    },
+    "taskNumber": {
+      "type": "string"
+    }
+
+  },
+  "metadata": {},
+  "types": {
+    "@decorators.get1113185EventTypesLOVResponse": {
+      "endpoint": "get11_13_18_05EventTypesLOV",
+      "service": "GenerateDraftInvoice",
+      "path": "response"
+    },
+    "@decorators.get1113185EventTypesLOVResponse2": {
+      "endpoint": "get11_13_18_05EventTypesLOV",
+      "service": "GenerateDraftInvoice",
+      "path": "response"
+    },
+    "@decorators.getallContractBillingSummaryResponse": {
+      "endpoint": "getall_ContractBillingSummary",
+      "service": "businessObjects",
+      "path": "response"
+    },
+    "@decorators.getallInvoiceLinesResponse": {
+      "endpoint": "getall_InvoiceLines",
+      "service": "businessObjects",
+      "path": "response"
+    },
+    "@decorators.getCONTRACTSLINESLOV1GetContractLinesResponse": {
+      "endpoint": "getCONTRACTS_LINES_LOV1_0GetContractLines",
+      "service": "icsEndpoint",
+      "path": "response"
+    },
+    "@decorators.getCONTRACTSLINESLOV1GetContractLinesResponse2": {
+      "endpoint": "getCONTRACTS_LINES_LOV1_0GetContractLines",
+      "service": "icsEndpoint",
+      "path": "response"
+    },
+    "@decorators.getEVENTDISTRIBUTIONS1GetEventDistributionsResponse": {
+      "endpoint": "getEVENT_DISTRIBUTIONS1_0GetEventDistributions",
+      "service": "icsEndpoint",
+      "path": "response"
+    },
+    "@decorators.getGetBillingEventsResponse": {
+      "endpoint": "getGetBillingEvents",
+      "service": "getBillingDetailsByContractNumber",
+      "path": "response"
+    },
+    "@decorators.getINVOICELINESDATA1GetInvoiceLines2Response": {
+      "endpoint": "getINVOICE_LINES_DATA1_0GetInvoiceLines2",
+      "service": "icsEndpoint",
+      "path": "response"
+    },
+    "@decorators.getINVOICELINESDISTRIBUTI1GetInvoiceDistributionsResponse": {
+      "endpoint": "getINVOICE_LINES_DISTRIBUTI1_0GetInvoiceDistributions",
+      "service": "icsEndpoint",
+      "path": "response"
+    },
+    "@decorators.getINVOICELINESDISTRIBUTI1GetInvoiceDistributionsResponse2": {
+      "endpoint": "getINVOICE_LINES_DISTRIBUTI1_0GetInvoiceDistributions",
+      "service": "icsEndpoint",
+      "path": "response"
+    },
+    "eventDist": {
+      "eventId": "string",
+      "eventNumber": "string",
+      "projectNumber": "string",
+      "sourceName": "string",
+      "sourceReference": "string",
+      "transactionAmount": "number",
+      "transactionCurrency": "string"
+    },
+    "get1113185EventTypesLOVResponse": {
+      "items": [
+        {
+          "EventTypeId": "number",
+          "EventTypeName": "string"
+        }
+      ]
+    },
+    "get1113185EventTypesLOVResponse2": {
+      "items": [
+        {
+          "Description": "string",
+          "EventTypeId": "number",
+          "EventTypeName": "string"
+        }
+      ]
+    },
+    "getallContractBillingSummaryResponse": {
+      "items": [
+        {
+          "description": "string",
+          "id": "number",
+          "lineNumber": "string",
+          "materialsPresentlyStored": "number",
+          "scheduledValue": "number",
+          "totalCompleted": "number",
+          "workCompletedFromPreviousAppli": "number",
+          "workCompletedThisPeriod": "number"
+        }
+      ]
+    },
+    "getallInvoiceLinesResponse": {
+      "items": [
+        {
+          "contractLineNumber": "string",
+          "descriptionOfWork": "string",
+          "id": "number",
+          "invoiceAmount": "string",
+          "invoiceLineNumber": "string",
+          "invoiceTax": "string",
+          "lineDescription": "string",
+          "scheduledValue": "string"
+        }
+      ]
+    },
+    "getCONTRACTSLINESLOV1GetContractLinesResponse": [
+      {
+        "lineId": "number",
+        "lineNumber": "string"
+      }
+    ],
+    "getCONTRACTSLINESLOV1GetContractLinesResponse2": [
+      {
+        "lineId": "number",
+        "lineNumber": "string"
+      }
+    ],
+    "getEVENTDISTRIBUTIONS1GetEventDistributionsResponse": [
+      {
+        "eventId": "string",
+        "eventNumber": "string",
+        "projectNumber": "string",
+        "sourceName": "string",
+        "sourceReference": "string",
+        "transactionAmount": "number",
+        "transactionCurrency": "string"
+      }
+    ],
+    "getGetBillingEventsResponse": {
+      "items": [
+        {
+          "billtrnsamount": "number",
+          "businessunitname": "string",
+          "contractlinenumber": "string",
+          "contractnumber": "string",
+          "contracttypename": "string",
+          "eventdescription": "string",
+          "eventid": "number",
+          "eventtypename": "string",
+          "sourcename": "string",
+          "sourcereference": "string"
+        }
+      ]
+    },
+    "getINVOICELINESDATA1GetInvoiceLines2Response": [
+      {
+        "CONTRACT_LINE_NUMBER": "string",
+        "DESCRIPTION_OF_WORK": "string",
+        "INVOICE_AMOUNT": "number",
+        "INVOICE_LINE_ID": "string",
+        "INVOICE_LINE_NUMBER": "string",
+        "LINE_DESCRIPTION": "string",
+        "SCHEDULED_VALUE": "number"
+      }
+    ],
+    "getINVOICELINESDISTRIBUTI1GetInvoiceDistributionsResponse": [
+      {
+        "BILL_CURRENCY": "string",
+        "BILL_RATE": "number",
+        "EXPENDITURE_ITEM": "string",
+        "ORIGINAL_BILL_AMOUNT": "number",
+        "PROJECT_NUMBER": "string",
+        "QUANTITY": "number",
+        "RETENTION_BILL_AMOUNT": "number",
+        "TASK_NUMBER": "string",
+        "TRANSACTION_ID": "string"
+      }
+    ],
+    "getINVOICELINESDISTRIBUTI1GetInvoiceDistributionsResponse2": [
+      {
+        "BILL_CURRENCY": "string",
+        "BILL_RATE": "number",
+        "EXPENDITURE_ITEM": "string",
+        "ORIGINAL_BILL_AMOUNT": "number",
+        "PROJECT_NUMBER": "string",
+        "QUANTITY": "number",
+        "RETENTION_BILL_AMOUNT": "number",
+        "TASK_NUMBER": "string",
+        "TRANSACTION_ID": "string"
+      }
+    ],
+    "invoiceDistribution": {
+      "BILL_CURRENCY": "string",
+      "BILL_RATE": "number",
+      "EXPENDITURE_ITEM": "string",
+      "ORIGINAL_BILL_AMOUNT": "string",
+      "PROJECT_NUMBER": "string",
+      "QUANTITY": "number",
+      "RETENTION_BILL_AMOUNT": "string",
+      "TASK_NUMBER": "string",
+      "TRANSACTION_ID": "string"
+    },
+    "pendingAdjustment": {
+      "billtrnsamount": "any",
+      "businessunitname": "string",
+      "contractlinenumber": "string",
+      "contractnumber": "string",
+      "contracttypename": "string",
+      "eventdescription": "string",
+      "eventid": "any",
+      "eventtypename": "string",
+      "sourcename": "string",
+      "sourcereference": "string"
+
+    }
+
+  },
+  "eventListeners": {
+    "buttonAction": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain"
+        }
+      ]
+    },
+    "buttonAction2": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain1"
+        }
+      ]
+    },
+    "buttonAction3": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain2"
+        }
+      ]
+    },
+    "buttonAction4": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain3"
+        }
+      ]
+    },
+    "buttonAction5": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain4"
+        }
+      ]
+    },
+    "buttonAction6": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain5"
+        }
+      ]
+    },
+    "buttonAction7": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain6"
+        }
+      ]
+    },
+    "iconClick": {
+      "chains": [
+        {
+          "chain": "IconClickChain1",
+          "parameters": {
+            "current": "{{ $current }}",
+            "index": "{{ $current.index }}",
+            "key": "{{ $current.key}}"
+          }
+        }
+      ]
+    },
+    "inputNumberValue": {
+      "chains": [
+        {
+          "chain": "InputNumberValueChangeChain",
+          "parameters": {
+            "value": "{{ $event.detail.value }}"
+          }
+        }
+      ]
+    },
+    "inputTextValue": {
+      "chains": [
+        {
+          "chain": "InputTextValueChangeChain4",
+          "parameters": {
+            "value": "{{ $event.detail.value }}"
+          }
+        }
+      ]
+    },
+    "inputTextValue2": {
+      "chains": [
+        {
+          "chain": "InputTextValueChangeChain5",
+          "parameters": {
+            "value": "{{ $event.detail.value }}"
+          }
+        }
+      ]
+    },
+    "selectValueItem": {
+      "chains": [
+        {
+          "chain": "SelectValueItemChangeChain4",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem2": {
+      "chains": [
+        {
+          "chain": "SelectValueItemChangeChain5",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "vbEnter": {
+      "chains": [
+        {
+          "chain": "PageVbEnterChain"
+        }
+      ]
+    }
+
+  },
+  "imports": {
+    "components": {
+      "oj-button": {
+        "path": "ojs/ojbutton"
+      },
+      "oj-dialog": {
+        "path": "ojs/ojdialog"
+      },
+      "oj-form-layout": {
+        "path": "ojs/ojformlayout"
+      },
+      "oj-input-number": {
+        "path": "ojs/ojinputnumber"
+      },
+      "oj-input-text": {
+        "path": "ojs/ojinputtext"
+      },
+      "oj-select-single": {
+        "path": "ojs/ojselectsingle"
+      },
+      "oj-switcher": {
+        "path": "ojs/ojswitcher"
+      },
+      "oj-tab-bar": {
+        "path": "ojs/ojnavigationlist"
+      },
+      "oj-table": {
+        "path": "ojs/ojtable"
+      },
+      "oj-toolbar": {
+        "path": "ojs/ojtoolbar"
+      }
+
+   }
+  },
+  "security": {
+    "access": {
+      "requiresAuthentication": false
+    }
+  }
+}

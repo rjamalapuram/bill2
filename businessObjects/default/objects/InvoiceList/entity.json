@@ -1,0 +1,93 @@
+{
+    "fields": [
+        {
+            "type": "number",
+            "name": "id",
+            "internal": false,
+            "key": true,
+            "oid": "9f070308-6bcb-4509-8bfc-53245b77ec83",
+            "required": true,
+            "unique": true,
+            "displayLabel": "Id"
+        },
+        {
+            "type": "datetime",
+            "name": "creationDate",
+            "internal": false,
+            "oid": "d18a52cf-58b6-4760-b36a-77d502c90d34",
+            "displayLabel": "Created",
+            "historyType": "timeCreated"
+        },
+        {
+            "type": "datetime",
+            "name": "lastUpdateDate",
+            "internal": false,
+            "oid": "3eb5c37e-fbd7-4ab4-a207-d17bf552b1b5",
+            "displayLabel": "Last Updated",
+            "historyType": "timeUpdated"
+        },
+        {
+            "type": "string",
+            "name": "createdBy",
+            "internal": false,
+            "oid": "409ffa6e-52f9-4a72-8dda-001a05b4de6a",
+            "displayLabel": "Created By",
+            "historyType": "createdBy"
+        },
+        {
+            "type": "string",
+            "name": "lastUpdatedBy",
+            "internal": false,
+            "oid": "ab0e0825-1334-4e45-ba0c-813da8a9ecac",
+            "displayLabel": "Last Updated By",
+            "historyType": "updatedBy"
+        },
+        {
+            "type": "number",
+            "name": "versionNumber",
+            "internal": false,
+            "oid": "613043a0-4ae4-4729-95f4-6ca33eca5195",
+            "displayLabel": "Version Number",
+            "historyType": "versionNumber"
+        },
+        {
+            "type": "string",
+            "name": "invoiceNumber",
+            "oid": "b83c89f6-4855-478a-a7b5-b4e884fe8520",
+            "displayLabel": "Invoice Number"
+        },
+        {
+            "type": "string",
+            "name": "status",
+            "oid": "20ed7e0b-c47a-46cf-bfdd-5f5ba618efc7",
+            "displayLabel": "Status"
+        },
+        {
+            "type": "string",
+            "name": "contractNumber",
+            "oid": "6e809eea-1f5f-4dcd-a706-2114d4897c33",
+            "displayLabel": "Contract Number"
+        },
+        {
+            "type": "string",
+            "name": "projectNumber",
+            "oid": "e7a121f8-8c5e-4205-99da-95b0445ac897",
+            "displayLabel": "Project Number"
+        },
+        {
+            "type": "string",
+            "name": "invoiceDate",
+            "oid": "a3b50c2f-0260-4ae4-b13a-ced23cefb9a8",
+            "displayLabel": "Invoice Date"
+        },
+        {
+            "type": "string",
+            "name": "amount",
+            "oid": "91bd2a64-8031-480f-bfc2-6d34a74e7068",
+            "displayLabel": "Amount"
+        }
+    ],
+    "name": "InvoiceList",
+    "oid": "dc094344-b994-4f5c-96b4-e473357d16b4",
+    "displayLabel": "Invoice List"
+}

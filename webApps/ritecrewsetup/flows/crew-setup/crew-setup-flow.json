@@ -1,0 +1,13 @@
+{
+  "id": "crew-setup",
+  "description": "Flow main",
+  "defaultPage": "crew-setup-",
+  "services": {},
+  "types": {},
+  "variables": {},
+  "security": {
+    "access": {
+      "requiresAuthentication": false
+    }
+  }
+}

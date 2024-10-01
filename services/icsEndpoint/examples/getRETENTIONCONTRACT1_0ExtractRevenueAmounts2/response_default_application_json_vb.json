@@ -1,0 +1,1925 @@
+{
+    "totalRetCount": 192,
+    "retValues": [
+        {
+            "contractNumber": "C10030",
+            "lineNumber": "1",
+            "projectNumber": "PCS10030",
+            "retentionPercentage": "",
+            "workCompleted": "3728946.4",
+            "materialsStored": "",
+            "totalCompleted": "3750000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "DHS1069",
+            "lineNumber": "1",
+            "projectNumber": "00009889",
+            "retentionPercentage": "",
+            "workCompleted": "217413.85",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "UKIC20001",
+            "lineNumber": "1",
+            "projectNumber": "PCS10028",
+            "retentionPercentage": "",
+            "workCompleted": "2640",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "UK10009",
+            "lineNumber": "1",
+            "projectNumber": "PUK10009",
+            "retentionPercentage": "",
+            "workCompleted": "752210",
+            "materialsStored": "",
+            "totalCompleted": "1000000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C20015",
+            "lineNumber": "2",
+            "projectNumber": "PI20015",
+            "retentionPercentage": "",
+            "workCompleted": "71939.5",
+            "materialsStored": "",
+            "totalCompleted": "85000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C20015",
+            "lineNumber": "3",
+            "projectNumber": "PI20015",
+            "retentionPercentage": "",
+            "workCompleted": "306076.55",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10004",
+            "lineNumber": "2",
+            "projectNumber": "PCS10025",
+            "retentionPercentage": "",
+            "workCompleted": "600000",
+            "materialsStored": "",
+            "totalCompleted": "1000000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "HHS-16-038",
+            "lineNumber": "1",
+            "projectNumber": "00009904",
+            "retentionPercentage": "",
+            "workCompleted": "510727.24",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "AMH002",
+            "lineNumber": "1",
+            "projectNumber": "00009922",
+            "retentionPercentage": "",
+            "workCompleted": "477986.8",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "UKIC20002",
+            "lineNumber": "1",
+            "projectNumber": "PCS10058",
+            "retentionPercentage": "",
+            "workCompleted": "1584",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "FR10008",
+            "lineNumber": "1",
+            "projectNumber": "PFR10008",
+            "retentionPercentage": "",
+            "workCompleted": "800918",
+            "materialsStored": "",
+            "totalCompleted": "1000000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "FR10010",
+            "lineNumber": "1",
+            "projectNumber": "300000145575086",
+            "retentionPercentage": "",
+            "workCompleted": "211586",
+            "materialsStored": "",
+            "totalCompleted": "160000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "FR10012",
+            "lineNumber": "1",
+            "projectNumber": "PFR10012",
+            "retentionPercentage": "",
+            "workCompleted": "857865",
+            "materialsStored": "",
+            "totalCompleted": "1000000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10026",
+            "lineNumber": "1",
+            "projectNumber": "PCS10026",
+            "retentionPercentage": "",
+            "workCompleted": "3051387.95",
+            "materialsStored": "",
+            "totalCompleted": "3250000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10033",
+            "lineNumber": "1",
+            "projectNumber": "PCS10033",
+            "retentionPercentage": "",
+            "workCompleted": "3245555.5",
+            "materialsStored": "",
+            "totalCompleted": "3250000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "FR10041",
+            "lineNumber": "1",
+            "projectNumber": "PFR10041",
+            "retentionPercentage": "",
+            "workCompleted": "970871.51",
+            "materialsStored": "",
+            "totalCompleted": "1100000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "UK10020",
+            "lineNumber": "1",
+            "projectNumber": "300000182377371",
+            "retentionPercentage": "",
+            "workCompleted": "433554",
+            "materialsStored": "",
+            "totalCompleted": "160000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "UK10032",
+            "lineNumber": "1",
+            "projectNumber": "PUK10032",
+            "retentionPercentage": "",
+            "workCompleted": "904491",
+            "materialsStored": "",
+            "totalCompleted": "1000000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10056",
+            "lineNumber": "1",
+            "projectNumber": "PCS10056",
+            "retentionPercentage": "",
+            "workCompleted": "1377500.5",
+            "materialsStored": "",
+            "totalCompleted": "300000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C20033",
+            "lineNumber": "2",
+            "projectNumber": "PI20033",
+            "retentionPercentage": "",
+            "workCompleted": "71939.5",
+            "materialsStored": "",
+            "totalCompleted": "85000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "UK10030",
+            "lineNumber": "1",
+            "projectNumber": "300000222671158",
+            "retentionPercentage": "",
+            "workCompleted": "138878",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "UK10028",
+            "lineNumber": "1",
+            "projectNumber": "PUK10028",
+            "retentionPercentage": "",
+            "workCompleted": "64236",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10080",
+            "lineNumber": "1",
+            "projectNumber": "PCS10080",
+            "retentionPercentage": "",
+            "workCompleted": "5000",
+            "materialsStored": "",
+            "totalCompleted": "30000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "1037",
+            "lineNumber": "1.1",
+            "projectNumber": "OAK1003",
+            "retentionPercentage": "10",
+            "workCompleted": "15000",
+            "materialsStored": "",
+            "totalCompleted": "100000",
+            "retainageAmount": "1500"
+        },
+        {
+            "contractNumber": "5555",
+            "lineNumber": "4",
+            "projectNumber": "1042",
+            "retentionPercentage": "10",
+            "workCompleted": "8100",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": "810"
+        },
+        {
+            "contractNumber": "UK10001",
+            "lineNumber": "1",
+            "projectNumber": "PUK10007",
+            "retentionPercentage": "",
+            "workCompleted": "1745092",
+            "materialsStored": "",
+            "totalCompleted": "1100000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "FR10009",
+            "lineNumber": "1",
+            "projectNumber": "PFR10009",
+            "retentionPercentage": "",
+            "workCompleted": "800188",
+            "materialsStored": "",
+            "totalCompleted": "1000000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "NCI-43567",
+            "lineNumber": "1",
+            "projectNumber": "00009917",
+            "retentionPercentage": "",
+            "workCompleted": "301661",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10009",
+            "lineNumber": "1",
+            "projectNumber": "PCS10009",
+            "retentionPercentage": "",
+            "workCompleted": "243009.99",
+            "materialsStored": "",
+            "totalCompleted": "2000000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10015",
+            "lineNumber": "1",
+            "projectNumber": "PCS10015",
+            "retentionPercentage": "",
+            "workCompleted": "1954584.25",
+            "materialsStored": "",
+            "totalCompleted": "2250000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "HHS-16-038",
+            "lineNumber": "1",
+            "projectNumber": "00009902",
+            "retentionPercentage": "",
+            "workCompleted": "510727.24",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10050",
+            "lineNumber": "1",
+            "projectNumber": "PCS10050",
+            "retentionPercentage": "",
+            "workCompleted": "78770",
+            "materialsStored": "",
+            "totalCompleted": "250000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10013",
+            "lineNumber": "1",
+            "projectNumber": "PCS10013",
+            "retentionPercentage": "",
+            "workCompleted": "3250000",
+            "materialsStored": "",
+            "totalCompleted": "3250000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10019",
+            "lineNumber": "1",
+            "projectNumber": "PCS10019",
+            "retentionPercentage": "",
+            "workCompleted": "3120000",
+            "materialsStored": "",
+            "totalCompleted": "3250000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "FR10002",
+            "lineNumber": "1",
+            "projectNumber": "PFR10002",
+            "retentionPercentage": "",
+            "workCompleted": "800000",
+            "materialsStored": "",
+            "totalCompleted": "800000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C20006",
+            "lineNumber": "3",
+            "projectNumber": "PI20006",
+            "retentionPercentage": "",
+            "workCompleted": "306076.55",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "UK10008",
+            "lineNumber": "1",
+            "projectNumber": "PUK10008",
+            "retentionPercentage": "",
+            "workCompleted": "752210",
+            "materialsStored": "",
+            "totalCompleted": "1000000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "FR10010",
+            "lineNumber": "2",
+            "projectNumber": "300000168264465",
+            "retentionPercentage": "",
+            "workCompleted": "211586",
+            "materialsStored": "",
+            "totalCompleted": "250000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10036",
+            "lineNumber": "1",
+            "projectNumber": "PCS10036",
+            "retentionPercentage": "",
+            "workCompleted": "1678593.44",
+            "materialsStored": "",
+            "totalCompleted": "1900000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C20020",
+            "lineNumber": "2",
+            "projectNumber": "PI20020",
+            "retentionPercentage": "",
+            "workCompleted": "71939.5",
+            "materialsStored": "",
+            "totalCompleted": "85000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10046",
+            "lineNumber": "1",
+            "projectNumber": "PCS10046",
+            "retentionPercentage": "",
+            "workCompleted": "2446737.95",
+            "materialsStored": "",
+            "totalCompleted": "3250000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10056",
+            "lineNumber": "2",
+            "projectNumber": "PCS10065",
+            "retentionPercentage": "",
+            "workCompleted": "425000",
+            "materialsStored": "",
+            "totalCompleted": "300000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10048",
+            "lineNumber": "1",
+            "projectNumber": "PCS10048",
+            "retentionPercentage": "",
+            "workCompleted": "580807.5",
+            "materialsStored": "",
+            "totalCompleted": "3750000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "PPM Rate Based",
+            "lineNumber": "1",
+            "projectNumber": "PPM Rate Based",
+            "retentionPercentage": "",
+            "workCompleted": "0",
+            "materialsStored": "",
+            "totalCompleted": "50000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "US-RB-01",
+            "lineNumber": "01",
+            "projectNumber": "US-RB-01",
+            "retentionPercentage": "",
+            "workCompleted": "24000",
+            "materialsStored": "",
+            "totalCompleted": "40000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "1032",
+            "lineNumber": "1",
+            "projectNumber": "1032",
+            "retentionPercentage": "10",
+            "workCompleted": "104910",
+            "materialsStored": "",
+            "totalCompleted": "80000",
+            "retainageAmount": "10491"
+        },
+        {
+            "contractNumber": "1032",
+            "lineNumber": "2",
+            "projectNumber": "1032",
+            "retentionPercentage": "15",
+            "workCompleted": "36960",
+            "materialsStored": "",
+            "totalCompleted": "120000",
+            "retainageAmount": "5544"
+        },
+        {
+            "contractNumber": "1050",
+            "lineNumber": "1.1",
+            "projectNumber": "OAK1003",
+            "retentionPercentage": "10",
+            "workCompleted": "900",
+            "materialsStored": "",
+            "totalCompleted": "100000",
+            "retainageAmount": "90"
+        },
+        {
+            "contractNumber": "EPA1204",
+            "lineNumber": "1",
+            "projectNumber": "00009900",
+            "retentionPercentage": "",
+            "workCompleted": "95629.29",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "UK10013",
+            "lineNumber": "1",
+            "projectNumber": "PUK10013",
+            "retentionPercentage": "",
+            "workCompleted": "908040",
+            "materialsStored": "",
+            "totalCompleted": "1000000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "HHS-15-035",
+            "lineNumber": "1",
+            "projectNumber": "00009813",
+            "retentionPercentage": "",
+            "workCompleted": "194082.22",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "FR10011",
+            "lineNumber": "1",
+            "projectNumber": "PFR10011",
+            "retentionPercentage": "",
+            "workCompleted": "988332.91",
+            "materialsStored": "",
+            "totalCompleted": "1100000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10024",
+            "lineNumber": "1",
+            "projectNumber": "PCS10024",
+            "retentionPercentage": "",
+            "workCompleted": "1944566.74",
+            "materialsStored": "",
+            "totalCompleted": "2250000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "HHS-15-036",
+            "lineNumber": "1",
+            "projectNumber": "00009908",
+            "retentionPercentage": "",
+            "workCompleted": "456433.99",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10036",
+            "lineNumber": "2",
+            "projectNumber": "PCS10045",
+            "retentionPercentage": "",
+            "workCompleted": "575000",
+            "materialsStored": "",
+            "totalCompleted": "1000000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "DHS2071",
+            "lineNumber": "1",
+            "projectNumber": "00009821",
+            "retentionPercentage": "",
+            "workCompleted": "351817.41",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10063",
+            "lineNumber": "1",
+            "projectNumber": "PCS10063",
+            "retentionPercentage": "",
+            "workCompleted": "1628616.45",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "NCI-43569",
+            "lineNumber": "1",
+            "projectNumber": "00009919",
+            "retentionPercentage": "",
+            "workCompleted": "14400",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "FR10021",
+            "lineNumber": "1",
+            "projectNumber": "PFR10021",
+            "retentionPercentage": "",
+            "workCompleted": "1850000",
+            "materialsStored": "",
+            "totalCompleted": "1850000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "FR10020",
+            "lineNumber": "1",
+            "projectNumber": "300000182377450",
+            "retentionPercentage": "",
+            "workCompleted": "434052",
+            "materialsStored": "",
+            "totalCompleted": "160000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "FR10018",
+            "lineNumber": "1",
+            "projectNumber": "PFR10018",
+            "retentionPercentage": "",
+            "workCompleted": "800918",
+            "materialsStored": "",
+            "totalCompleted": "1000000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "UK10031",
+            "lineNumber": "1",
+            "projectNumber": "PUK10031",
+            "retentionPercentage": "",
+            "workCompleted": "478575",
+            "materialsStored": "",
+            "totalCompleted": "2250000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10043",
+            "lineNumber": "1",
+            "projectNumber": "PCS10043",
+            "retentionPercentage": "",
+            "workCompleted": "629417.03",
+            "materialsStored": "",
+            "totalCompleted": "3250000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "US-FB-01",
+            "lineNumber": "01",
+            "projectNumber": "US-FB-01",
+            "retentionPercentage": "",
+            "workCompleted": "1000",
+            "materialsStored": "",
+            "totalCompleted": "10000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "OAK_PERCENT_COMPLETE",
+            "lineNumber": "1.1",
+            "projectNumber": "OAK1003",
+            "retentionPercentage": "",
+            "workCompleted": "20000",
+            "materialsStored": "",
+            "totalCompleted": "100000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "Demo Contract Project",
+            "lineNumber": "1",
+            "projectNumber": "RITE20",
+            "retentionPercentage": "",
+            "workCompleted": "10000",
+            "materialsStored": "",
+            "totalCompleted": "100000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "1050",
+            "lineNumber": "2.1",
+            "projectNumber": "OAK1003",
+            "retentionPercentage": "20",
+            "workCompleted": "8000",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": "1600"
+        },
+        {
+            "contractNumber": "C20005",
+            "lineNumber": "2",
+            "projectNumber": "PI20005",
+            "retentionPercentage": "",
+            "workCompleted": "71939.5",
+            "materialsStored": "",
+            "totalCompleted": "85000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "FR10013",
+            "lineNumber": "1",
+            "projectNumber": "PFR10013",
+            "retentionPercentage": "",
+            "workCompleted": "848865",
+            "materialsStored": "",
+            "totalCompleted": "1000000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C20015",
+            "lineNumber": "1",
+            "projectNumber": "PI20015",
+            "retentionPercentage": "",
+            "workCompleted": "118010",
+            "materialsStored": "",
+            "totalCompleted": "130000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10004",
+            "lineNumber": "2",
+            "projectNumber": "PCS10011",
+            "retentionPercentage": "",
+            "workCompleted": "600000",
+            "materialsStored": "",
+            "totalCompleted": "1000000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10021",
+            "lineNumber": "1",
+            "projectNumber": "PCS10021",
+            "retentionPercentage": "",
+            "workCompleted": "3073387.95",
+            "materialsStored": "",
+            "totalCompleted": "3250000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "EPA8774",
+            "lineNumber": "1",
+            "projectNumber": "PRG00005",
+            "retentionPercentage": "",
+            "workCompleted": "103776.25",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C20006",
+            "lineNumber": "1",
+            "projectNumber": "PI20006",
+            "retentionPercentage": "",
+            "workCompleted": "118010",
+            "materialsStored": "",
+            "totalCompleted": "130000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "NSF002",
+            "lineNumber": "1",
+            "projectNumber": "00009918",
+            "retentionPercentage": "",
+            "workCompleted": "720000",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "UK10006",
+            "lineNumber": "1",
+            "projectNumber": "PUK10006",
+            "retentionPercentage": "",
+            "workCompleted": "834268",
+            "materialsStored": "",
+            "totalCompleted": "1100000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "UK10012",
+            "lineNumber": "1",
+            "projectNumber": "PUK10012",
+            "retentionPercentage": "",
+            "workCompleted": "904491",
+            "materialsStored": "",
+            "totalCompleted": "1000000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "NCI-63562",
+            "lineNumber": "1",
+            "projectNumber": "00009910",
+            "retentionPercentage": "",
+            "workCompleted": "256157.4",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "AMH003",
+            "lineNumber": "1",
+            "projectNumber": "00009924",
+            "retentionPercentage": "",
+            "workCompleted": "146674",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10042",
+            "lineNumber": "1",
+            "projectNumber": "PCS10042",
+            "retentionPercentage": "",
+            "workCompleted": "1148579.47",
+            "materialsStored": "",
+            "totalCompleted": "1500000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C20020",
+            "lineNumber": "1",
+            "projectNumber": "PI20020",
+            "retentionPercentage": "",
+            "workCompleted": "118010",
+            "materialsStored": "",
+            "totalCompleted": "130000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "UK10041",
+            "lineNumber": "1",
+            "projectNumber": "PUK10041",
+            "retentionPercentage": "",
+            "workCompleted": "946733.28",
+            "materialsStored": "",
+            "totalCompleted": "1100000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "FR10016",
+            "lineNumber": "1",
+            "projectNumber": "PFR10016",
+            "retentionPercentage": "",
+            "workCompleted": "777185",
+            "materialsStored": "",
+            "totalCompleted": "1850000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "UK10016",
+            "lineNumber": "1",
+            "projectNumber": "PUK10016",
+            "retentionPercentage": "",
+            "workCompleted": "834268",
+            "materialsStored": "",
+            "totalCompleted": "2250000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "UK10018",
+            "lineNumber": "1",
+            "projectNumber": "PUK10018",
+            "retentionPercentage": "",
+            "workCompleted": "752210",
+            "materialsStored": "",
+            "totalCompleted": "1000000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "DOE8760",
+            "lineNumber": "1",
+            "projectNumber": "EDU50002",
+            "retentionPercentage": "",
+            "workCompleted": "678364.47",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "CPDSC1007",
+            "lineNumber": "1",
+            "projectNumber": "PDSC1007",
+            "retentionPercentage": "",
+            "workCompleted": "37250.8",
+            "materialsStored": "",
+            "totalCompleted": "75000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "FR10031",
+            "lineNumber": "1",
+            "projectNumber": "PFR10031",
+            "retentionPercentage": "",
+            "workCompleted": "397935",
+            "materialsStored": "",
+            "totalCompleted": "1850000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "UK10033",
+            "lineNumber": "1",
+            "projectNumber": "PUK10033",
+            "retentionPercentage": "",
+            "workCompleted": "147011",
+            "materialsStored": "",
+            "totalCompleted": "1000000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "PPM Percent Complete",
+            "lineNumber": "1",
+            "projectNumber": "PPM Percent Comp",
+            "retentionPercentage": "",
+            "workCompleted": "25000",
+            "materialsStored": "",
+            "totalCompleted": "100000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "1033",
+            "lineNumber": "1",
+            "projectNumber": "1032",
+            "retentionPercentage": "20",
+            "workCompleted": "1000",
+            "materialsStored": "",
+            "totalCompleted": "80000",
+            "retainageAmount": "200"
+        },
+        {
+            "contractNumber": "5555",
+            "lineNumber": "3",
+            "projectNumber": "1042",
+            "retentionPercentage": "20",
+            "workCompleted": "6000",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": "1200"
+        },
+        {
+            "contractNumber": "C10007",
+            "lineNumber": "1",
+            "projectNumber": "PCS10007",
+            "retentionPercentage": "",
+            "workCompleted": "3064755.8",
+            "materialsStored": "",
+            "totalCompleted": "3250000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10003",
+            "lineNumber": "1",
+            "projectNumber": "PCS10003",
+            "retentionPercentage": "",
+            "workCompleted": "1957714.92",
+            "materialsStored": "",
+            "totalCompleted": "2250000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C20005",
+            "lineNumber": "3",
+            "projectNumber": "PI20005",
+            "retentionPercentage": "",
+            "workCompleted": "306076.55",
+            "materialsStored": "",
+            "totalCompleted": "335000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "UK10001",
+            "lineNumber": "1",
+            "projectNumber": "PUK10001",
+            "retentionPercentage": "",
+            "workCompleted": "1745092",
+            "materialsStored": "",
+            "totalCompleted": "1150000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "FR10001",
+            "lineNumber": "1",
+            "projectNumber": "PFR10001",
+            "retentionPercentage": "",
+            "workCompleted": "1634774",
+            "materialsStored": "",
+            "totalCompleted": "950000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "FR10004",
+            "lineNumber": "1",
+            "projectNumber": "PFR10004",
+            "retentionPercentage": "",
+            "workCompleted": "671162",
+            "materialsStored": "",
+            "totalCompleted": "800000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10058",
+            "lineNumber": "1",
+            "projectNumber": "PCS10058",
+            "retentionPercentage": "",
+            "workCompleted": "1210101.54",
+            "materialsStored": "",
+            "totalCompleted": "1500000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "UK10011",
+            "lineNumber": "1",
+            "projectNumber": "PUK10011",
+            "retentionPercentage": "",
+            "workCompleted": "986145.84",
+            "materialsStored": "",
+            "totalCompleted": "1100000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "DOE8704",
+            "lineNumber": "1",
+            "projectNumber": "00009805",
+            "retentionPercentage": "",
+            "workCompleted": "474475.89",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "MLC-5678",
+            "lineNumber": "1",
+            "projectNumber": "HC2001",
+            "retentionPercentage": "",
+            "workCompleted": "150000",
+            "materialsStored": "",
+            "totalCompleted": "615000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "UK10021",
+            "lineNumber": "1",
+            "projectNumber": "PUK10021",
+            "retentionPercentage": "",
+            "workCompleted": "2247975",
+            "materialsStored": "",
+            "totalCompleted": "2250000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "UK10020",
+            "lineNumber": "1",
+            "projectNumber": "300000202687762",
+            "retentionPercentage": "",
+            "workCompleted": "433554",
+            "materialsStored": "",
+            "totalCompleted": "200000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "FR10020",
+            "lineNumber": "1",
+            "projectNumber": "300000196093681",
+            "retentionPercentage": "",
+            "workCompleted": "434052",
+            "materialsStored": "",
+            "totalCompleted": "240000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "NIH-6018",
+            "lineNumber": "1",
+            "projectNumber": "HC1005",
+            "retentionPercentage": "",
+            "workCompleted": "68735.24",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C20033",
+            "lineNumber": "3",
+            "projectNumber": "PI20033",
+            "retentionPercentage": "",
+            "workCompleted": "60518.55",
+            "materialsStored": "",
+            "totalCompleted": "335000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10073",
+            "lineNumber": "1",
+            "projectNumber": "PCS10073",
+            "retentionPercentage": "",
+            "workCompleted": "397349.12",
+            "materialsStored": "",
+            "totalCompleted": "1500000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "OAK_Fixed_Bid_Contract",
+            "lineNumber": "1",
+            "projectNumber": "OAK Fixed Bid",
+            "retentionPercentage": "",
+            "workCompleted": "9450",
+            "materialsStored": "",
+            "totalCompleted": "50000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "3000",
+            "lineNumber": "1",
+            "projectNumber": "OAK1003",
+            "retentionPercentage": "10",
+            "workCompleted": "24300",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": "2430"
+        },
+        {
+            "contractNumber": "C10001",
+            "lineNumber": "1",
+            "projectNumber": "PCS10001",
+            "retentionPercentage": "",
+            "workCompleted": "3205127.87",
+            "materialsStored": "",
+            "totalCompleted": "1500000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10020",
+            "lineNumber": "1",
+            "projectNumber": "PCS10020",
+            "retentionPercentage": "",
+            "workCompleted": "1146027.15",
+            "materialsStored": "",
+            "totalCompleted": "1500000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10008",
+            "lineNumber": "1",
+            "projectNumber": "PCS10008",
+            "retentionPercentage": "",
+            "workCompleted": "1796182.15",
+            "materialsStored": "",
+            "totalCompleted": "2000000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10022",
+            "lineNumber": "1",
+            "projectNumber": "PCS10022",
+            "retentionPercentage": "",
+            "workCompleted": "3191859.8",
+            "materialsStored": "",
+            "totalCompleted": "3250000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C20005",
+            "lineNumber": "1",
+            "projectNumber": "PI20005",
+            "retentionPercentage": "",
+            "workCompleted": "94010",
+            "materialsStored": "",
+            "totalCompleted": "130000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "UK10005",
+            "lineNumber": "1",
+            "projectNumber": "PUK10005",
+            "retentionPercentage": "",
+            "workCompleted": "893978",
+            "materialsStored": "",
+            "totalCompleted": "1100000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10004",
+            "lineNumber": "1",
+            "projectNumber": "PCS10006",
+            "retentionPercentage": "",
+            "workCompleted": "1975560.02",
+            "materialsStored": "",
+            "totalCompleted": "1900000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10012",
+            "lineNumber": "1",
+            "projectNumber": "PCS10012",
+            "retentionPercentage": "",
+            "workCompleted": "1149741.96",
+            "materialsStored": "",
+            "totalCompleted": "1500000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "AMH002",
+            "lineNumber": "1",
+            "projectNumber": "00009920",
+            "retentionPercentage": "",
+            "workCompleted": "477986.8",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10055",
+            "lineNumber": "1",
+            "projectNumber": "PCS10055",
+            "retentionPercentage": "",
+            "workCompleted": "1330329",
+            "materialsStored": "",
+            "totalCompleted": "1000000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "UK10002",
+            "lineNumber": "1",
+            "projectNumber": "PUK10002",
+            "retentionPercentage": "",
+            "workCompleted": "2247975",
+            "materialsStored": "",
+            "totalCompleted": "2250000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "FR10006",
+            "lineNumber": "1",
+            "projectNumber": "PFR10006",
+            "retentionPercentage": "",
+            "workCompleted": "747275",
+            "materialsStored": "",
+            "totalCompleted": "900000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "UK10010",
+            "lineNumber": "1",
+            "projectNumber": "300000145575127",
+            "retentionPercentage": "",
+            "workCompleted": "211297",
+            "materialsStored": "",
+            "totalCompleted": "160000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "DHS10001",
+            "lineNumber": "1",
+            "projectNumber": "CAP10001",
+            "retentionPercentage": "",
+            "workCompleted": "710690.4",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C20020",
+            "lineNumber": "3",
+            "projectNumber": "PI20020",
+            "retentionPercentage": "",
+            "workCompleted": "306076.55",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "FR10023",
+            "lineNumber": "1",
+            "projectNumber": "PFR10023",
+            "retentionPercentage": "",
+            "workCompleted": "670158",
+            "materialsStored": "",
+            "totalCompleted": "800000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "UK10023",
+            "lineNumber": "1",
+            "projectNumber": "PUK10023",
+            "retentionPercentage": "",
+            "workCompleted": "742541",
+            "materialsStored": "",
+            "totalCompleted": "1000000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10039",
+            "lineNumber": "1",
+            "projectNumber": "PCS10039",
+            "retentionPercentage": "",
+            "workCompleted": "3229525",
+            "materialsStored": "",
+            "totalCompleted": "3250000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10044",
+            "lineNumber": "1",
+            "projectNumber": "PCS10044",
+            "retentionPercentage": "",
+            "workCompleted": "1877517.28",
+            "materialsStored": "",
+            "totalCompleted": "2250000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "CPDSC1001",
+            "lineNumber": "1",
+            "projectNumber": "PDSC1001",
+            "retentionPercentage": "",
+            "workCompleted": "68133.8",
+            "materialsStored": "",
+            "totalCompleted": "75000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10049",
+            "lineNumber": "1",
+            "projectNumber": "PCS10049",
+            "retentionPercentage": "",
+            "workCompleted": "599300",
+            "materialsStored": "",
+            "totalCompleted": "3250000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "FR10026",
+            "lineNumber": "1",
+            "projectNumber": "PFR10026",
+            "retentionPercentage": "",
+            "workCompleted": "48820",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "UK10042",
+            "lineNumber": "1",
+            "projectNumber": "PUK10042",
+            "retentionPercentage": "",
+            "workCompleted": "44971",
+            "materialsStored": "",
+            "totalCompleted": "1000000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "Demo Contract",
+            "lineNumber": "1",
+            "projectNumber": "DEMO1002",
+            "retentionPercentage": "",
+            "workCompleted": "4026",
+            "materialsStored": "",
+            "totalCompleted": "10000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10002",
+            "lineNumber": "1",
+            "projectNumber": "PCS10002",
+            "retentionPercentage": "",
+            "workCompleted": "1618782.16",
+            "materialsStored": "",
+            "totalCompleted": "2000000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10028",
+            "lineNumber": "1",
+            "projectNumber": "PCS10028",
+            "retentionPercentage": "",
+            "workCompleted": "1354310",
+            "materialsStored": "",
+            "totalCompleted": "1500000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C20005",
+            "lineNumber": "3",
+            "projectNumber": "PI20005",
+            "retentionPercentage": "",
+            "workCompleted": "306076.55",
+            "materialsStored": "",
+            "totalCompleted": "0",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "FR10001",
+            "lineNumber": "1",
+            "projectNumber": "PFR10007",
+            "retentionPercentage": "",
+            "workCompleted": "1634774",
+            "materialsStored": "",
+            "totalCompleted": "900000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "UK10004",
+            "lineNumber": "1",
+            "projectNumber": "PUK10004",
+            "retentionPercentage": "",
+            "workCompleted": "742221",
+            "materialsStored": "",
+            "totalCompleted": "1000000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "FR10005",
+            "lineNumber": "1",
+            "projectNumber": "PFR10005",
+            "retentionPercentage": "",
+            "workCompleted": "931968",
+            "materialsStored": "",
+            "totalCompleted": "1100000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "AMH001",
+            "lineNumber": "1",
+            "projectNumber": "00009915",
+            "retentionPercentage": "",
+            "workCompleted": "632500",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "NSF001",
+            "lineNumber": "1",
+            "projectNumber": "00009916",
+            "retentionPercentage": "",
+            "workCompleted": "1017454",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10004",
+            "lineNumber": "1",
+            "projectNumber": "PCS10004",
+            "retentionPercentage": "",
+            "workCompleted": "1975560.02",
+            "materialsStored": "",
+            "totalCompleted": "1500000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10018",
+            "lineNumber": "1",
+            "projectNumber": "PCS10018",
+            "retentionPercentage": "",
+            "workCompleted": "3735323.5",
+            "materialsStored": "",
+            "totalCompleted": "3750000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "FR10003",
+            "lineNumber": "1",
+            "projectNumber": "PFR10003",
+            "retentionPercentage": "",
+            "workCompleted": "645492",
+            "materialsStored": "",
+            "totalCompleted": "800000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C20006",
+            "lineNumber": "2",
+            "projectNumber": "PI20006",
+            "retentionPercentage": "",
+            "workCompleted": "71939.5",
+            "materialsStored": "",
+            "totalCompleted": "85000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "EPA-63560",
+            "lineNumber": "1",
+            "projectNumber": "00009910",
+            "retentionPercentage": "",
+            "workCompleted": "258817.3",
+            "materialsStored": "",
+            "totalCompleted": "300000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "DHS7704",
+            "lineNumber": "1",
+            "projectNumber": "00009805",
+            "retentionPercentage": "",
+            "workCompleted": "451663.85",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C0038",
+            "lineNumber": "1",
+            "projectNumber": "PCS10038",
+            "retentionPercentage": "",
+            "workCompleted": "3725498.5",
+            "materialsStored": "",
+            "totalCompleted": "3000000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "NSF003",
+            "lineNumber": "1",
+            "projectNumber": "00009928",
+            "retentionPercentage": "",
+            "workCompleted": "39240",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10068",
+            "lineNumber": "1",
+            "projectNumber": "PCS10068",
+            "retentionPercentage": "",
+            "workCompleted": "1742957.46",
+            "materialsStored": "",
+            "totalCompleted": "1500000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10056",
+            "lineNumber": "2",
+            "projectNumber": "PCS10075",
+            "retentionPercentage": "",
+            "workCompleted": "425000",
+            "materialsStored": "",
+            "totalCompleted": "300000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C20033",
+            "lineNumber": "1",
+            "projectNumber": "PI20033",
+            "retentionPercentage": "",
+            "workCompleted": "118010",
+            "materialsStored": "",
+            "totalCompleted": "130000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "FR10033",
+            "lineNumber": "1",
+            "projectNumber": "PFR10033",
+            "retentionPercentage": "",
+            "workCompleted": "125900",
+            "materialsStored": "",
+            "totalCompleted": "800000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "UK10051",
+            "lineNumber": "1",
+            "projectNumber": "PUK10051",
+            "retentionPercentage": "",
+            "workCompleted": "186753.49",
+            "materialsStored": "",
+            "totalCompleted": "1100000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "UK10026",
+            "lineNumber": "1",
+            "projectNumber": "PUK10026",
+            "retentionPercentage": "",
+            "workCompleted": "69885",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10080",
+            "lineNumber": "2",
+            "projectNumber": "PCS10080",
+            "retentionPercentage": "",
+            "workCompleted": "1920",
+            "materialsStored": "",
+            "totalCompleted": "150000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "1999",
+            "lineNumber": "1.1",
+            "projectNumber": "OAK1003",
+            "retentionPercentage": "10",
+            "workCompleted": "5400",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": "540"
+        },
+        {
+            "contractNumber": "5555",
+            "lineNumber": "1",
+            "projectNumber": "1042",
+            "retentionPercentage": "10",
+            "workCompleted": "9450",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": "945"
+        },
+        {
+            "contractNumber": "5555",
+            "lineNumber": "2",
+            "projectNumber": "1042",
+            "retentionPercentage": "30",
+            "workCompleted": "4200",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": "1260"
+        },
+        {
+            "contractNumber": "C10001",
+            "lineNumber": "1",
+            "projectNumber": "PCS10014",
+            "retentionPercentage": "",
+            "workCompleted": "3205127.87",
+            "materialsStored": "",
+            "totalCompleted": "2000000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10016",
+            "lineNumber": "1",
+            "projectNumber": "PCS10016",
+            "retentionPercentage": "",
+            "workCompleted": "1553935.8",
+            "materialsStored": "",
+            "totalCompleted": "1750000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10023",
+            "lineNumber": "1",
+            "projectNumber": "PCS10023",
+            "retentionPercentage": "",
+            "workCompleted": "1426145.55",
+            "materialsStored": "",
+            "totalCompleted": "1750000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "NCI-5002",
+            "lineNumber": "1",
+            "projectNumber": "00009914",
+            "retentionPercentage": "",
+            "workCompleted": "1442944",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "DHS7701",
+            "lineNumber": "1",
+            "projectNumber": "00009801",
+            "retentionPercentage": "",
+            "workCompleted": "248263.71",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C20015",
+            "lineNumber": "3",
+            "projectNumber": "PI20015",
+            "retentionPercentage": "",
+            "workCompleted": "306076.55",
+            "materialsStored": "",
+            "totalCompleted": "335000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "EPA8776",
+            "lineNumber": "1",
+            "projectNumber": "PRG00004",
+            "retentionPercentage": "",
+            "workCompleted": "39326.72",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "DHS1071",
+            "lineNumber": "1",
+            "projectNumber": "00009891",
+            "retentionPercentage": "",
+            "workCompleted": "498805.84",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "NCI-43568",
+            "lineNumber": "1",
+            "projectNumber": "00009912",
+            "retentionPercentage": "",
+            "workCompleted": "97560",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "UK10003",
+            "lineNumber": "1",
+            "projectNumber": "PUK10003",
+            "retentionPercentage": "",
+            "workCompleted": "742541",
+            "materialsStored": "",
+            "totalCompleted": "1000000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C20006",
+            "lineNumber": "3",
+            "projectNumber": "PI20006",
+            "retentionPercentage": "",
+            "workCompleted": "306076.55",
+            "materialsStored": "",
+            "totalCompleted": "335000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "UK10010",
+            "lineNumber": "2",
+            "projectNumber": "300000168406659",
+            "retentionPercentage": "",
+            "workCompleted": "211297",
+            "materialsStored": "",
+            "totalCompleted": "250000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "AMH003",
+            "lineNumber": "1",
+            "projectNumber": "00009923",
+            "retentionPercentage": "",
+            "workCompleted": "146674",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "HHS-15-036",
+            "lineNumber": "1",
+            "projectNumber": "00009906",
+            "retentionPercentage": "",
+            "workCompleted": "456433.99",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10036",
+            "lineNumber": "2",
+            "projectNumber": "PCS10040",
+            "retentionPercentage": "",
+            "workCompleted": "575000",
+            "materialsStored": "",
+            "totalCompleted": "1000000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "NCI-5005",
+            "lineNumber": "1",
+            "projectNumber": "HC2002",
+            "retentionPercentage": "",
+            "workCompleted": "220179.56",
+            "materialsStored": "",
+            "totalCompleted": "879000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C20020",
+            "lineNumber": "3",
+            "projectNumber": "PI20020",
+            "retentionPercentage": "",
+            "workCompleted": "306076.55",
+            "materialsStored": "",
+            "totalCompleted": "335000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "CFIT001",
+            "lineNumber": "1",
+            "projectNumber": "PFITR10009",
+            "retentionPercentage": "",
+            "workCompleted": "621801.45",
+            "materialsStored": "",
+            "totalCompleted": "1000000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "FR10032",
+            "lineNumber": "1",
+            "projectNumber": "PFR10032",
+            "retentionPercentage": "",
+            "workCompleted": "849615",
+            "materialsStored": "",
+            "totalCompleted": "1000000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "HHS-20-101",
+            "lineNumber": "1",
+            "projectNumber": "PRG10001",
+            "retentionPercentage": "",
+            "workCompleted": "145372.67",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "HHS-20-101",
+            "lineNumber": "1",
+            "projectNumber": "PRG10002",
+            "retentionPercentage": "",
+            "workCompleted": "145372.67",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "C10062",
+            "lineNumber": "1",
+            "projectNumber": "PCS10062",
+            "retentionPercentage": "",
+            "workCompleted": "770075.04",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "DOE8760",
+            "lineNumber": "1",
+            "projectNumber": "EDU50001",
+            "retentionPercentage": "",
+            "workCompleted": "678364.47",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "DHS-2730",
+            "lineNumber": "1",
+            "projectNumber": "HC1007",
+            "retentionPercentage": "",
+            "workCompleted": "60218.33",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "FR10030",
+            "lineNumber": "1",
+            "projectNumber": "300000222479177",
+            "retentionPercentage": "",
+            "workCompleted": "145885",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "FR10051",
+            "lineNumber": "1",
+            "projectNumber": "PFR10051",
+            "retentionPercentage": "",
+            "workCompleted": "191123.98",
+            "materialsStored": "",
+            "totalCompleted": "1100000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "FR10028",
+            "lineNumber": "1",
+            "projectNumber": "PFR10028",
+            "retentionPercentage": "",
+            "workCompleted": "66985",
+            "materialsStored": "",
+            "totalCompleted": "",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "FR10042",
+            "lineNumber": "1",
+            "projectNumber": "PFR10042",
+            "retentionPercentage": "",
+            "workCompleted": "32184",
+            "materialsStored": "",
+            "totalCompleted": "1000000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "PPM Fixed Bid",
+            "lineNumber": "1",
+            "projectNumber": "PPM Fixed Bid",
+            "retentionPercentage": "",
+            "workCompleted": "9450",
+            "materialsStored": "",
+            "totalCompleted": "50000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "OAK_RATE_BASED",
+            "lineNumber": "1",
+            "projectNumber": "OAK1005",
+            "retentionPercentage": "",
+            "workCompleted": "114410.56",
+            "materialsStored": "",
+            "totalCompleted": "50000",
+            "retainageAmount": ""
+        },
+        {
+            "contractNumber": "1036",
+            "lineNumber": "1.1",
+            "projectNumber": "OAK1003",
+            "retentionPercentage": "10",
+            "workCompleted": "10000",
+            "materialsStored": "",
+            "totalCompleted": "100000",
+            "retainageAmount": "1000"
+        },
+        {
+            "contractNumber": "1038",
+            "lineNumber": "1.1",
+            "projectNumber": "OAK1003",
+            "retentionPercentage": "10",
+            "workCompleted": "25000",
+            "materialsStored": "",
+            "totalCompleted": "100000",
+            "retainageAmount": "2500"
+        }
+    ]
+}

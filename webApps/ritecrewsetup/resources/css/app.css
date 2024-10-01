@@ -1,0 +1,122 @@
+.sticky-div {
+  background-color: green;
+  position: sticky;
+  top: 0px;
+  padding: 10px 0px;
+}
+
+.formclass .oj-text-field-container {
+  height: 32px !important;
+  max-height: 32px !important;
+}
+
+.formclass .oj-text-field-input {
+  font-size: 12px
+}
+
+.oj-label {
+  font-size: 12px;
+}
+
+.redclass {
+  color: red;
+  font-weight:600;
+}
+
+
+.greenclass {
+  color: green;
+}
+
+.headingclass {
+  font-size: 19px;
+  font-weight: bolder;
+  /* color: #006AA2; */
+}
+
+.sideheading{
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.subheadings {
+  font-size: 17px;
+  font-weight: bolder;
+  /* color: #006AA2; */
+}
+
+.mainheadingclass {
+  font-size: 22px;
+  font-weight: bolder;
+  /* color: #006AA2; */
+}
+
+.anchore {
+  font-size: 16px;
+  color: black !important;
+
+}
+
+.anchoreselect {
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.oj-text-field-container {
+  height: 32px !important;
+  max-height: 32px !important;
+}
+
+input:focus {
+  background-color: rgba(186, 234, 247, 0.622) !important;
+}
+.oj-text-field-input {
+  font-size: 12px;
+}
+
+
+.oj-text-field-readonly {
+  font-size: 12px;
+}
+
+.oj-table-data-cell {
+  font-size: 12px;
+}
+
+.comp.oj-text-field-input{
+  font-size: 12px !important;
+}
+
+
+.oj-table-header-row {
+  background-color: rgb(80, 79, 77);
+  color: white;
+  font-size: 10px !important;
+  /* font-weigh: 600 */
+}
+
+.oj-table-column-header-text {
+  font-size: 13px !important;
+}
+
+
+
+.table-container {
+  width: 96vw !important;
+  max-width: 96vw !important;
+  max-height: calc(100vh - 250px);
+
+}
+
+.oj-button-button {
+  height: 90% !important;
+}
+
+.oj-dialog-header {
+  /* padding: 3px !important; */
+  display: none;
+}
+
+.oj-form>.oj-flex>.oj-flex-item:not(.oj-formlayout-nested-formlayout):not(.oj-formlayout-nested-labelvalue) {
+  padding-bottom: 0 !important;
+}

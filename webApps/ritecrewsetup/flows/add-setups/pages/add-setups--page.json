@@ -1,0 +1,399 @@
+{
+  "title": "",
+  "description": "",
+  "variables": {
+    "contract_id": {
+      "type": "string"
+    },
+    "contractId": {
+      "type": "string"
+    },
+    "contractLineIdDialog": {
+      "type": "string"
+    },
+    "contractNumber": {
+      "type": "string"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "dialogContractId": {
+      "type": "string"
+    },
+    "dialogContractLineNumber": {
+      "type": "string"
+    },
+    "dialogLineId": {
+      "type": "string"
+    },
+    "dialogMaxRetentionValue": {
+      "type": "string"
+    },
+    "dialogRetentionPercentage": {
+      "type": "string"
+    },
+    "getCOMSUMMITSUMMITALLCONTRACTSLOVSUMMIT1GetContractsListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "getContracts/getCOM_SUMMIT_SUMMIT_ALLCONTRACTS_LOV_SUMMIT1_0GetContracts",
+        "keyAttributes": "contractNumber",
+        "itemsPath": "items",
+        "responseType": "getCOMSUMMITSUMMITALLCONTRACTSLOVSUMMIT1GetContractsResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "contractNumber"
+          ]
+        },
+        "filterCriterion": {
+          "attribute": "{{ $variables.contractNumber }}"
+        }
+      }
+    },
+    "getCONTRACTSLINESLOV1GetContractLinesListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "icsEndpoint/getCONTRACTS_LINES_LOV1_0GetContractLines",
+        "keyAttributes": "lineNumber",
+        "itemsPath": "",
+        "responseType": "getCONTRACTSLINESLOV1GetContractLinesResponse",
+        "uriParameters": {
+          "p_contract_id": "{{ $variables.contractNumber }}"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "lineNumber"
+          ]
+        }
+      }
+    },
+    "getCONTRACTSLINESLOV1GetContractLinesListSDP2": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "icsEndpoint/getCONTRACTS_LINES_LOV1_0GetContractLines",
+        "keyAttributes": "lineNumber",
+        "itemsPath": "",
+        "responseType": "getCONTRACTSLINESLOV1GetContractLinesResponse2",
+        "uriParameters": {
+          "p_contract_id": "{{ $variables.contractId }}"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "lineNumber"
+          ]
+        }
+      }
+    },
+    "getCONTRACTSLOV1GetContracts2ListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "icsEndpoint/getCONTRACTS_LOV1_0GetContracts2",
+        "keyAttributes": "contractNumber",
+        "itemsPath": "items",
+        "responseType": "getCONTRACTSLOV1GetContracts2Response",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "contractNumber"
+          ]
+        }
+      }
+    },
+    "getRETENTIONCONTRACT1ExtractRevenueAmounts2ListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "icsEndpoint/getRETENTIONCONTRACT1_0ExtractRevenueAmounts2",
+        "keyAttributes": "lineNumber",
+        "itemsPath": "retValues",
+        "responseType": "getRETENTIONCONTRACT1ExtractRevenueAmounts2Response"
+      }
+    },
+    "lineId": {
+      "type": "string"
+    },
+    "lineNumber": {
+      "type": "string"
+    },
+    "maxRetValue": {
+      "type": "number"
+    },
+    "projectCompletionThreshold": {
+      "type": "number"
+    },
+    "retentionSetupListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "businessObjects/getall_RetentionSetup",
+        "keyAttributes": "id",
+        "itemsPath": "items",
+        "responseType": "getallRetentionSetupResponse"
+      }
+    },
+    "retPercentage": {
+      "type": "number"
+    },
+    "retValuesListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "businessObjects/getall_RetValues",
+        "keyAttributes": "retType",
+        "itemsPath": "items",
+        "responseType": "getallRetValuesResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "retType"
+          ]
+        }
+      }
+    },
+    "setupList": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "setups"
+      }
+    }
+
+  },
+  "metadata": {},
+  "types": {
+    "@decorators.getallRetentionSetupResponse": {
+      "endpoint": "getall_RetentionSetup",
+      "service": "businessObjects",
+      "path": "response"
+    },
+    "@decorators.getallRetValuesResponse": {
+      "endpoint": "getall_RetValues",
+      "service": "businessObjects",
+      "path": "response"
+    },
+    "@decorators.getCOMSUMMITSUMMITALLCONTRACTSLOVSUMMIT1GetContractsResponse": {
+      "endpoint": "getCOM_SUMMIT_SUMMIT_ALLCONTRACTS_LOV_SUMMIT1_0GetContracts",
+      "service": "getContracts",
+      "path": "response"
+    },
+    "@decorators.getCONTRACTSLINESLOV1GetContractLinesResponse": {
+      "endpoint": "getCONTRACTS_LINES_LOV1_0GetContractLines",
+      "service": "icsEndpoint",
+      "path": "response"
+    },
+    "@decorators.getCONTRACTSLINESLOV1GetContractLinesResponse2": {
+      "endpoint": "getCONTRACTS_LINES_LOV1_0GetContractLines",
+      "service": "icsEndpoint",
+      "path": "response"
+    },
+    "@decorators.getCONTRACTSLOV1GetContracts2Response": {
+      "endpoint": "getCONTRACTS_LOV1_0GetContracts2",
+      "service": "icsEndpoint",
+      "path": "response"
+    },
+    "@decorators.getRETENTIONCONTRACT1ExtractRevenueAmounts2Response": {
+      "endpoint": "getRETENTIONCONTRACT1_0ExtractRevenueAmounts2",
+      "service": "icsEndpoint",
+      "path": "response"
+    },
+    "getallRetentionSetupResponse": {
+      "items": [
+        {
+          "contractNumber": "string",
+          "id": "number",
+          "lineNumber": "string",
+          "maxRetention": "string",
+          "retentionPercentage": "string",
+          "retentionType": "string"
+        }
+      ]
+    },
+    "getallRetValuesResponse": {
+      "items": [
+        {
+          "retType": "string"
+        }
+      ]
+    },
+    "getCOMSUMMITSUMMITALLCONTRACTSLOVSUMMIT1GetContractsResponse": {
+      "items": [
+        {
+          "contractId": "number",
+          "contractNumber": "string"
+        }
+      ]
+    },
+    "getCONTRACTSLINESLOV1GetContractLinesResponse": [
+      {
+        "lineId": "number",
+        "lineNumber": "string"
+      }
+    ],
+    "getCONTRACTSLINESLOV1GetContractLinesResponse2": [
+      {
+        "lineId": "number",
+        "lineNumber": "string"
+      }
+    ],
+    "getCONTRACTSLOV1GetContracts2Response": {
+      "items": [
+        {
+          "contractId": "number",
+          "contractNumber": "string"
+        }
+      ]
+    },
+    "getRETENTIONCONTRACT1ExtractRevenueAmounts2Response": {
+      "retValues": [
+        {
+          "contractNumber": "string",
+          "lineNumber": "string",
+          "retentionPercentage": "string",
+          "totalCompleted": "string",
+          "workCompleted": "string"
+        }
+      ]
+    },
+    "setups": {
+      "contractNumber": "string",
+      "lineNumber": "string",
+      "materialsStored": "string",
+      "projectNumber": "string",
+      "retainageAmount": "string",
+      "retentionPercentage": "string",
+      "totalCompleted": "string",
+      "workCompleted": "string"
+    }
+
+  },
+  "eventListeners": {
+    "buttonAction": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain"
+        }
+      ]
+    },
+    "buttonAction2": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain1"
+        }
+      ]
+    },
+    "buttonAction3": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain2"
+        }
+      ]
+    },
+    "buttonAction4": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain3"
+        }
+      ]
+    },
+    "buttonAction5": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain4"
+        }
+      ]
+    },
+    "iconClick": {
+      "chains": [
+        {
+          "chain": "IconClickChain1",
+          "parameters": {
+            "key": "{{ $current.key }}",
+            "index": "{{ $current.index }}",
+            "current": "{{ $current }}"
+          }
+        }
+      ]
+    },
+    "inputNumberValue": {
+      "chains": [
+        {
+          "chain": "InputNumberValueChangeChain",
+          "parameters": {
+            "value": "{{ $event.detail.value }}"
+          }
+        }
+      ]
+    },
+    "inputNumberValue2": {
+      "chains": [
+        {
+          "chain": "InputNumberValueChangeChain1",
+          "parameters": {
+            "value": "{{ $event.detail.value }}"
+          }
+        }
+      ]
+    },
+    "inputNumberValue3": {
+      "chains": [
+        {
+          "chain": "InputNumberValueChangeChain2",
+          "parameters": {
+            "value": "{{ $event.detail.value }}"
+          }
+        }
+      ]
+    },
+    "selectValueItem": {
+      "chains": [
+        {
+          "chain": "SelectValueItemChangeChain",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem2": {
+      "chains": [
+        {
+          "chain": "SelectValueItemChangeChain1",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    }
+
+  },
+  "imports": {
+    "components": {
+      "oj-button": {
+        "path": "ojs/ojbutton"
+      },
+      "oj-dialog": {
+        "path": "ojs/ojdialog"
+      },
+      "oj-form-layout": {
+        "path": "ojs/ojformlayout"
+      },
+      "oj-input-number": {
+        "path": "ojs/ojinputnumber"
+      },
+      "oj-input-text": {
+        "path": "ojs/ojinputtext"
+      },
+      "oj-select-single": {
+        "path": "ojs/ojselectsingle"
+      },
+      "oj-table": {
+        "path": "ojs/ojtable"
+      },
+      "oj-toolbar": {
+        "path": "ojs/ojtoolbar"
+      }
+   },
+    "modules": {
+      "ojValidationNumber": {
+        "path": "ojs/ojvalidation-number"
+      }
+    }
+  }
+}

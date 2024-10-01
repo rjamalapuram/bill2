@@ -1,0 +1,8 @@
+{
+  "id": "retention_workbench",
+  "description": "Flow main",
+  "defaultPage": "retention_workbench-",
+  "services": {},
+  "types": {},
+  "variables": {}
+}

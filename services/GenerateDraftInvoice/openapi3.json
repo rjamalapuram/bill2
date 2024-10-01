@@ -1,0 +1,939 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "FscmRestApi",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "vb-catalog://backends/fscmRestApi",
+            "description": "FscmRestApi"
+        }
+    ],
+    "paths": {
+        "/11.13.18.05/erpintegrations": {
+            "post": {
+                "operationId": "get11_13_18_05Erpintegrations",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Post11_13_18_05ErpintegrationsRequest"
+                            },
+                            "examples": {
+                                "vb": {
+                                    "externalValue": "./examples/get11_13_18_05Erpintegrations/request_application_json_vb.json"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Post11_13_18_05ErpintegrationsResponse"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/get11_13_18_05Erpintegrations/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/11.13.18.05/eventTypesLOV": {
+            "get": {
+                "operationId": "get11_13_18_05EventTypesLOV",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Get11_13_18_05EventTypesLOV"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/get11_13_18_05EventTypesLOV/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany",
+                    "queryParameters": {
+                        "onlyData": "true",
+                        "orderBy": "EventTypeName:asc",
+                        "q": "Description LIKE 'AIA%'"
+                    }
+                }
+            }
+        },
+        "/11.13.18.05/contracts": {
+            "get": {
+                "operationId": "get11_13_18_05Contracts2",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Get11_13_18_05Contracts"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/get11_13_18_05Contracts2/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Post11_13_18_05ErpintegrationsRequest": {
+                "type": "object",
+                "properties": {
+                    "OperationName": {
+                        "type": "string"
+                    },
+                    "JobPackageName": {
+                        "type": "string"
+                    },
+                    "JobDefName": {
+                        "type": "string"
+                    },
+                    "ESSParameters": {
+                        "type": "string"
+                    }
+                }
+            },
+            "Post11_13_18_05ErpintegrationsResponse": {
+                "type": "object",
+                "properties": {
+                    "OperationName": {
+                        "type": "string"
+                    },
+                    "DocumentId": {
+                        "nullable": true
+                    },
+                    "DocumentContent": {
+                        "nullable": true
+                    },
+                    "FileName": {
+                        "nullable": true
+                    },
+                    "ContentType": {
+                        "nullable": true
+                    },
+                    "FileType": {
+                        "nullable": true
+                    },
+                    "DocumentAccount": {
+                        "nullable": true
+                    },
+                    "Comments": {
+                        "nullable": true
+                    },
+                    "ProcessName": {
+                        "nullable": true
+                    },
+                    "LoadRequestId": {
+                        "nullable": true
+                    },
+                    "JobPackageName": {
+                        "type": "string"
+                    },
+                    "JobDefName": {
+                        "type": "string"
+                    },
+                    "ReqstId": {
+                        "type": "string"
+                    },
+                    "RequestStatus": {
+                        "nullable": true
+                    },
+                    "JobName": {
+                        "nullable": true
+                    },
+                    "ParameterList": {
+                        "nullable": true
+                    },
+                    "NotificationCode": {
+                        "nullable": true
+                    },
+                    "CallbackURL": {
+                        "nullable": true
+                    },
+                    "JobOptions": {
+                        "nullable": true
+                    },
+                    "StatusCode": {
+                        "nullable": true
+                    },
+                    "ESSParameters": {
+                        "type": "string"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "kind": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "Get11_13_18_05EventTypesLOV": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "EventTypeId": {
+                                    "type": "integer"
+                                },
+                                "StartDateActive": {
+                                    "type": "string"
+                                },
+                                "EndDateActive": {
+                                    "nullable": true
+                                },
+                                "InvoiceFlag": {
+                                    "type": "boolean"
+                                },
+                                "RevenueFlag": {
+                                    "type": "boolean"
+                                },
+                                "EventTypeName": {
+                                    "type": "string"
+                                },
+                                "Description": {
+                                    "type": "string"
+                                },
+                                "RevenueCategory": {
+                                    "type": "string"
+                                },
+                                "AllowAdjustmentFlag": {
+                                    "type": "boolean"
+                                },
+                                "MigrationFlag": {
+                                    "type": "boolean"
+                                }
+                            }
+                        }
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "kind": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "Get11_13_18_05Contracts": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "Id": {
+                                    "type": "integer"
+                                },
+                                "MajorVersion": {
+                                    "type": "integer"
+                                },
+                                "ExternalSource": {
+                                    "type": "string"
+                                },
+                                "ExternalKey": {
+                                    "type": "string"
+                                },
+                                "InvConvRateTypeName": {
+                                    "type": "string"
+                                },
+                                "InvConvRateDateTypeName": {
+                                    "type": "string"
+                                },
+                                "OrgName": {
+                                    "type": "string"
+                                },
+                                "OrgId": {
+                                    "type": "integer"
+                                },
+                                "ContractTypeName": {
+                                    "type": "string"
+                                },
+                                "ContractClass": {
+                                    "type": "string"
+                                },
+                                "ContractTypeId": {
+                                    "type": "integer"
+                                },
+                                "ContractNumber": {
+                                    "type": "string"
+                                },
+                                "ContractNumberModifier": {
+                                    "nullable": true
+                                },
+                                "Cognomen": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "PartyId": {
+                                    "type": "integer"
+                                },
+                                "PartyName": {
+                                    "type": "string"
+                                },
+                                "InvOrganizationId": {
+                                    "nullable": true
+                                },
+                                "StsCode": {
+                                    "type": "string"
+                                },
+                                "CurrencyCode": {
+                                    "type": "string"
+                                },
+                                "StartDate": {
+                                    "type": "string"
+                                },
+                                "EndDate": {
+                                    "type": "string"
+                                },
+                                "TrnCode": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "SupplierId": {
+                                    "type": "integer",
+                                    "nullable": true
+                                },
+                                "SupplierSiteId": {
+                                    "type": "integer",
+                                    "nullable": true
+                                },
+                                "InvConvRateType": {
+                                    "type": "string"
+                                },
+                                "InvConvRateDateType": {
+                                    "type": "string"
+                                },
+                                "InvConvRateDate": {
+                                    "nullable": true
+                                },
+                                "InvTrxTypeId": {
+                                    "type": "integer"
+                                },
+                                "InvTrxTypeName": {
+                                    "type": "string"
+                                },
+                                "BillToAccountId": {
+                                    "type": "integer"
+                                },
+                                "BillToAccount": {
+                                    "type": "string"
+                                },
+                                "BillToAccountNumber": {
+                                    "type": "string"
+                                },
+                                "BillToSiteUseId": {
+                                    "type": "integer"
+                                },
+                                "BillToSiteUseLocation": {
+                                    "type": "string"
+                                },
+                                "BillToAddress": {
+                                    "type": "string"
+                                },
+                                "ShipToAccountId": {
+                                    "type": "integer"
+                                },
+                                "ShipToAccount": {
+                                    "type": "string"
+                                },
+                                "ShipToAccountNumber": {
+                                    "type": "string"
+                                },
+                                "ShipToSiteUseId": {
+                                    "type": "integer"
+                                },
+                                "ShipToSiteUseLocation": {
+                                    "type": "string"
+                                },
+                                "ShipToAddress": {
+                                    "type": "string"
+                                },
+                                "ShipToAccountDescription": {
+                                    "type": "string"
+                                },
+                                "SoldToAccountId": {
+                                    "nullable": true
+                                },
+                                "SoldToAccount": {
+                                    "nullable": true
+                                },
+                                "SoldToAccountNumber": {
+                                    "nullable": true
+                                },
+                                "SoldToSiteId": {
+                                    "nullable": true
+                                },
+                                "SoldToNumber": {
+                                    "nullable": true
+                                },
+                                "SoldToAddress": {
+                                    "nullable": true
+                                },
+                                "SoldToAccountDescription": {
+                                    "nullable": true
+                                },
+                                "ShipInvOrgId": {
+                                    "nullable": true
+                                },
+                                "RecvInvOrgId": {
+                                    "nullable": true
+                                },
+                                "LegalEntityId": {
+                                    "type": "integer"
+                                },
+                                "OutputTaxClassificationCode": {
+                                    "type": "string"
+                                },
+                                "DateApproved": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "DatetimeCancelled": {
+                                    "nullable": true
+                                },
+                                "DateSigned": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "DateTerminated": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "TerminateCancelSource": {
+                                    "nullable": true
+                                },
+                                "ContributionPercent": {
+                                    "type": "integer"
+                                },
+                                "BillSequence": {
+                                    "nullable": true
+                                },
+                                "OverallRiskCode": {
+                                    "nullable": true
+                                },
+                                "ShortDescription": {
+                                    "nullable": true
+                                },
+                                "Description": {
+                                    "type": "string"
+                                },
+                                "HoldReasonCode": {
+                                    "nullable": true
+                                },
+                                "HoldUntilDate": {
+                                    "nullable": true
+                                },
+                                "AmendmentEffectiveDate": {
+                                    "type": "string"
+                                },
+                                "TaxExemptionControl": {
+                                    "type": "string"
+                                },
+                                "ExemptCertificateNumber": {
+                                    "nullable": true
+                                },
+                                "ExemptReasonCode": {
+                                    "nullable": true
+                                },
+                                "ProjectEnabledFlag": {
+                                    "type": "boolean"
+                                },
+                                "OutputTaxSetId": {
+                                    "type": "integer"
+                                },
+                                "PartyObjectType": {
+                                    "type": "string"
+                                },
+                                "PrimaryLedgerId": {
+                                    "type": "integer"
+                                },
+                                "CustomerPartyId": {
+                                    "type": "integer"
+                                },
+                                "CustomerPartySiteId": {
+                                    "type": "integer"
+                                },
+                                "GeneratedInvoiceStatus": {
+                                    "type": "string"
+                                },
+                                "OwningOrgId": {
+                                    "type": "integer"
+                                },
+                                "NetInvoiceFlag": {
+                                    "type": "boolean"
+                                },
+                                "OwningOrgName": {
+                                    "type": "string"
+                                },
+                                "TaxClassificationMeaning": {
+                                    "type": "string"
+                                },
+                                "ExemptionReasonMeaning": {
+                                    "nullable": true
+                                },
+                                "FreightTerms": {
+                                    "type": "string"
+                                },
+                                "FOB": {
+                                    "type": "string"
+                                },
+                                "ApTermsId": {
+                                    "type": "integer"
+                                },
+                                "ShipToLocationId": {
+                                    "nullable": true
+                                },
+                                "ServiceEnabledFlag": {
+                                    "type": "string"
+                                },
+                                "EstimatedAmount": {
+                                    "type": "integer"
+                                },
+                                "TaxAmount": {
+                                    "nullable": true
+                                },
+                                "LastUpdateDate": {
+                                    "type": "string"
+                                },
+                                "LastUpdateLogin": {
+                                    "type": "string"
+                                },
+                                "LastUpdatedBy": {
+                                    "type": "string"
+                                },
+                                "CreatedBy": {
+                                    "type": "string"
+                                },
+                                "CreationDate": {
+                                    "type": "string"
+                                },
+                                "LedgerCurrency": {
+                                    "type": "string"
+                                },
+                                "BilltoLocationId": {
+                                    "nullable": true
+                                },
+                                "AgreedAmount": {
+                                    "type": "integer"
+                                },
+                                "AgreementAmountLimit": {
+                                    "nullable": true
+                                },
+                                "MinimumReleaseAmount": {
+                                    "nullable": true
+                                },
+                                "EncumbranceLevel": {
+                                    "nullable": true
+                                },
+                                "CarrierId": {
+                                    "nullable": true
+                                },
+                                "CarrierName": {
+                                    "nullable": true
+                                },
+                                "CloseReason": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "CancelReason": {
+                                    "nullable": true
+                                },
+                                "AuthoringPartyCode": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "HoldReasonMeaning": {
+                                    "nullable": true
+                                },
+                                "PrimaryPartyId": {
+                                    "type": "integer"
+                                },
+                                "OrigSystemId": {
+                                    "type": "integer"
+                                },
+                                "OrigSystemReference": {
+                                    "type": "string"
+                                },
+                                "OrigSystemSourceCode": {
+                                    "type": "string"
+                                },
+                                "ItemSourceCode": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "StateTransitionFlowName": {
+                                    "type": "string"
+                                },
+                                "StateTransitionFlowState": {
+                                    "type": "string"
+                                },
+                                "UserStatusCode": {
+                                    "nullable": true
+                                },
+                                "AssigneeType": {
+                                    "nullable": true
+                                },
+                                "AssigneeId": {
+                                    "nullable": true
+                                },
+                                "Assignee": {
+                                    "nullable": true
+                                },
+                                "CustomerPONumber": {
+                                    "nullable": true
+                                },
+                                "AccessLevel": {
+                                    "type": "string"
+                                },
+                                "TemplateFlag": {
+                                    "type": "boolean"
+                                },
+                                "BillingSalesrepId": {
+                                    "nullable": true
+                                },
+                                "BillingSalesrepName": {
+                                    "nullable": true
+                                },
+                                "VersionDescription": {
+                                    "type": "string"
+                                },
+                                "PriceList": {
+                                    "nullable": true
+                                },
+                                "AdjustmentBasis": {
+                                    "nullable": true
+                                },
+                                "CommitmentAmount": {
+                                    "type": "integer"
+                                },
+                                "DiscountPercent": {
+                                    "nullable": true
+                                },
+                                "PriceListName": {
+                                    "nullable": true
+                                },
+                                "TrnCodeSetId": {
+                                    "type": "integer",
+                                    "nullable": true
+                                },
+                                "HoldReasonCodeSetId": {
+                                    "nullable": true
+                                },
+                                "WebServiceFlag": {
+                                    "nullable": true
+                                },
+                                "TermsTemplateId": {
+                                    "type": "integer"
+                                },
+                                "ContractOwnerId": {
+                                    "nullable": true
+                                },
+                                "Status": {
+                                    "type": "string"
+                                },
+                                "AuthoringPartyMeaning": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "InvOrgName": {
+                                    "nullable": true
+                                },
+                                "Supplier": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "SupplierSite": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "ShipInvOrg": {
+                                    "nullable": true
+                                },
+                                "RecvInvOrg": {
+                                    "nullable": true
+                                },
+                                "Currency": {
+                                    "type": "string"
+                                },
+                                "UserStatusMeaning": {
+                                    "nullable": true
+                                },
+                                "LegalEntityName": {
+                                    "type": "string"
+                                },
+                                "ShipToOrgLocation": {
+                                    "nullable": true
+                                },
+                                "BillToLocation": {
+                                    "nullable": true
+                                },
+                                "EnableElectronicSignFlag": {
+                                    "type": "boolean"
+                                },
+                                "ContractTrueValue": {
+                                    "nullable": true
+                                },
+                                "ShipToPartyId": {
+                                    "nullable": true
+                                },
+                                "PricingStrategyId": {
+                                    "nullable": true
+                                },
+                                "PricingSegmentCode": {
+                                    "nullable": true
+                                },
+                                "PricingEffectivityDate": {
+                                    "nullable": true
+                                },
+                                "ShipToPartyName": {
+                                    "nullable": true
+                                },
+                                "ShipToPartySiteLocation": {
+                                    "nullable": true
+                                },
+                                "CustomerPartyName": {
+                                    "type": "string"
+                                },
+                                "TrxnExtensionId": {
+                                    "nullable": true
+                                },
+                                "BillToAccountPartyId": {
+                                    "type": "integer"
+                                },
+                                "RenewalType": {
+                                    "nullable": true
+                                },
+                                "UnderMigrationFlag": {
+                                    "nullable": true
+                                },
+                                "TargetLineName": {
+                                    "nullable": true
+                                },
+                                "TargetLineId": {
+                                    "nullable": true
+                                },
+                                "TargetLineMajorVer": {
+                                    "nullable": true
+                                },
+                                "ContractId": {
+                                    "type": "integer"
+                                },
+                                "CorpCurrencyCode": {
+                                    "nullable": true
+                                },
+                                "CurcyConvRateType": {
+                                    "nullable": true
+                                },
+                                "PrimarySalesrepId": {
+                                    "nullable": true
+                                },
+                                "AutoSendForSignature": {
+                                    "nullable": true
+                                },
+                                "PriceApplicationRule": {
+                                    "nullable": true
+                                },
+                                "EsignTemplateId": {
+                                    "nullable": true
+                                },
+                                "SignContract": {
+                                    "nullable": true
+                                },
+                                "SendForSignature": {
+                                    "nullable": true
+                                },
+                                "NonStandardClauseCount": {
+                                    "type": "string"
+                                },
+                                "CancelReasonSetCode": {
+                                    "nullable": true
+                                },
+                                "CloseReasonSetCode": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "HoldReasonSetCode": {
+                                    "nullable": true
+                                },
+                                "ContractPuid": {
+                                    "type": "string"
+                                },
+                                "EncumbranceLevelMeaning": {
+                                    "nullable": true
+                                },
+                                "FOBMeaning": {
+                                    "type": "string"
+                                },
+                                "FreightTermsMeaning": {
+                                    "type": "string"
+                                },
+                                "TaxExemptionControlMeaning": {
+                                    "type": "string"
+                                },
+                                "ApTermsName": {
+                                    "type": "string"
+                                },
+                                "SourceDocumentId": {
+                                    "nullable": true
+                                },
+                                "SourceDocumentSystemCode": {
+                                    "nullable": true
+                                },
+                                "RunContractExpertFlag": {
+                                    "nullable": true
+                                },
+                                "ShareWithExternalPartyYn": {
+                                    "type": "string"
+                                },
+                                "BaseContractYN": {
+                                    "type": "string"
+                                },
+                                "Risk_c": {
+                                    "nullable": true
+                                },
+                                "links": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "rel": {
+                                                "type": "string"
+                                            },
+                                            "href": {
+                                                "type": "string"
+                                            },
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "kind": {
+                                                "type": "string"
+                                            },
+                                            "properties": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "changeIndicator": {
+                                                        "type": "string"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "kind": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,276 @@
+{
+  "title": "",
+  "description": "",
+  "variables": {
+    "bu_id": {
+      "type": "string"
+    },
+    "bu_name": {
+      "type": "string"
+    },
+    "contract_id": {
+      "type": "string"
+    },
+    "contract_number": {
+      "type": "string"
+    },
+    "contractNumberOnly": {
+      "type": "string"
+    },
+    "getGLDITC001LOVBUSINESSUNITS1ListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "icsEndpoint/getGLD_ITC_0001_LOV_BUSINESS_UNITS1_0",
+        "keyAttributes": "bu_name",
+        "itemsPath": "BusinessUnits",
+        "responseType": "getGLDITC001LOVBUSINESSUNITS1Response",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "bu_name"
+          ]
+        }
+      }
+    },
+    "getGLDITC001LOVPPMCONTRACTS1ListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "icsEndpoint/getGLD_ITC_0001_LOV_PPM_CONTRACTS1_0",
+        "keyAttributes": "contract_display",
+        "itemsPath": "Contracts",
+        "responseType": "getGLDITC001LOVPPMCONTRACTS1Response",
+        "uriParameters": {
+          "p_bu_id": "{{ $variables.bu_id }}"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "contract_display"
+          ]
+        }
+      }
+    },
+    "getPROJECTSLOVBU1GetProjectsLOVBUListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "icsEndpoint/getPROJECTS_LOV_BU1_0GetProjectsLOVBU",
+        "keyAttributes": "project_number",
+        "itemsPath": "",
+        "responseType": "getPROJECTSLOVBU1GetProjectsLOVBUResponse",
+        "uriParameters": {
+          "p_bu_id": "{{ $variables.bu_id }}"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "project_number"
+          ]
+        }
+      }
+    },
+    "invoiceListListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "businessObjects/getall_InvoiceList",
+        "keyAttributes": "id",
+        "itemsPath": "items",
+        "responseType": "getallInvoiceListResponse"
+      }
+    },
+    "invoiceNumber": {
+      "type": "string"
+    },
+    "InvoiceRequestId": {
+      "type": "string"
+    },
+    "invoicesList": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "invoiceListObject"
+      }
+    },
+    "invoiceStatusListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "businessObjects/getall_InvoiceStatus",
+        "keyAttributes": "invoiceStatus",
+        "itemsPath": "items",
+        "responseType": "getallInvoiceStatusResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "invoiceStatus"
+          ]
+        }
+      }
+    },
+    "oj_table_1995689965_1SelectedId": {
+      "type": "string",
+      "defaultValue": ""
+    }
+
+  },
+  "metadata": {},
+  "types": {
+    "@decorators.getallInvoiceListResponse": {
+      "endpoint": "getall_InvoiceList",
+      "service": "businessObjects",
+      "path": "response"
+    },
+    "@decorators.getallInvoiceStatusResponse": {
+      "endpoint": "getall_InvoiceStatus",
+      "service": "businessObjects",
+      "path": "response"
+    },
+    "@decorators.getGLDITC001LOVBUSINESSUNITS1Response": {
+      "endpoint": "getGLD_ITC_0001_LOV_BUSINESS_UNITS1_0",
+      "service": "icsEndpoint",
+      "path": "response"
+    },
+    "@decorators.getGLDITC001LOVPPMCONTRACTS1Response": {
+      "endpoint": "getGLD_ITC_0001_LOV_PPM_CONTRACTS1_0",
+      "service": "icsEndpoint",
+      "path": "response"
+    },
+    "@decorators.getPROJECTSLOVBU1GetProjectsLOVBUResponse": {
+      "endpoint": "getPROJECTS_LOV_BU1_0GetProjectsLOVBU",
+      "service": "icsEndpoint",
+      "path": "response"
+    },
+    "getallInvoiceListResponse": {
+      "items": [
+        {
+          "amount": "string",
+          "contractNumber": "string",
+          "id": "number",
+          "invoiceDate": "string",
+          "invoiceNumber": "string",
+          "projectNumber": "string",
+          "status": "string"
+        }
+      ]
+    },
+    "getallInvoiceStatusResponse": {
+      "items": [
+        {
+          "invoiceStatus": "string"
+        }
+      ]
+    },
+    "getGLDITC001LOVBUSINESSUNITS1Response": {
+      "BusinessUnits": [
+        {
+          "bu_id": "string",
+          "bu_name": "string"
+        }
+      ]
+    },
+    "getGLDITC001LOVPPMCONTRACTS1Response": {
+      "Contracts": [
+        {
+          "contract_display": "string",
+          "contract_id": "string"
+        }
+      ]
+    },
+    "getPROJECTSLOVBU1GetProjectsLOVBUResponse": [
+      {
+        "project_id": "number",
+        "project_number": "string"
+      }
+    ],
+    "invoiceListObject": {
+      "contract_number": "string",
+      "invice_amount": "string",
+      "invoice_date": "string",
+      "invoice_id": "string",
+      "invoice_number": "string",
+      "project_number": "string",
+      "status": "string"
+    },
+    "payload": {
+      "ESSParameters": "string",
+      "JobDefName": "string",
+      "JobPackageName": "string",
+      "OperationName": "string"
+    }
+  },
+  "eventListeners": {
+    "buttonAction": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain"
+        }
+      ]
+    },
+    "iconClick": {
+      "chains": [
+        {
+          "chain": "IconClickChain",
+          "parameters": {
+            "key": "{{ $current.key }}",
+            "index": "{{ $current.index }}",
+            "current": "{{ $current }}"
+          }
+        }
+      ]
+    },
+    "selectValueItem": {
+      "chains": [
+        {
+          "chain": "SelectValueItemChangeChain",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "selectValueItem2": {
+      "chains": [
+        {
+          "chain": "SelectValueItemChangeChain1",
+          "parameters": {
+            "key": "{{$event.detail.value.key}}",
+            "data": "{{$event.detail.value.data}}",
+            "metadata": "{{$event.detail.value.metadata}}"
+          }
+        }
+      ]
+    },
+    "invoiceListTableSelection": {
+      "chains": [
+        {
+          "chain": "ojTable19956899651ChangeSelectionChain",
+          "parameters": {
+            "invoiceListId": "[[ $event.detail.value.key || '' ]]"
+          }
+        }
+      ]
+    }
+  },
+  "imports": {
+    "components": {
+      "oj-button": {
+        "path": "ojs/ojbutton"
+      },
+      "oj-form-layout": {
+        "path": "ojs/ojformlayout"
+      },
+      "oj-input-date": {
+        "path": "ojs/ojdatetimepicker"
+      },
+      "oj-select-single": {
+        "path": "ojs/ojselectsingle"
+      },
+      "oj-table": {
+        "path": "ojs/ojtable"
+      },
+      "oj-toolbar": {
+        "path": "ojs/ojtoolbar"
+      }
+   }
+  },
+  "security": {
+    "access": {
+      "requiresAuthentication": false
+    }
+  }
+}

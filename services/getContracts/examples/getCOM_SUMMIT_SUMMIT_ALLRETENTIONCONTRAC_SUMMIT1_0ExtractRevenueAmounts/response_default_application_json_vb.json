@@ -1,0 +1,76 @@
+{
+  "totalRetCount" : 8,
+  "retValues" : [ {
+    "contractNumber" : "AIA Retention 1",
+    "lineNumber" : "Field Labor",
+    "projectNumber" : "60000366",
+    "retentionPercentage" : "10",
+    "workCompleted" : "",
+    "materialsStored" : "",
+    "totalCompleted" : "0",
+    "retainageAmount" : "0"
+  }, {
+    "contractNumber" : "AIA Retention 1",
+    "lineNumber" : "PM Labor",
+    "projectNumber" : "60000366",
+    "retentionPercentage" : "10",
+    "workCompleted" : "",
+    "materialsStored" : "",
+    "totalCompleted" : "0",
+    "retainageAmount" : "0"
+  }, {
+    "contractNumber" : "AIA Retention 1",
+    "lineNumber" : "Other",
+    "projectNumber" : "60000366",
+    "retentionPercentage" : "10",
+    "workCompleted" : "",
+    "materialsStored" : "",
+    "totalCompleted" : "0",
+    "retainageAmount" : "0"
+  }, {
+    "contractNumber" : "AIA Retention 1",
+    "lineNumber" : "Materials",
+    "projectNumber" : "60000366",
+    "retentionPercentage" : "",
+    "workCompleted" : "",
+    "materialsStored" : "",
+    "totalCompleted" : "0",
+    "retainageAmount" : "0"
+  }, {
+    "contractNumber" : "AIA Retention 1",
+    "lineNumber" : "Design Labor",
+    "projectNumber" : "60000366",
+    "retentionPercentage" : "15",
+    "workCompleted" : "",
+    "materialsStored" : "",
+    "totalCompleted" : "0",
+    "retainageAmount" : "0"
+  }, {
+    "contractNumber" : "AIA Retention 1",
+    "lineNumber" : "Shop",
+    "projectNumber" : "60000366",
+    "retentionPercentage" : "10",
+    "workCompleted" : "",
+    "materialsStored" : "",
+    "totalCompleted" : "0",
+    "retainageAmount" : "0"
+  }, {
+    "contractNumber" : "AIA Retention 1",
+    "lineNumber" : "Equipment",
+    "projectNumber" : "60000366",
+    "retentionPercentage" : "10",
+    "workCompleted" : "",
+    "materialsStored" : "",
+    "totalCompleted" : "0",
+    "retainageAmount" : "0"
+  }, {
+    "contractNumber" : "AIA Retention 1",
+    "lineNumber" : "Subcontract",
+    "projectNumber" : "60000366",
+    "retentionPercentage" : "10",
+    "workCompleted" : "",
+    "materialsStored" : "",
+    "totalCompleted" : "0",
+    "retainageAmount" : "0"
+  } ]
+}

@@ -1,0 +1,99 @@
+{
+    "fields": [
+        {
+            "type": "number",
+            "name": "id",
+            "internal": false,
+            "key": true,
+            "oid": "73a4a012-b487-425d-9538-5925de718197",
+            "required": true,
+            "unique": true,
+            "displayLabel": "Id"
+        },
+        {
+            "type": "datetime",
+            "name": "creationDate",
+            "internal": false,
+            "oid": "dba0e5dc-3a63-4fd6-afe6-ec3275d31a5e",
+            "displayLabel": "Created",
+            "historyType": "timeCreated"
+        },
+        {
+            "type": "datetime",
+            "name": "lastUpdateDate",
+            "internal": false,
+            "oid": "cd07308a-7b7d-4a69-88aa-2208e4488e8c",
+            "displayLabel": "Last Updated",
+            "historyType": "timeUpdated"
+        },
+        {
+            "type": "string",
+            "name": "createdBy",
+            "internal": false,
+            "oid": "45a77126-623b-451b-a05d-24adf12e85cf",
+            "displayLabel": "Created By",
+            "historyType": "createdBy"
+        },
+        {
+            "type": "string",
+            "name": "lastUpdatedBy",
+            "internal": false,
+            "oid": "7387e2d8-2ae4-4f02-94fb-b87077441149",
+            "displayLabel": "Last Updated By",
+            "historyType": "updatedBy"
+        },
+        {
+            "type": "number",
+            "name": "versionNumber",
+            "internal": false,
+            "oid": "04e50cbb-d5b4-4f99-aa65-a4b72366503f",
+            "displayLabel": "Version Number",
+            "historyType": "versionNumber"
+        },
+        {
+            "type": "string",
+            "name": "invoiceLineNumber",
+            "oid": "679c04dc-39d9-4f14-b4b8-8292f93b737b",
+            "displayLabel": "Invoice Line Number"
+        },
+        {
+            "type": "string",
+            "name": "contractLineNumber",
+            "oid": "dad408a9-9da2-4675-9cfd-8772865ad344",
+            "displayLabel": "Contract Line Number"
+        },
+        {
+            "type": "string",
+            "name": "descriptionOfWork",
+            "oid": "c0c977e2-f98f-415a-9a8d-c515f8b6eb33",
+            "displayLabel": "Description of Work"
+        },
+        {
+            "type": "string",
+            "name": "lineDescription",
+            "oid": "9644d309-a8ce-4c13-a8df-a3ce764498e6",
+            "displayLabel": "Line Description"
+        },
+        {
+            "type": "string",
+            "name": "scheduledValue",
+            "oid": "4464b5b2-25de-42fe-be3a-4373a721b15e",
+            "displayLabel": "Scheduled Value"
+        },
+        {
+            "type": "string",
+            "name": "invoiceAmount",
+            "oid": "70559f42-7bb3-4bc4-a20e-17b7745ea149",
+            "displayLabel": "Invoice Amount"
+        },
+        {
+            "type": "string",
+            "name": "invoiceTax",
+            "oid": "60fb0c23-80bf-4760-a063-72f3c156bdf2",
+            "displayLabel": "Invoice Tax"
+        }
+    ],
+    "name": "InvoiceLines",
+    "oid": "28ddf34b-adbb-480c-b2f5-50be4f106f95",
+    "displayLabel": "Invoice Lines"
+}

@@ -1,0 +1,63 @@
+<header role="banner" class="oj-sm-flex-initial vb-web-applayout-header oj-sm-only-hide" style="display:none;">
+  <div class="oj-flex-bar oj-sm-align-items-center vb-web-applayout-header-content oj-bg-neutral-170">
+    <!-- Navigator toggle button -->
+    <div class="oj-flex-bar oj-bg-neutral-170">
+      <oj-button on-oj-action="[[$listeners.drawerToggle]]" chroming="borderless" display="icons">
+        <span slot="startIcon" class="oj-ux-ico-menu"></span>
+        <span><oj-bind-text value="[[$application.translations.app.app_title_navigation_drawer]]"></oj-bind-text></span>
+      </oj-button>
+    </div>
+
+    <!-- Company logo and application title only displayed in desktop mode -->
+    <div class="oj-flex-item oj-sm-flex-initial"></div>
+    <div class="oj-flex-item oj-sm-flex-initial">
+      <img src="https://ritesoftware.com/wp-content/uploads/2023/07/logo-ritesoftware.png" width="80">
+       <!-- <h1 class="oj-typography-body-md oj-typography-semi-bold" title="Retention From Crew"></h1> -->
+    </div>
+    <div class="oj-flex-item oj-sm-flex-initial"></div>
+    <div class="oj-flex-item oj-sm-flex-initial"></div>
+    <div class="oj-flex-item oj-sm-flex-initial"></div>
+    <div class="oj-flex-item oj-sm-flex-initial"></div>
+
+    <div class="oj-flex-bar-middle oj-sm-margin-4x-horizontal oj-sm-align-items-center">
+      <!-- Please Change the following for company specific logo   -->
+
+      <h6 text="Retention From Crew">AIA Workbench</h6>
+    </div>
+
+    <!-- Global toolbar only displayed in desktop form-factor -->
+
+    <div class="oj-flex-bar-end">
+      <oj-switch label-hint="Enable Help Description" class="oj-flex-item oj-sm-flex-initial oj-sm-margin-2x-end"
+        value="{{ $application.variables.HelpEnabled }}"></oj-switch>
+
+      <oj-toolbar>
+        <!-- Global toolbar items not displayed on phones. They are moved to offcanvas on phones -->
+        <oj-bind-for-each data="[[$application.variables.globalHeadersADP]]">
+          <template>
+            <div>
+            </div>
+          </template>
+        </oj-bind-for-each>
+        <oj-button display="icons" on-oj-action="[[$listeners.openAvatarMenu]]">
+          <oj-avatar id="header-avatar" slot="startIcon" role="img" icon-class="oj-ux-ico-contact oj-typography-body-lg"
+            size="xs" background="orange" :aria-label="[[$application.user.fullName]]"
+            :title="[[$application.user.fullName]]">
+          </oj-avatar>
+          <oj-popup id="header-avatar-menu" role="navigation">
+            <oj-bind-for-each data="[[$application.variables.avatarItems]]">
+              <template>
+                <div>
+                  <oj-button chroming="borderless">
+                    <span :class="[[ $current.data.iconClass ]]" slot="startIcon"></span>
+                    <oj-bind-text value="[[ $current.data.name ]]"></oj-bind-text>
+                  </oj-button>
+                </div>
+              </template>
+            </oj-bind-for-each>
+          </oj-popup>
+        </oj-button>
+      </oj-toolbar>
+    </div>
+  </div>
+</header>

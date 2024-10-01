@@ -1,0 +1,94 @@
+<oj-vb-fragment id="page-header" bridge="[[vbBridge]]" name="page-header">
+  <oj-toolbar chroming="solid"></oj-toolbar>
+  <oj-vb-fragment-param name="title" value="Add Retention Setup "></oj-vb-fragment-param>
+  <template slot="actions">
+    <oj-button label="Done" chroming="callToAction" class="oj-button-sm" on-oj-action="[[$listeners.buttonAction5]]"></oj-button>
+  </template>
+</oj-vb-fragment>
+<div class="oj-flex">
+  <oj-toolbar chroming="solid" class="oj-flex-item oj-sm-12 oj-md-12"></oj-toolbar>
+</div>
+<div class="oj-flex">
+  <div class="oj-flex-item oj-sm-12 oj-md-12">
+    <oj-form-layout class="oj-formlayout-full-width" max-columns="3" columns="3">
+      <oj-select-single label-hint="Contract Number" required="true" item-text="contractNumber"
+        on-value-item-changed="[[$listeners.selectValueItem]]"
+        data="[[$variables.getCOMSUMMITSUMMITALLCONTRACTSLOVSUMMIT1GetContractsListSDP]]"></oj-select-single>
+      <oj-select-single label-hint="Contract Line Number " item-text="lineNumber"
+        data="[[$variables.getCONTRACTSLINESLOV1GetContractLinesListSDP2]]"
+        on-value-item-changed="[[$listeners.selectValueItem2]]"></oj-select-single>
+      <oj-button label="Search" class="oj-button-lg" chroming="callToAction" on-oj-action="[[$listeners.buttonAction]]">
+        <span class="oj-ux-ico-search" slot="startIcon"></span>
+      </oj-button>
+    </oj-form-layout>
+  </div>
+</div>
+<div class="oj-flex">
+  <oj-toolbar chroming="solid" class="oj-flex-item oj-sm-12 oj-md-12"></oj-toolbar>
+</div>
+<div class="oj-flex">
+  <oj-toolbar chroming="solid" class="oj-flex-item oj-sm-12 oj-md-11"></oj-toolbar>
+  <div class="oj-flex-item oj-sm-12 oj-md-1">
+    <oj-button class="" display="icons" chroming="callToAction"
+      on-oj-action="[[$listeners.buttonAction4]]">
+
+      <span style="cursor:pointer;font-size:18px"
+            class="oj-ux-ico-refresh" on-click="[[$listeners.iconClick]]"></span>
+    </oj-button>
+  </div>
+</div>
+<div class="oj-flex">
+  <oj-table scroll-policy="loadMoreOnScroll" class="oj-flex-item oj-sm-12 oj-md-12"
+    columns='[{"headerText":"Contract Number","field":"contractNumber"},{"headerText":"Line Number","field":"lineNumber"},{"headerText":"Retention Percentage","field":"retentionPercentage","template":"Retention Percentage"},{"headerText":"Max Retention Amount (USD)","field":"totalCompleted","template":"Max Retention Amount (USD)"},{"headerText":"Project Percent Completed","field":"workCompleted","template":"Project Percent Completed"},{"headerText":"Add/Update Setup","field":"","sortable":"disabled","template":"action"}]'
+    data="[[ $variables.setupList ]]" id="setupTable" horizontal-grid-visible="enabled" vertical-grid-visible="enabled">
+                 <template slot="Retention Percentage">
+          <oj-input-text value="[[$current.data +' %']]" readonly="true" style="text-align:right;"></oj-input-text>
+                 </template>
+                 <template slot="Max Retention Amount (USD)">
+          <oj-input-text value="[['$ '+$current.data]]" readonly="true" style="text-align:right"></oj-input-text>
+                 </template>
+                 <template slot="Project Percent Completed">
+          <oj-input-text value="[[$current.data]]" readonly="true"></oj-input-text>
+                 </template>
+                 <template slot="action">
+          <span style="cursor:pointer;font-size:18px" class="oj-ux-ico-edit-plus" on-click="[[$listeners.iconClick]]"></span>
+        </template>
+    </oj-table>
+</div>
+<oj-dialog dialog-title="Dialog" id="oj-dialog-266497694-1" style="width: 55%;">
+  <div slot="body">
+    <div class="oj-flex">
+      <div class="oj-flex-item oj-sm-12 oj-md-3"></div>
+      <h5 class="oj-header oj-flex-item oj-sm-12 oj-md-7">Add Retention Setup</h5>
+    </div>
+    <div class="oj-divider-top"></div>
+    <oj-toolbar chroming="solid"></oj-toolbar>
+    <oj-form-layout class="oj-formlayout-full-width" columns="3" max-columns="3">
+      <oj-input-text label-hint="Contract Number" readonly="true" value="{{ $variables.contractNumber }}"></oj-input-text>
+      <oj-input-text label-hint="Contract Line Number" readonly="true"
+        value="{{ $variables.dialogContractLineNumber }}"></oj-input-text>
+      <oj-input-number label-hint="Retention Percentage" on-value-changed="[[$listeners.inputNumberValue]]"
+        value="{{$variables.retPercentage  ? $variables.retPercentage  : 0}}"
+        converter='{"options":{"style":"decimal"},"type":"number"}'></oj-input-number>
+      <oj-select-single label-hint="Max Retention" data="[[$variables.retValuesListSDP]]" item-text="retType"></oj-select-single>
+      <oj-input-number label-hint="Max Retention Value" on-value-changed="[[$listeners.inputNumberValue2]]"
+        value="{{$variables.maxRetValue ? $variables.maxRetValue : 0}}"
+        converter='{"options":{"style":"currency","currency":"USD"},"type":"number"}'></oj-input-number>
+      <oj-input-text label-hint="Currency" readonly="true" value="{{ $variables.currency }}"></oj-input-text>
+      <oj-input-number label-hint="Project % Completion Threshold"
+        value="{{$variables.projectCompletionThreshold  ? $variables.projectCompletionThreshold  : 0}}"
+        on-value-changed="[[$listeners.inputNumberValue3]]"
+        converter='{"options":{"style":"decimal","unit":"byte","useGrouping":true},"type":"number"}'></oj-input-number>
+    </oj-form-layout>
+  </div>
+  <div slot="footer">
+    <oj-button label="Submit" on-oj-action="[[$listeners.buttonAction2]]" chroming="callToAction">
+       <span class="oj-ux-ico-arrow-inline-right" slot="startIcon"></span>
+    </oj-button>
+    <oj-button label="Close" on-oj-action="[[$listeners.buttonAction3]]" chroming="callToAction">
+      <span class="oj-ux-ico-close" slot="startIcon"></span>
+    </oj-button>
+  </div>
+</oj-dialog>
+
+

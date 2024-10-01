@@ -1,0 +1,373 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "FscmRestApi",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "vb-catalog://backends/fscmRestApi",
+            "description": "FscmRestApi"
+        }
+    ],
+    "paths": {
+        "/11.13.18.05/projectBillingEvents": {
+            "post": {
+                "operationId": "post11_13_18_05ProjectBillingEvents",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Post11_13_18_05ProjectBillingEventsRequest"
+                            },
+                            "examples": {
+                                "vb": {
+                                    "externalValue": "./examples/post11_13_18_05ProjectBillingEvents/request_application_json_vb.json"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Post11_13_18_05ProjectBillingEventsResponse"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/post11_13_18_05ProjectBillingEvents/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Post11_13_18_05ProjectBillingEventsRequest": {
+                "type": "object",
+                "properties": {
+                    "SourceName": {
+                        "type": "string"
+                    },
+                    "SourceReference": {
+                        "type": "string"
+                    },
+                    "ContractTypeName": {
+                        "type": "string"
+                    },
+                    "ContractNumber": {
+                        "type": "string"
+                    },
+                    "ContractLineNumber": {
+                        "type": "string"
+                    },
+                    "EventTypeName": {
+                        "type": "string"
+                    },
+                    "EventDescription": {
+                        "type": "string"
+                    },
+                    "BusinessUnitName": {
+                        "type": "string"
+                    },
+                    "BillTrnsAmount": {
+                        "type": "integer"
+                    }
+                }
+            },
+            "Post11_13_18_05ProjectBillingEventsResponse": {
+                "type": "object",
+                "properties": {
+                    "EventId": {
+                        "type": "integer"
+                    },
+                    "SourceName": {
+                        "type": "string"
+                    },
+                    "SourceReference": {
+                        "type": "string"
+                    },
+                    "ContractTypeName": {
+                        "type": "string"
+                    },
+                    "ContractNumber": {
+                        "type": "string"
+                    },
+                    "ContractLineNumber": {
+                        "type": "string"
+                    },
+                    "EventNumber": {
+                        "type": "integer"
+                    },
+                    "OrganizationName": {
+                        "type": "string"
+                    },
+                    "EventTypeName": {
+                        "type": "string"
+                    },
+                    "EventDescription": {
+                        "type": "string"
+                    },
+                    "RevenueHold": {
+                        "type": "string"
+                    },
+                    "BillHold": {
+                        "type": "string"
+                    },
+                    "ProjectNumber": {
+                        "nullable": true
+                    },
+                    "CompletionDate": {
+                        "nullable": true
+                    },
+                    "TaskNumber": {
+                        "nullable": true
+                    },
+                    "BillTrnsAmount": {
+                        "type": "integer"
+                    },
+                    "ReverseAccrual": {
+                        "type": "string"
+                    },
+                    "EventTypeId": {
+                        "type": "integer"
+                    },
+                    "ContractTypeId": {
+                        "type": "integer"
+                    },
+                    "OrganizationId": {
+                        "type": "integer"
+                    },
+                    "ProjectId": {
+                        "nullable": true
+                    },
+                    "TaskId": {
+                        "nullable": true
+                    },
+                    "BillTrnsCurrencyCode": {
+                        "type": "string"
+                    },
+                    "EventTypeCode": {
+                        "type": "string"
+                    },
+                    "ContractId": {
+                        "type": "integer"
+                    },
+                    "Version": {
+                        "type": "integer"
+                    },
+                    "ContractLineId": {
+                        "type": "integer"
+                    },
+                    "BusinessUnitName": {
+                        "type": "string"
+                    },
+                    "BusinessUnitId": {
+                        "type": "integer"
+                    },
+                    "Automatic": {
+                        "type": "string"
+                    },
+                    "BillingResourceId": {
+                        "nullable": true
+                    },
+                    "AdjustedEventId": {
+                        "nullable": true
+                    },
+                    "EventNumberReversed": {
+                        "nullable": true
+                    },
+                    "ContractCurrencyAmount": {
+                        "type": "integer"
+                    },
+                    "ContractCurrencyExchgRate": {
+                        "type": "integer"
+                    },
+                    "Invoiced": {
+                        "type": "string"
+                    },
+                    "InvoiceCurrencyCode": {
+                        "type": "string"
+                    },
+                    "InvoicedAmount": {
+                        "nullable": true
+                    },
+                    "InvoicedPercentage": {
+                        "nullable": true
+                    },
+                    "RevenueRecognized": {
+                        "type": "string"
+                    },
+                    "RevenueRecognizedPercentage": {
+                        "nullable": true
+                    },
+                    "RevenueAmount": {
+                        "nullable": true
+                    },
+                    "LedgerCurrencyCode": {
+                        "type": "string"
+                    },
+                    "LedgerRevenueAmount": {
+                        "nullable": true
+                    },
+                    "LedgerInvoiceAmount": {
+                        "nullable": true
+                    },
+                    "RevenueException": {
+                        "type": "string"
+                    },
+                    "InvoiceException": {
+                        "type": "string"
+                    },
+                    "CreatedRequestId": {
+                        "nullable": true
+                    },
+                    "ContractCurrencyCode": {
+                        "type": "string"
+                    },
+                    "ContractCurrencyExchgDate": {
+                        "nullable": true
+                    },
+                    "ContractRateDateType": {
+                        "type": "string"
+                    },
+                    "ContractCurrencyRateType": {
+                        "type": "string"
+                    },
+                    "BillCurrencyOptCode": {
+                        "type": "string"
+                    },
+                    "InvoiceCurrencyDateType": {
+                        "type": "string"
+                    },
+                    "InvoiceCurrencyExchgDate": {
+                        "nullable": true
+                    },
+                    "InvoiceCurrencyExchgRate": {
+                        "type": "integer"
+                    },
+                    "InvoicePotentialAmount": {
+                        "type": "integer"
+                    },
+                    "InvoiceCurrencyRateType": {
+                        "type": "string"
+                    },
+                    "RevenueCurrencyCode": {
+                        "nullable": true
+                    },
+                    "ProjectInvoiceAmount": {
+                        "nullable": true
+                    },
+                    "ProjectRevenueAmount": {
+                        "nullable": true
+                    },
+                    "LinkedTaskId": {
+                        "nullable": true
+                    },
+                    "ProjectCurrencyCode": {
+                        "nullable": true
+                    },
+                    "BillingResource": {
+                        "nullable": true
+                    },
+                    "RevenueStatusMeaning": {
+                        "nullable": true
+                    },
+                    "InvoiceStatusMeaning": {
+                        "nullable": true
+                    },
+                    "RevenueHoldMeaning": {
+                        "nullable": true
+                    },
+                    "BillHoldMeaning": {
+                        "nullable": true
+                    },
+                    "InvCurrencyDateTypeMeaning": {
+                        "nullable": true
+                    },
+                    "ContractRateDateTypeMeaning": {
+                        "nullable": true
+                    },
+                    "ConversionRateTypeMeaning": {
+                        "type": "string"
+                    },
+                    "InvCurrencyRateTypeMeaning": {
+                        "type": "string"
+                    },
+                    "ItemEventFlag": {
+                        "type": "boolean"
+                    },
+                    "Quantity": {
+                        "nullable": true
+                    },
+                    "ItemNumber": {
+                        "nullable": true
+                    },
+                    "InventoryItemId": {
+                        "nullable": true
+                    },
+                    "ItemOrganizationId": {
+                        "nullable": true
+                    },
+                    "UOMCode": {
+                        "nullable": true
+                    },
+                    "UOMName": {
+                        "nullable": true
+                    },
+                    "UnitPrice": {
+                        "nullable": true
+                    },
+                    "UnitPriceCurrency": {
+                        "nullable": true
+                    },
+                    "QuantityBilled": {
+                        "nullable": true
+                    },
+                    "QuantityRevenueRecognzd": {
+                        "nullable": true
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "kind": {
+                                    "type": "string"
+                                },
+                                "properties": {
+                                    "type": "object",
+                                    "properties": {
+                                        "changeIndicator": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

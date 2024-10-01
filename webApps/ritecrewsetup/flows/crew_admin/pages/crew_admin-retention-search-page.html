@@ -1,0 +1,362 @@
+ <oj-drawer-layout class="oj-flex-item oj-sm-12 oj-md-12">
+<oj-vb-fragment id="page-header" bridge="[[vbBridge]]" name="page-header">
+  <template slot="actions">
+    <oj-button on-oj-action="[[$listeners.buttonAction5]]" class="oj-button-sm">
+      <span slot="endIcon" :class="[[ $variables.openNavDrawer?'oj-ux-ico-close':'oj-ux-ico-menu' ]]"></span>
+    </oj-button>
+  </template>
+</oj-vb-fragment>
+<div class="oj-flex">
+  <template class="oj-flex-item oj-sm-12 oj-md-12"></template>
+</div>
+<div class="oj-flex">
+  <oj-toolbar chroming="solid" class="oj-flex-item oj-sm-12 oj-md-12"></oj-toolbar>
+</div>
+<div class="oj-flex">
+  <oj-toolbar chroming="solid" class="oj-flex-item oj-sm-12 oj-md-11"></oj-toolbar>
+</div>
+
+
+
+
+<div class="oj-flex">
+  <div class="oj-panel oj-flex-item oj-sm-12 oj-panel-shadow-lg oj-md-8 oj-panel-border-radius-0">
+    <div class="oj-flex">
+      <div class="oj-flex-item oj-sm-12 oj-md-6"></div>
+    </div>
+    <div class="oj-flex">
+      <div class="oj-flex-item oj-sm-12 oj-md-1"></div>
+      <div class="oj-flex-item oj-sm-12 oj-md-11">
+        <oj-form-layout class="oj-formlayout-full-width oj-md-padding-5x" columns="3" max-columns="3">
+          <oj-select-single label-hint="Contract Number" item-text="contractNumber"
+            on-value-item-changed="[[$listeners.selectValueItem]]"
+            data="[[$variables.getCOMSUMMITSUMMITALLCONTRACTSLOVSUMMIT1GetContractsListSDP]]"
+            value="{{ $variables.contractNumber }}"></oj-select-single>
+          <oj-select-single label-hint="Project Name" item-text="ProjectName"
+            on-value-item-changed="[[$listeners.selectValueItem3]]"
+            data="[[$variables.getFscmRestApiResources1113185ProjectsLOV2ListSDP]]"
+            value="{{ $variables.projectName }}"></oj-select-single>
+          <oj-select-single label-hint="Project Manager" on-value-item-changed="[[$listeners.selectValueItem4]]"
+            item-text="managerName"
+            data="[[$variables.getCOMSUMMITSUMMITALLPROJECTMANAGERLOSUMMIT1GetProjectManagers2ListSDP]]"
+            value="{{ $variables.managerName }}"></oj-select-single>
+          <oj-select-single label-hint="Branch" item-text="OrganizationName"
+            on-value-item-changed="[[$listeners.selectValueItem5]]"
+            data="[[$variables.getFscmRestApiResources1113185ProjectOrganizationsLOVListSDP]]"
+            value="{{ $variables.OrganizationName }}"></oj-select-single>
+          <oj-select-single label-hint="Service Type"
+            data="[[$variables.getFscmRestApiResources1113185ValueSetsService20Type20SummitChildValuesListSDP]]"
+            item-text="Value" on-value-item-changed="[[$listeners.selectValueItem2]]"
+            value="{{ $variables.valueName?$variables.valueName:'' }}"></oj-select-single>
+          <oj-input-date label-hint="Billing Due Date"></oj-input-date>
+        </oj-form-layout>
+      </div>
+    </div>
+  
+  
+    <div class="oj-flex">
+      <div class="oj-flex-item oj-sm-12 oj-md-1"></div>
+      <div class="oj-flex-item oj-sm-12 oj-md-2">
+        <oj-button label="Search" class="oj-button-sm"
+          on-oj-action="[[$listeners.buttonAction]]" chroming="callToAction">
+          <span class="oj-ux-ico-search" slot="startIcon"></span>
+        </oj-button>
+      </div>
+      <div class="oj-flex-item oj-sm-12 oj-md-2">
+        <oj-button label="Reset" class="oj-button-sm" chroming="callToAction"
+          on-oj-action="[[$listeners.buttonAction6]]">
+          <span class="oj-ux-ico-reset-variable" slot="startIcon"></span>
+        </oj-button>
+      </div>
+      <div class="oj-flex-item oj-sm-12 oj-md-2">
+        <oj-button label="Save Details" class="oj-button-sm" chroming="callToAction"
+          on-oj-action="[[$listeners.buttonAction10]]" >
+          <span class="oj-ux-ico-save" slot="startIcon"></span>
+        </oj-button>
+      </div>
+      <div class="oj-flex-item oj-sm-12 oj-md-3">
+        <oj-button label="Generate Invoice" class="oj-button-sm" chroming="callToAction"
+          on-oj-action="[[$listeners.buttonAction8]]">
+          <span class="oj-ux-ico-invoice-extraction" slot="startIcon"></span>
+        </oj-button>
+      </div>
+      <div class="oj-flex-item oj-sm-12 oj-md-2">
+        <oj-button label="G702 Report" class="oj-button-sm" chroming="callToAction"
+          on-oj-action="[[$listeners.buttonAction9]]">
+          <span class="oj-ux-ico-download" slot="startIcon"></span>
+        </oj-button>
+      </div>
+    </div>
+  </div>
+  <div
+    class="oj-panel oj-flex-item oj-sm-12 oj-md-4 oj-panel-shadow-sm oj-bg-neutral-170 oj-color-invert">
+    <div class="oj-flex">
+      <h6 class="oj-header oj-flex-item oj-sm-12 oj-md-12"><oj-bind-text
+                                                               value="[[ 'Contract: '+($variables.selectedContractNumber?$variables.selectedContractNumber:'')+' '+($variables.selectedContractName?' : '+ $variables.selectedContractName:'') ]]"></oj-bind-text></h6>
+    </div>
+    <div class="oj-flex">
+      <div class="oj-flex-item oj-sm-12 oj-md-12">
+        <oj-form-layout columns="3" max-columns="3">
+           <oj-label for="input1">Project Number</oj-label>
+        <oj-input-text id="input1" readonly="true"
+          value="{{ $variables.selectedProjectNumber?$variables.selectedProjectNumber:'' }}"></oj-input-text>
+        <oj-label for="input2">Customer</oj-label>
+        <oj-input-text id="input2" readonly="true" value="{{ $variables.selectedCustomer }}"></oj-input-text>
+        <oj-label for="input3">Customer Contact</oj-label>
+        <oj-input-text id="input3" readonly="true" value="{{ $variables.selectedCustomerContact }}"></oj-input-text>
+        <oj-label for="input4">Billing Frequency</oj-label>
+        <oj-input-text id="input4" readonly="true" value="{{ $variables.selectedBillingFreq }}"></oj-input-text>
+        <oj-label for="input5">Billing Portal</oj-label>
+        <oj-input-text id="input5" readonly="true" value="{{ $variables.selectedBillingPortal }}"></oj-input-text>
+        <oj-label for="input9">Total Budgeted Costs</oj-label>
+        <oj-input-number readonly="true" converter='{"options":{"style":"currency","currency":"USD"},"type":"number"}'
+          style="text-align:right;" value="{{ $variables.selectedBudgetedcosts }}"></oj-input-number>
+        <oj-label for="input6">Total Cost to Date (A)</oj-label>
+        <oj-input-number readonly="true" value="{{ $variables.selectedCosts }}"
+          converter='{"options":{"style":"currency","currency":"USD"},"type":"number"}' style="text-align:right;"></oj-input-number>
+        <oj-label for="input7">Committed Costs (B)</oj-label>
+        <oj-input-number readonly="true" converter='{"options":{"style":"currency","currency":"USD"},"type":"number"}'
+          value="{{ $variables.selectedCommittedCosts }}" style="text-align:right;"></oj-input-number>
+        <oj-label for="input8">Totals (A + B)</oj-label>
+        <oj-input-number
+          value="{{ $variables.selectedCommittedCosts?$variables.selectedCommittedCosts:'' + $variables.selectedCosts?$variables.selectedCosts:'' }}"
+          readonly="true" converter='{"options":{"style":"currency","currency":"USD"},"type":"number"}'
+          style="text-align:right;"></oj-input-number>
+        
+
+        </oj-form-layout>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="oj-flex">
+  <oj-toolbar chroming="solid" class="oj-flex-item oj-sm-12 oj-md-11"></oj-toolbar>
+</div>
+<div class="oj-flex">
+         <oj-table class="oj-flex-item oj-sm-12 oj-md-12"
+           columns='[  {    "headerText": "Contract Number",    "field": "contractNumber",    "footerTemplate": "contractNumberFooter",    "sortable": false  },  {    "headerText": "Line Number - Description",    "field": "contractItem",    "template": "Contract Line Number","sortable":false  },  {    "headerText": "Revised Contract Amount",    "field": "revisedContractAmount",    "template": "Revised Contract Amount",    "footerTemplate": "revisedContractAmountFooter"  },  {    "headerText": "Previously Billed Amount",    "field": "previouslyBilledAmount",    "style": "text-align:right",    "template": "formatNumber",    "footerTemplate": "previouslyBilledAmountFooter"  },  {    "headerText": "Amount To Bill This Period",    "template": "Amount To Bill This Period",    "footerTemplate": "amountToBillFooter"  },  {    "headerText": "Stored Materials",    "template": "Materials Stored",    "footerTemplate": "storedMaterialsFooter"  },  {    "headerText": "Total Billed",    "field": "",    "style": "text-align:right",    "template": "Total Billed",    "footerTemplate": "totalBilledFooter"  },  {    "headerText": "Percent Billed",    "template": "Percent Billed"  },  {    "headerText": "Retainage Held This Period",    "template": "Retainage Held This Period"  },  {    "headerText": "Retention (%) ",    "template": "Retention Percentage"  },  {    "headerText": "Retainage Billed This Period",    "template": "Retainage Billed This Period"  },  {    "headerText": "Current Retainage Balance",    "template": "Retainage Balance",    "footerTemplate": "currentRetainageFooter"  },  {    "headerText": "Total Retainage Balance",    "template": "Total Retainage Balance"  }]'
+           id="RetCon" data="[[ $variables.contractSearchscreenRecords || [] ]]" vertical-grid-visible="enabled"
+           selection-mode.row="single" display="grid"
+           on-first-selected-row-changed="[[$listeners.retConFirstSelectedRow]]" selection-mode.column="none"
+           style=" padding-bottom: 120px;" scroll-policy="loadAll"
+           scroll-policy-options.fetch-size="100" scroll-policy-options.max-count="1000"
+           columns-default.resizable="enabled" columns-default.sortable="disabled">
+          <template slot="formatNumber" data-oj-as="cell">
+            <oj-input-number
+              value='[[ typeof $variables.contractSearchscreenRecords.data[$current.index].previouslyBilledAmount=== "number" ? $variables.contractSearchscreenRecords.data[$current.index].previouslyBilledAmount: 0]]'
+              readonly="true" style="text-align: right;"
+              converter='{"options":{"style":"currency","currency":"USD"},"type":"number"}' id="preBilledAmount"></oj-input-number>
+          </template>
+          <template slot="formatPercent" data-oj-as="cell">
+            <oj-bind-text></oj-bind-text>
+          </template>
+
+
+               <template slot="action">
+          <span style="cursor:pointer;font-size:18px" on-click="[[$listeners.iconClick]]"
+            class="oj-ux-ico-accounts-receivable"></span>
+        </template>
+    <template slot="Amount To Bill This Period">
+            <oj-input-number style="text-align: right;"
+              converter='{"options":{"style":"currency","currency":"USD","currencyDisplay":"symbol"},"type":"number"}'
+              placeholder="Enter Amount" on-value-changed="[[$listeners.inputNumberValue2]]" virtual-keyboard="number"
+              id="amountToBill"
+              value='{{ typeof $variables.contractSearchscreenRecords.data[$current.index].amountToBillThisPeriod === "number" ? $variables.contractSearchscreenRecords.data[$current.index].amountToBillThisPeriod : 0 }}'></oj-input-number>
+    </template>
+    <template slot="Revised Contract Amount">
+            <oj-input-number value='[[typeof $current.data === "number" ? $current.data : null]]' readonly="true"
+              style="text-align: right;" converter='{"options":{"style":"currency","currency":"USD"},"type":"number"}'
+              id="reContractAmount"></oj-input-number>
+    </template>
+    <template slot="Materials Stored">
+            <oj-input-number placeholder="Enter Amount"
+              converter='{"options":{"style":"currency","currency":"USD"},"type":"number"}'
+              on-value-changed="[[$listeners.inputNumberValue3]]" style="text-align: right;" id="stMaterials"></oj-input-number>
+    </template>
+    <template slot="Retainage Held This Period">
+            <oj-input-number readonly="true"
+              value="{{ ((($variables.values[$current.index]?$variables.values[$current.index]:0)*($variables.contractSearchscreenRecords.data[$current.index].retentionPercentage?$variables.contractSearchscreenRecords.data[$current.index].retentionPercentage:0))/100)+((($variables.storedMaterials[$current.index]?$variables.storedMaterials[$current.index]:0)*($variables.contractSearchscreenRecords.data[$current.index].retentionPercentage?$variables.contractSearchscreenRecords.data[$current.index].retentionPercentage:0))/100) }}"
+              converter='{"options":{"style":"currency","currency":"USD","currencyFormat":"standard"},"type":"number"}'
+              style="text-align: right;" id="retainageHeldPeriod"></oj-input-number>
+    </template>
+    <template slot="Percent Billed">
+            <oj-input-number readonly="true"
+              value="{{ ((($variables.values[$current.index]?$variables.values[$current.index]:0)+($variables.storedMaterials[$current.index]?$variables.storedMaterials[$current.index]:0)+($variables.contractSearchscreenRecords.data[$current.index].totalBilled?$variables.contractSearchscreenRecords.data[$current.index].totalBilled:0))/($current.row.revisedContractAmount?$current.row.revisedContractAmount:1)) }}"
+              converter='{"options":{"style":"percent","minimumFractionDigits":2,"maximumFractionDigits":2},"type":"number"}'
+              style="text-align: right;" id="percentBilled"></oj-input-number>
+    </template>
+    <template slot="Retention Percentage">
+            <oj-input-number
+              value="{{ $variables.contractSearchscreenRecords.data[$current.index].retentionPercentage/100 }}"
+              converter='{"options":{"style":"percent"},"type":"number"}' readonly="true" style="text-align: right;"
+              id="retPercent"></oj-input-number>
+    </template>
+    <template slot="Retainage Billed This Period">
+            <oj-input-number placeholder="Bill back Amount"
+              converter='{"options":{"style":"currency","currency":"USD"},"type":"number"}' style="text-align: right;"
+              on-value-changed="[[$listeners.inputNumberValue4]]" id="billbackAmount"></oj-input-number>
+    </template>
+    <template slot="Retainage Balance">
+            <oj-input-number readonly="true"
+              converter='{"options":{"style":"currency","currency":"USD"},"type":"number"}' style="text-align: right;"
+              value='{{     typeof $variables.contractSearchscreenRecords.data[$current.index].retainageAmount === "number"     ? $variables.contractSearchscreenRecords.data[$current.index].retainageAmount     : 0}}'
+              id="currentRetBalance"></oj-input-number>
+    </template>
+    <template slot="Total Billed">
+            <oj-input-number
+              value="{{ ($variables.contractSearchscreenRecords.data[$current.index].previouslyBilledAmount?$variables.contractSearchscreenRecords.data[$current.index].previouslyBilledAmount:0) + ($variables.contractSearchscreenRecords.data[$current.index].amountToBillThisPeriod?$variables.contractSearchscreenRecords.data[$current.index].amountToBillThisPeriod:0)+($variables.values[$current.index]?$variables.values[$current.index]:0) +($variables.storedMaterials[$current.index]?$variables.storedMaterials[$current.index]:0) }}"
+              converter='{"options":{"style":"currency","currency":"USD"},"type":"number"}' style="text-align: right;"
+              readonly="true" id="totalBilled"></oj-input-number>
+    </template>
+    <template slot="Total Retainage Balance">
+            <oj-input-number
+              value='{{    (typeof $variables.contractSearchscreenRecords.data[$current.index].retainageAmount === "number"         ? $variables.contractSearchscreenRecords.data[$current.index].retainageAmount         : 0) +     ((($variables.values[$current.index] ? $variables.values[$current.index] : 0) *     (typeof $variables.contractSearchscreenRecords.data[$current.index].retentionPercentage === "number"         ? $variables.contractSearchscreenRecords.data[$current.index].retentionPercentage         : 0)) / 100) +     (($variables.storedMaterials[$current.index] ? $variables.storedMaterials[$current.index] : 0) *     (typeof $variables.contractSearchscreenRecords.data[$current.index].retentionPercentage === "number"         ? $variables.contractSearchscreenRecords.data[$current.index].retentionPercentage         : 0) / 100)}}'
+              converter='{"options":{"style":"currency","currency":"USD"},"type":"number"}' style="text-align:right;"
+              readonly="true" id="totalRetBalance"></oj-input-number>
+    </template>
+    <template slot="Description">
+            <oj-input-text value='{{$current.data || ""}}' readonly="true"></oj-input-text>
+    </template>
+    <template slot="Contract Line Number">
+            <oj-input-text value="[[ $current.row.contractItem + ' - ' + $current.row.description ]]" readonly="true"></oj-input-text>
+    </template>
+
+
+
+    </oj-table>
+</div>
+
+</div>
+<oj-drawer-popup edge="end" opened="{{ $variables.openNavDrawer }}"
+  class="oj-bg-neutral-170 oj-color-invert oj-md-width-1/5">
+
+   
+  <!-- Contracts Section -->
+   <div class="oj-flex-item oj-sm-flex-initial oj-md-margin-10x-top"></div>
+    <ul class="oj-md-margin-10x-top" style = "list-style-type: none;"> 
+      <div>
+        <oj-toolbar chroming="solid"></oj-toolbar>
+      </div>
+      <li>
+        <span style="font-weight: bold;">Setup</span>
+
+          <div style="cursor: pointer;  display: flex; align-items: center;" on-click="[[$listeners.liClick2]]">
+             <span class="oj-ux-ico-settings-box" slot="startIcon" style="margin-right: 10px;"></span>
+            <span>Retention Setups</span>
+            </div>
+      </li>
+      <div>
+        <oj-toolbar chroming="solid"></oj-toolbar>
+      </div>
+      <li>
+        <span style="font-weight: bold;">Analytics</span>
+  
+          <div style="cursor: pointer; display: flex; align-items: center;" on-click="[[$listeners.liClick3]]"> 
+    <span class="oj-ux-ico-desktop-analytics" slot="startIcon" style="margin-right: 10px;"></span>
+    <span>Dashboard</span>
+</div>
+
+      </li>
+    </ul>
+
+
+</oj-drawer-popup>
+
+<oj-dialog dialog-title="Dialog" id="oj-dialog--1022294219-1" style="width: 65%;" drag-affordance="none">
+  <div slot="body">
+    <div class="oj-flex">
+      <div class="oj-flex-item oj-sm-12 oj-md-4"></div>
+      <h5 class="oj-header oj-flex-item oj-sm-12 oj-md-6">Release Retention</h5>
+    </div>
+    <oj-toolbar chroming="solid"></oj-toolbar>
+    <oj-form-layout class="oj-formlayout-full-width" max-columns="3" columns="3">
+      <oj-input-text label-hint="Contract Number" readonly="true" value="{{ $variables.dialogContractNumber }}"></oj-input-text>
+      <oj-input-text label-hint="Contract Line Number" readonly="true"
+        value="{{ $variables.dialogContractLineNumber }}"></oj-input-text>
+      <oj-input-text label-hint="Available Retained Amount" readonly="true"
+        value="{{ $variables.availableRetainageAmount }}"></oj-input-text>
+      <oj-input-text label-hint="Source Name" readonly="true" value="{{ $variables.SourceName }}"></oj-input-text>
+      <oj-input-text label-hint="Source Reference" on-value-changed="[[$listeners.inputTextValue2]]" required="true"></oj-input-text>
+      <oj-input-number label-hint="Retention Release Amount" placeholder="Must be less than Available Retained Amount"
+        required="true" converter='{"options":{"style":"currency","currency":"USD"},"type":"number"}'
+        on-value-changed="[[$listeners.inputNumberValue]]"></oj-input-number>
+    </oj-form-layout>
+  </div>
+  <div slot="footer">
+    <oj-button label="Submit" on-oj-action="[[$listeners.buttonAction2]]" chroming="callToAction" class="oj-button-lg">
+  <span class="oj-ux-ico-arrow-inline-right" slot="startIcon"></span>
+    </oj-button>
+    <oj-button label="Generate Invoice" disabled="[[ $variables.generateInvoice ]]" chroming="callToAction"
+      on-oj-action="[[$listeners.buttonAction4]]" class="oj-button-lg">
+        <span class="oj-ux-ico-invoice-create" slot="startIcon"></span>
+    </oj-button>
+    <oj-button label="Close" on-oj-action="[[$listeners.buttonAction3]]" chroming="callToAction" class="oj-button-lg">
+        <span class="oj-ux-ico-close" slot="startIcon"></span>
+    </oj-button>
+  </div>
+</oj-dialog>
+
+<oj-dialog dialog-title="Dialog" id="custom-drawer" class="drawer-dialog"
+  style="position: fixed; top: 20%; height: 60%; right: 0; width: 250px; overflow: hidden; box-shadow: -3px 0 5px rgba(0,0,0,0.2); border-radius: 0 8px 8px 0;"
+  modality="modeless">
+
+  <div slot="body" style="padding: 15px;">
+    <!-- Content goes here -->
+    <div class="oj-flex">
+        <h3>Drawer Content</h3>
+        <p>Your drawer content goes here...</p>
+    </div>
+  </div>
+
+  <div slot="footer" style="padding: 10px;">
+    <oj-button on-oj-action="[[$listeners.buttonAction7]]">Close</oj-button>
+  </div>
+</oj-dialog>
+  <oj-dialog title="Processing..." id="loadDialog" class="" style="width: 300px; height: 150px;">
+  <h6 class="oj-header">Processing..</h6>
+  
+  <div slot="body">
+    
+    <div class="oj-flex-item oj-sm-margin-5x-top">
+       
+      
+      <oj-progress-bar value="-1" class="oj-sm-margin-3x-top"></oj-progress-bar>
+    
+    </div>
+  
+  </div>
+
+  </oj-dialog>
+  <oj-toolbar chroming="solid"></oj-toolbar>
+<div class="oj-panel fixed-footer oj-panel-shadow-sm oj-panel-border-radius-0"
+  style=" position: fixed;    bottom: 0;    left: 0;    width: 100%;    background-color: white;    padding: 10px;    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);    z-index: 1000;">
+  <div class="oj-flex">
+    <h6 class="oj-header oj-flex-item oj-sm-12 oj-md-2"><oj-bind-text
+                                                            value="[[ 'Totals '+ ($variables.selectedContractNumber?' : ' +$variables.selectedContractNumber:'') ]]"></oj-bind-text></h6>
+    <div class="oj-flex-item oj-sm-12 oj-md-10">
+      <oj-form-layout columns="4" max-columns="4">
+        <oj-label for="trca">Total Revised Contract Amount</oj-label>
+          <oj-input-number id="trca" readonly="true"
+            value="{{ $variables.totalRevisedContractAmount?$variables.totalRevisedContractAmount:0 }}"
+            converter='{"options":{"style":"currency","currency":"USD"},"type":"number"}' style="text-align:right;"></oj-input-number>
+        <oj-label for="tpba">Total Previously Billed Amount</oj-label>
+          <oj-input-number id="tpba" readonly="true"
+            value="{{ $variables.totalPreviousBilledAmount?$variables.totalPreviousBilledAmount:0 }}"
+            converter='{"options":{"style":"currency","currency":"USD"},"type":"number"}' style="text-align:right;"></oj-input-number>
+
+        <oj-label for="taba">Total Amount to bill this period</oj-label>
+          <oj-input-number id="taba" readonly="true"
+            value="{{ $variables.totalAmountToBill?$variables.totalAmountToBill:0 }}"
+            converter='{"options":{"style":"currency","currency":"USD"},"type":"number"}' style="text-align:right;"></oj-input-number>  
+
+          <oj-label for="trba">Total Retainage Balance</oj-label>
+          <oj-input-number id="trba" readonly="true"
+            value="{{ $variables.totalRetainageAmount?$variables.totalRetainageAmount:0 }}"
+            converter='{"options":{"style":"currency","currency":"USD"},"type":"number"}' style="text-align:right;"></oj-input-number>  
+
+      </oj-form-layout>
+    </div>
+  </div>
+</div>
+
+ </oj-drawer-layout>

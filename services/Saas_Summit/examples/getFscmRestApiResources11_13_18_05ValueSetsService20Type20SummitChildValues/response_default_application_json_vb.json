@@ -1,0 +1,1061 @@
+{
+    "items": [
+        {
+            "ValueId": 59687,
+            "IndependentValue": null,
+            "IndependentValueNumber": null,
+            "IndependentValueDate": null,
+            "IndependentValueTimestamp": null,
+            "Value": "00",
+            "ValueNumber": null,
+            "ValueDate": null,
+            "ValueTimestamp": null,
+            "TranslatedValue": null,
+            "Description": "General",
+            "EnabledFlag": "Y",
+            "StartDateActive": null,
+            "EndDateActive": null,
+            "SortOrder": null,
+            "SummaryFlag": "N",
+            "DetailPostingAllowed": "Y",
+            "DetailBudgetingAllowed": "Y",
+            "AccountType": null,
+            "ControlAccount": null,
+            "ReconciliationFlag": null,
+            "FinancialCategory": null,
+            "ExternalDataSource": null,
+            "CreationDate": "2024-03-19T20:57:43.420+00:00",
+            "CreatedBy": "Jeffrey.haddock@apexit.com",
+            "LastUpdateDate": "2024-03-19T20:57:43.534+00:00",
+            "LastUpdatedBy": "Jeffrey.haddock@apexit.com",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59687",
+                    "name": "values",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59687",
+                    "name": "values",
+                    "kind": "item"
+                },
+                {
+                    "rel": "parent",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit",
+                    "name": "valueSets",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59687/child/valuesDFF",
+                    "name": "valuesDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "ValueId": 59691,
+            "IndependentValue": null,
+            "IndependentValueNumber": null,
+            "IndependentValueDate": null,
+            "IndependentValueTimestamp": null,
+            "Value": "10",
+            "ValueNumber": null,
+            "ValueDate": null,
+            "ValueTimestamp": null,
+            "TranslatedValue": null,
+            "Description": "Install - New >$50k",
+            "EnabledFlag": "Y",
+            "StartDateActive": null,
+            "EndDateActive": null,
+            "SortOrder": null,
+            "SummaryFlag": "N",
+            "DetailPostingAllowed": "Y",
+            "DetailBudgetingAllowed": "Y",
+            "AccountType": null,
+            "ControlAccount": null,
+            "ReconciliationFlag": null,
+            "FinancialCategory": null,
+            "ExternalDataSource": null,
+            "CreationDate": "2024-03-19T20:57:43.447+00:00",
+            "CreatedBy": "Jeffrey.haddock@apexit.com",
+            "LastUpdateDate": "2024-04-18T00:24:49.399+00:00",
+            "LastUpdatedBy": "Jeffrey.haddock@apexit.com",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59691",
+                    "name": "values",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59691",
+                    "name": "values",
+                    "kind": "item"
+                },
+                {
+                    "rel": "parent",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit",
+                    "name": "valueSets",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59691/child/valuesDFF",
+                    "name": "valuesDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "ValueId": 67036,
+            "IndependentValue": null,
+            "IndependentValueNumber": null,
+            "IndependentValueDate": null,
+            "IndependentValueTimestamp": null,
+            "Value": "11",
+            "ValueNumber": null,
+            "ValueDate": null,
+            "ValueTimestamp": null,
+            "TranslatedValue": null,
+            "Description": "Install - New <$50k",
+            "EnabledFlag": "Y",
+            "StartDateActive": null,
+            "EndDateActive": null,
+            "SortOrder": null,
+            "SummaryFlag": "N",
+            "DetailPostingAllowed": "Y",
+            "DetailBudgetingAllowed": "Y",
+            "AccountType": null,
+            "ControlAccount": null,
+            "ReconciliationFlag": null,
+            "FinancialCategory": null,
+            "ExternalDataSource": null,
+            "CreationDate": "2024-04-18T00:23:47.941+00:00",
+            "CreatedBy": "Jeffrey.haddock@apexit.com",
+            "LastUpdateDate": "2024-04-18T00:24:49.395+00:00",
+            "LastUpdatedBy": "Jeffrey.haddock@apexit.com",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/67036",
+                    "name": "values",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/67036",
+                    "name": "values",
+                    "kind": "item"
+                },
+                {
+                    "rel": "parent",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit",
+                    "name": "valueSets",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/67036/child/valuesDFF",
+                    "name": "valuesDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "ValueId": 59692,
+            "IndependentValue": null,
+            "IndependentValueNumber": null,
+            "IndependentValueDate": null,
+            "IndependentValueTimestamp": null,
+            "Value": "15",
+            "ValueNumber": null,
+            "ValueDate": null,
+            "ValueTimestamp": null,
+            "TranslatedValue": null,
+            "Description": "Retrofit >$50k",
+            "EnabledFlag": "Y",
+            "StartDateActive": null,
+            "EndDateActive": null,
+            "SortOrder": null,
+            "SummaryFlag": "N",
+            "DetailPostingAllowed": "Y",
+            "DetailBudgetingAllowed": "Y",
+            "AccountType": null,
+            "ControlAccount": null,
+            "ReconciliationFlag": null,
+            "FinancialCategory": null,
+            "ExternalDataSource": null,
+            "CreationDate": "2024-03-19T20:57:43.453+00:00",
+            "CreatedBy": "Jeffrey.haddock@apexit.com",
+            "LastUpdateDate": "2024-04-18T00:24:49.403+00:00",
+            "LastUpdatedBy": "Jeffrey.haddock@apexit.com",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59692",
+                    "name": "values",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59692",
+                    "name": "values",
+                    "kind": "item"
+                },
+                {
+                    "rel": "parent",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit",
+                    "name": "valueSets",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59692/child/valuesDFF",
+                    "name": "valuesDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "ValueId": 67037,
+            "IndependentValue": null,
+            "IndependentValueNumber": null,
+            "IndependentValueDate": null,
+            "IndependentValueTimestamp": null,
+            "Value": "16",
+            "ValueNumber": null,
+            "ValueDate": null,
+            "ValueTimestamp": null,
+            "TranslatedValue": null,
+            "Description": "Retrofit <$50k",
+            "EnabledFlag": "Y",
+            "StartDateActive": null,
+            "EndDateActive": null,
+            "SortOrder": null,
+            "SummaryFlag": "N",
+            "DetailPostingAllowed": "Y",
+            "DetailBudgetingAllowed": "Y",
+            "AccountType": null,
+            "ControlAccount": null,
+            "ReconciliationFlag": null,
+            "FinancialCategory": null,
+            "ExternalDataSource": null,
+            "CreationDate": "2024-04-18T00:24:28.998+00:00",
+            "CreatedBy": "Jeffrey.haddock@apexit.com",
+            "LastUpdateDate": "2024-04-18T00:24:49.406+00:00",
+            "LastUpdatedBy": "Jeffrey.haddock@apexit.com",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/67037",
+                    "name": "values",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/67037",
+                    "name": "values",
+                    "kind": "item"
+                },
+                {
+                    "rel": "parent",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit",
+                    "name": "valueSets",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/67037/child/valuesDFF",
+                    "name": "valuesDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "ValueId": 67038,
+            "IndependentValue": null,
+            "IndependentValueNumber": null,
+            "IndependentValueDate": null,
+            "IndependentValueTimestamp": null,
+            "Value": "19",
+            "ValueNumber": null,
+            "ValueDate": null,
+            "ValueTimestamp": null,
+            "TranslatedValue": null,
+            "Description": "Specialty",
+            "EnabledFlag": "Y",
+            "StartDateActive": null,
+            "EndDateActive": null,
+            "SortOrder": null,
+            "SummaryFlag": "N",
+            "DetailPostingAllowed": "Y",
+            "DetailBudgetingAllowed": "Y",
+            "AccountType": null,
+            "ControlAccount": null,
+            "ReconciliationFlag": null,
+            "FinancialCategory": null,
+            "ExternalDataSource": null,
+            "CreationDate": "2024-04-18T00:24:40.627+00:00",
+            "CreatedBy": "Jeffrey.haddock@apexit.com",
+            "LastUpdateDate": "2024-04-18T00:24:49.408+00:00",
+            "LastUpdatedBy": "Jeffrey.haddock@apexit.com",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/67038",
+                    "name": "values",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/67038",
+                    "name": "values",
+                    "kind": "item"
+                },
+                {
+                    "rel": "parent",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit",
+                    "name": "valueSets",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/67038/child/valuesDFF",
+                    "name": "valuesDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "ValueId": 59694,
+            "IndependentValue": null,
+            "IndependentValueNumber": null,
+            "IndependentValueDate": null,
+            "IndependentValueTimestamp": null,
+            "Value": "20",
+            "ValueNumber": null,
+            "ValueDate": null,
+            "ValueTimestamp": null,
+            "TranslatedValue": null,
+            "Description": "Inspection",
+            "EnabledFlag": "Y",
+            "StartDateActive": null,
+            "EndDateActive": null,
+            "SortOrder": null,
+            "SummaryFlag": "N",
+            "DetailPostingAllowed": "Y",
+            "DetailBudgetingAllowed": "Y",
+            "AccountType": null,
+            "ControlAccount": null,
+            "ReconciliationFlag": null,
+            "FinancialCategory": null,
+            "ExternalDataSource": null,
+            "CreationDate": "2024-03-19T20:57:43.467+00:00",
+            "CreatedBy": "Jeffrey.haddock@apexit.com",
+            "LastUpdateDate": "2024-03-19T20:57:43.548+00:00",
+            "LastUpdatedBy": "Jeffrey.haddock@apexit.com",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59694",
+                    "name": "values",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59694",
+                    "name": "values",
+                    "kind": "item"
+                },
+                {
+                    "rel": "parent",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit",
+                    "name": "valueSets",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59694/child/valuesDFF",
+                    "name": "valuesDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "ValueId": 59695,
+            "IndependentValue": null,
+            "IndependentValueNumber": null,
+            "IndependentValueDate": null,
+            "IndependentValueTimestamp": null,
+            "Value": "25",
+            "ValueNumber": null,
+            "ValueDate": null,
+            "ValueTimestamp": null,
+            "TranslatedValue": null,
+            "Description": "Deficiencies",
+            "EnabledFlag": "Y",
+            "StartDateActive": null,
+            "EndDateActive": null,
+            "SortOrder": null,
+            "SummaryFlag": "N",
+            "DetailPostingAllowed": "Y",
+            "DetailBudgetingAllowed": "Y",
+            "AccountType": null,
+            "ControlAccount": null,
+            "ReconciliationFlag": null,
+            "FinancialCategory": null,
+            "ExternalDataSource": null,
+            "CreationDate": "2024-03-19T20:57:43.476+00:00",
+            "CreatedBy": "Jeffrey.haddock@apexit.com",
+            "LastUpdateDate": "2024-03-19T20:57:43.550+00:00",
+            "LastUpdatedBy": "Jeffrey.haddock@apexit.com",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59695",
+                    "name": "values",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59695",
+                    "name": "values",
+                    "kind": "item"
+                },
+                {
+                    "rel": "parent",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit",
+                    "name": "valueSets",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59695/child/valuesDFF",
+                    "name": "valuesDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "ValueId": 59696,
+            "IndependentValue": null,
+            "IndependentValueNumber": null,
+            "IndependentValueDate": null,
+            "IndependentValueTimestamp": null,
+            "Value": "30",
+            "ValueNumber": null,
+            "ValueDate": null,
+            "ValueTimestamp": null,
+            "TranslatedValue": null,
+            "Description": "Service",
+            "EnabledFlag": "Y",
+            "StartDateActive": null,
+            "EndDateActive": null,
+            "SortOrder": null,
+            "SummaryFlag": "N",
+            "DetailPostingAllowed": "Y",
+            "DetailBudgetingAllowed": "Y",
+            "AccountType": null,
+            "ControlAccount": null,
+            "ReconciliationFlag": null,
+            "FinancialCategory": null,
+            "ExternalDataSource": null,
+            "CreationDate": "2024-03-19T20:57:43.485+00:00",
+            "CreatedBy": "Jeffrey.haddock@apexit.com",
+            "LastUpdateDate": "2024-03-19T20:57:43.552+00:00",
+            "LastUpdatedBy": "Jeffrey.haddock@apexit.com",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59696",
+                    "name": "values",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59696",
+                    "name": "values",
+                    "kind": "item"
+                },
+                {
+                    "rel": "parent",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit",
+                    "name": "valueSets",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59696/child/valuesDFF",
+                    "name": "valuesDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "ValueId": 59697,
+            "IndependentValue": null,
+            "IndependentValueNumber": null,
+            "IndependentValueDate": null,
+            "IndependentValueTimestamp": null,
+            "Value": "40",
+            "ValueNumber": null,
+            "ValueDate": null,
+            "ValueTimestamp": null,
+            "TranslatedValue": null,
+            "Description": "Monitoring",
+            "EnabledFlag": "Y",
+            "StartDateActive": null,
+            "EndDateActive": null,
+            "SortOrder": null,
+            "SummaryFlag": "N",
+            "DetailPostingAllowed": "Y",
+            "DetailBudgetingAllowed": "Y",
+            "AccountType": null,
+            "ControlAccount": null,
+            "ReconciliationFlag": null,
+            "FinancialCategory": null,
+            "ExternalDataSource": null,
+            "CreationDate": "2024-03-19T20:57:43.494+00:00",
+            "CreatedBy": "Jeffrey.haddock@apexit.com",
+            "LastUpdateDate": "2024-03-19T20:57:43.553+00:00",
+            "LastUpdatedBy": "Jeffrey.haddock@apexit.com",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59697",
+                    "name": "values",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59697",
+                    "name": "values",
+                    "kind": "item"
+                },
+                {
+                    "rel": "parent",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit",
+                    "name": "valueSets",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59697/child/valuesDFF",
+                    "name": "valuesDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "ValueId": 59698,
+            "IndependentValue": null,
+            "IndependentValueNumber": null,
+            "IndependentValueDate": null,
+            "IndependentValueTimestamp": null,
+            "Value": "50",
+            "ValueNumber": null,
+            "ValueDate": null,
+            "ValueTimestamp": null,
+            "TranslatedValue": null,
+            "Description": "Shop",
+            "EnabledFlag": "Y",
+            "StartDateActive": null,
+            "EndDateActive": null,
+            "SortOrder": null,
+            "SummaryFlag": "N",
+            "DetailPostingAllowed": "Y",
+            "DetailBudgetingAllowed": "Y",
+            "AccountType": null,
+            "ControlAccount": null,
+            "ReconciliationFlag": null,
+            "FinancialCategory": null,
+            "ExternalDataSource": null,
+            "CreationDate": "2024-03-19T20:57:43.501+00:00",
+            "CreatedBy": "Jeffrey.haddock@apexit.com",
+            "LastUpdateDate": "2024-03-19T20:57:43.555+00:00",
+            "LastUpdatedBy": "Jeffrey.haddock@apexit.com",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59698",
+                    "name": "values",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59698",
+                    "name": "values",
+                    "kind": "item"
+                },
+                {
+                    "rel": "parent",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit",
+                    "name": "valueSets",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59698/child/valuesDFF",
+                    "name": "valuesDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "ValueId": 59699,
+            "IndependentValue": null,
+            "IndependentValueNumber": null,
+            "IndependentValueDate": null,
+            "IndependentValueTimestamp": null,
+            "Value": "55",
+            "ValueNumber": null,
+            "ValueDate": null,
+            "ValueTimestamp": null,
+            "TranslatedValue": null,
+            "Description": "Parts Sales",
+            "EnabledFlag": "Y",
+            "StartDateActive": null,
+            "EndDateActive": null,
+            "SortOrder": null,
+            "SummaryFlag": "N",
+            "DetailPostingAllowed": "Y",
+            "DetailBudgetingAllowed": "Y",
+            "AccountType": null,
+            "ControlAccount": null,
+            "ReconciliationFlag": null,
+            "FinancialCategory": null,
+            "ExternalDataSource": null,
+            "CreationDate": "2024-03-19T20:57:43.510+00:00",
+            "CreatedBy": "Jeffrey.haddock@apexit.com",
+            "LastUpdateDate": "2024-03-19T20:57:43.557+00:00",
+            "LastUpdatedBy": "Jeffrey.haddock@apexit.com",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59699",
+                    "name": "values",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59699",
+                    "name": "values",
+                    "kind": "item"
+                },
+                {
+                    "rel": "parent",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit",
+                    "name": "valueSets",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59699/child/valuesDFF",
+                    "name": "valuesDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "ValueId": 59688,
+            "IndependentValue": null,
+            "IndependentValueNumber": null,
+            "IndependentValueDate": null,
+            "IndependentValueTimestamp": null,
+            "Value": "60",
+            "ValueNumber": null,
+            "ValueDate": null,
+            "ValueTimestamp": null,
+            "TranslatedValue": null,
+            "Description": "Consulting",
+            "EnabledFlag": "Y",
+            "StartDateActive": null,
+            "EndDateActive": null,
+            "SortOrder": null,
+            "SummaryFlag": "N",
+            "DetailPostingAllowed": "Y",
+            "DetailBudgetingAllowed": "Y",
+            "AccountType": null,
+            "ControlAccount": null,
+            "ReconciliationFlag": null,
+            "FinancialCategory": null,
+            "ExternalDataSource": null,
+            "CreationDate": "2024-03-19T20:57:43.427+00:00",
+            "CreatedBy": "Jeffrey.haddock@apexit.com",
+            "LastUpdateDate": "2024-03-19T20:57:43.536+00:00",
+            "LastUpdatedBy": "Jeffrey.haddock@apexit.com",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59688",
+                    "name": "values",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59688",
+                    "name": "values",
+                    "kind": "item"
+                },
+                {
+                    "rel": "parent",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit",
+                    "name": "valueSets",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59688/child/valuesDFF",
+                    "name": "valuesDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "ValueId": 59689,
+            "IndependentValue": null,
+            "IndependentValueNumber": null,
+            "IndependentValueDate": null,
+            "IndependentValueTimestamp": null,
+            "Value": "70",
+            "ValueNumber": null,
+            "ValueDate": null,
+            "ValueTimestamp": null,
+            "TranslatedValue": null,
+            "Description": "Distribution",
+            "EnabledFlag": "Y",
+            "StartDateActive": null,
+            "EndDateActive": null,
+            "SortOrder": null,
+            "SummaryFlag": "N",
+            "DetailPostingAllowed": "Y",
+            "DetailBudgetingAllowed": "Y",
+            "AccountType": null,
+            "ControlAccount": null,
+            "ReconciliationFlag": null,
+            "FinancialCategory": null,
+            "ExternalDataSource": null,
+            "CreationDate": "2024-03-19T20:57:43.434+00:00",
+            "CreatedBy": "Jeffrey.haddock@apexit.com",
+            "LastUpdateDate": "2024-03-19T20:57:43.538+00:00",
+            "LastUpdatedBy": "Jeffrey.haddock@apexit.com",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59689",
+                    "name": "values",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59689",
+                    "name": "values",
+                    "kind": "item"
+                },
+                {
+                    "rel": "parent",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit",
+                    "name": "valueSets",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59689/child/valuesDFF",
+                    "name": "valuesDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "ValueId": 67041,
+            "IndependentValue": null,
+            "IndependentValueNumber": null,
+            "IndependentValueDate": null,
+            "IndependentValueTimestamp": null,
+            "Value": "IN",
+            "ValueNumber": null,
+            "ValueDate": null,
+            "ValueTimestamp": null,
+            "TranslatedValue": null,
+            "Description": "Install - New",
+            "EnabledFlag": "Y",
+            "StartDateActive": null,
+            "EndDateActive": null,
+            "SortOrder": null,
+            "SummaryFlag": "Y",
+            "DetailPostingAllowed": "N",
+            "DetailBudgetingAllowed": "N",
+            "AccountType": null,
+            "ControlAccount": null,
+            "ReconciliationFlag": null,
+            "FinancialCategory": null,
+            "ExternalDataSource": null,
+            "CreationDate": "2024-04-18T02:01:34+00:00",
+            "CreatedBy": "Jeffrey.haddock@apexit.com",
+            "LastUpdateDate": "2024-04-18T02:02:06.820+00:00",
+            "LastUpdatedBy": "Jeffrey.haddock@apexit.com",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/67041",
+                    "name": "values",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/67041",
+                    "name": "values",
+                    "kind": "item"
+                },
+                {
+                    "rel": "parent",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit",
+                    "name": "valueSets",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/67041/child/valuesDFF",
+                    "name": "valuesDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "ValueId": 59690,
+            "IndependentValue": null,
+            "IndependentValueNumber": null,
+            "IndependentValueDate": null,
+            "IndependentValueTimestamp": null,
+            "Value": "IR",
+            "ValueNumber": null,
+            "ValueDate": null,
+            "ValueTimestamp": null,
+            "TranslatedValue": null,
+            "Description": "Install and Retrofit",
+            "EnabledFlag": "Y",
+            "StartDateActive": null,
+            "EndDateActive": null,
+            "SortOrder": null,
+            "SummaryFlag": "Y",
+            "DetailPostingAllowed": "N",
+            "DetailBudgetingAllowed": "N",
+            "AccountType": null,
+            "ControlAccount": null,
+            "ReconciliationFlag": null,
+            "FinancialCategory": null,
+            "ExternalDataSource": null,
+            "CreationDate": "2024-03-19T20:57:43.440+00:00",
+            "CreatedBy": "Jeffrey.haddock@apexit.com",
+            "LastUpdateDate": "2024-03-19T20:57:43.540+00:00",
+            "LastUpdatedBy": "Jeffrey.haddock@apexit.com",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59690",
+                    "name": "values",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59690",
+                    "name": "values",
+                    "kind": "item"
+                },
+                {
+                    "rel": "parent",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit",
+                    "name": "valueSets",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59690/child/valuesDFF",
+                    "name": "valuesDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "ValueId": 59693,
+            "IndependentValue": null,
+            "IndependentValueNumber": null,
+            "IndependentValueDate": null,
+            "IndependentValueTimestamp": null,
+            "Value": "RS",
+            "ValueNumber": null,
+            "ValueDate": null,
+            "ValueTimestamp": null,
+            "TranslatedValue": null,
+            "Description": "Recurring Services",
+            "EnabledFlag": "Y",
+            "StartDateActive": null,
+            "EndDateActive": null,
+            "SortOrder": null,
+            "SummaryFlag": "Y",
+            "DetailPostingAllowed": "N",
+            "DetailBudgetingAllowed": "N",
+            "AccountType": null,
+            "ControlAccount": null,
+            "ReconciliationFlag": null,
+            "FinancialCategory": null,
+            "ExternalDataSource": null,
+            "CreationDate": "2024-03-19T20:57:43.460+00:00",
+            "CreatedBy": "Jeffrey.haddock@apexit.com",
+            "LastUpdateDate": "2024-03-19T20:57:43.546+00:00",
+            "LastUpdatedBy": "Jeffrey.haddock@apexit.com",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59693",
+                    "name": "values",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59693",
+                    "name": "values",
+                    "kind": "item"
+                },
+                {
+                    "rel": "parent",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit",
+                    "name": "valueSets",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59693/child/valuesDFF",
+                    "name": "valuesDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "ValueId": 67042,
+            "IndependentValue": null,
+            "IndependentValueNumber": null,
+            "IndependentValueDate": null,
+            "IndependentValueTimestamp": null,
+            "Value": "RT",
+            "ValueNumber": null,
+            "ValueDate": null,
+            "ValueTimestamp": null,
+            "TranslatedValue": null,
+            "Description": "Retrofit",
+            "EnabledFlag": "Y",
+            "StartDateActive": null,
+            "EndDateActive": null,
+            "SortOrder": null,
+            "SummaryFlag": "Y",
+            "DetailPostingAllowed": "N",
+            "DetailBudgetingAllowed": "N",
+            "AccountType": null,
+            "ControlAccount": null,
+            "ReconciliationFlag": null,
+            "FinancialCategory": null,
+            "ExternalDataSource": null,
+            "CreationDate": "2024-04-18T02:02:09.600+00:00",
+            "CreatedBy": "Jeffrey.haddock@apexit.com",
+            "LastUpdateDate": "2024-04-18T02:02:26.237+00:00",
+            "LastUpdatedBy": "Jeffrey.haddock@apexit.com",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/67042",
+                    "name": "values",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/67042",
+                    "name": "values",
+                    "kind": "item"
+                },
+                {
+                    "rel": "parent",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit",
+                    "name": "valueSets",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/67042/child/valuesDFF",
+                    "name": "valuesDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "ValueId": 59686,
+            "IndependentValue": null,
+            "IndependentValueNumber": null,
+            "IndependentValueDate": null,
+            "IndependentValueTimestamp": null,
+            "Value": "TS",
+            "ValueNumber": null,
+            "ValueDate": null,
+            "ValueTimestamp": null,
+            "TranslatedValue": null,
+            "Description": "ALL Service Types",
+            "EnabledFlag": "Y",
+            "StartDateActive": null,
+            "EndDateActive": null,
+            "SortOrder": null,
+            "SummaryFlag": "Y",
+            "DetailPostingAllowed": "N",
+            "DetailBudgetingAllowed": "N",
+            "AccountType": null,
+            "ControlAccount": null,
+            "ReconciliationFlag": null,
+            "FinancialCategory": null,
+            "ExternalDataSource": null,
+            "CreationDate": "2024-03-19T20:57:43.412+00:00",
+            "CreatedBy": "Jeffrey.haddock@apexit.com",
+            "LastUpdateDate": "2024-03-19T20:57:43.532+00:00",
+            "LastUpdatedBy": "Jeffrey.haddock@apexit.com",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59686",
+                    "name": "values",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59686",
+                    "name": "values",
+                    "kind": "item"
+                },
+                {
+                    "rel": "parent",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit",
+                    "name": "valueSets",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values/59686/child/valuesDFF",
+                    "name": "valuesDFF",
+                    "kind": "collection"
+                }
+            ]
+        }
+    ],
+    "count": 19,
+    "hasMore": false,
+    "limit": 500,
+    "offset": 0,
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://fa-exxm-dev3-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values",
+            "name": "values",
+            "kind": "collection"
+        }
+    ]
+}

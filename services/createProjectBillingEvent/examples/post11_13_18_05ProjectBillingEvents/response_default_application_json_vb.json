@@ -1,0 +1,174 @@
+{
+    "EventId": 300001506488995,
+    "SourceName": "REST10383",
+    "SourceReference": "10383",
+    "ContractTypeName": "OAK_Contract",
+    "ContractNumber": "1050",
+    "ContractLineNumber": "1.1",
+    "EventNumber": 5,
+    "OrganizationName": "OAK_FIN",
+    "EventTypeName": "Percent Complete Billing",
+    "EventDescription": "Percent Complete Billing",
+    "RevenueHold": "N",
+    "BillHold": "N",
+    "ProjectNumber": null,
+    "CompletionDate": null,
+    "TaskNumber": null,
+    "BillTrnsAmount": 10,
+    "ReverseAccrual": "N",
+    "EventTypeId": 300000081405508,
+    "ContractTypeId": 300000309882519,
+    "OrganizationId": 300000301890759,
+    "ProjectId": null,
+    "TaskId": null,
+    "BillTrnsCurrencyCode": "USD",
+    "EventTypeCode": "I",
+    "ContractId": 300001514987208,
+    "Version": 3,
+    "ContractLineId": 100002701541129,
+    "BusinessUnitName": "Oak USA BU1",
+    "BusinessUnitId": 300000301911646,
+    "Automatic": "N",
+    "BillingResourceId": null,
+    "AdjustedEventId": null,
+    "EventNumberReversed": null,
+    "ContractCurrencyAmount": 10,
+    "ContractCurrencyExchgRate": 1,
+    "Invoiced": "U",
+    "InvoiceCurrencyCode": "USD",
+    "InvoicedAmount": null,
+    "InvoicedPercentage": null,
+    "RevenueRecognized": "U",
+    "RevenueRecognizedPercentage": null,
+    "RevenueAmount": null,
+    "LedgerCurrencyCode": "USD",
+    "LedgerRevenueAmount": null,
+    "LedgerInvoiceAmount": null,
+    "RevenueException": "N",
+    "InvoiceException": "N",
+    "CreatedRequestId": null,
+    "ContractCurrencyCode": "USD",
+    "ContractCurrencyExchgDate": null,
+    "ContractRateDateType": "TRANSACTION",
+    "ContractCurrencyRateType": "Corporate",
+    "BillCurrencyOptCode": "CONTRACT",
+    "InvoiceCurrencyDateType": "TRANSACTION",
+    "InvoiceCurrencyExchgDate": null,
+    "InvoiceCurrencyExchgRate": 1,
+    "InvoicePotentialAmount": 10,
+    "InvoiceCurrencyRateType": "Corporate",
+    "RevenueCurrencyCode": null,
+    "ProjectInvoiceAmount": null,
+    "ProjectRevenueAmount": null,
+    "LinkedTaskId": null,
+    "ProjectCurrencyCode": null,
+    "BillingResource": null,
+    "RevenueStatusMeaning": null,
+    "InvoiceStatusMeaning": null,
+    "RevenueHoldMeaning": null,
+    "BillHoldMeaning": null,
+    "InvCurrencyDateTypeMeaning": null,
+    "ContractRateDateTypeMeaning": null,
+    "ConversionRateTypeMeaning": "Corporate",
+    "InvCurrencyRateTypeMeaning": "Corporate",
+    "ItemEventFlag": false,
+    "Quantity": null,
+    "ItemNumber": null,
+    "InventoryItemId": null,
+    "ItemOrganizationId": null,
+    "UOMCode": null,
+    "UOMName": null,
+    "UnitPrice": null,
+    "UnitPriceCurrency": null,
+    "QuantityBilled": null,
+    "QuantityRevenueRecognzd": null,
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectBillingEvents/300001506488995",
+            "name": "projectBillingEvents",
+            "kind": "item",
+            "properties": {
+                "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+            }
+        },
+        {
+            "rel": "canonical",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectBillingEvents/300001506488995",
+            "name": "projectBillingEvents",
+            "kind": "item"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectBillingEvents/300001506488995/lov/ContractHeaderByTypeVA",
+            "name": "ContractHeaderByTypeVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectBillingEvents/300001506488995/lov/EventTypePVA",
+            "name": "EventTypePVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectBillingEvents/300001506488995/lov/ItemPVA",
+            "name": "ItemPVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectBillingEvents/300001506488995/lov/LinkedProjectVA",
+            "name": "LinkedProjectVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectBillingEvents/300001506488995/lov/ContractLineVA",
+            "name": "ContractLineVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectBillingEvents/300001506488995/lov/BusinessUnitVA",
+            "name": "BusinessUnitVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectBillingEvents/300001506488995/lov/ContractTypeVA",
+            "name": "ContractTypeVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectBillingEvents/300001506488995/lov/ProjOwningOrgVA",
+            "name": "ProjOwningOrgVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectBillingEvents/300001506488995/lov/CurrencyPVA",
+            "name": "CurrencyPVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectBillingEvents/300001506488995/lov/UnitOfMeasureVA",
+            "name": "UnitOfMeasureVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectBillingEvents/300001506488995/lov/LinkedFinancialTaskVA",
+            "name": "LinkedFinancialTaskVA",
+            "kind": "collection"
+        },
+        {
+            "rel": "child",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectBillingEvents/300001506488995/child/billingEventDFF",
+            "name": "billingEventDFF",
+            "kind": "collection"
+        }
+    ]
+}

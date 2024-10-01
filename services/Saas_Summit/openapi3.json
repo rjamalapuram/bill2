@@ -1,0 +1,1460 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "FscmRestApi 11.13.18.05",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "vb-catalog://backends/summit_saas"
+        }
+    ],
+    "paths": {
+        "/fscmRestApi/resources/11.13.18.05/projects": {
+            "get": {
+                "operationId": "getFscmRestApiResources11_13_18_05Projects",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetFscmRestApiResources11_13_18_05Projects"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getFscmRestApiResources11_13_18_05Projects/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany",
+                    "queryParameters": {
+                        "limit": "100000"
+                    }
+                }
+            }
+        },
+        "/fscmRestApi/resources/11.13.18.05/projectBillingEvents": {
+            "post": {
+                "operationId": "postFscmRestApiResources11_13_18_05ProjectBillingEvents2",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/PostFscmRestApiResources11_13_18_05ProjectBillingEventsRequest"
+                            },
+                            "examples": {
+                                "vb": {
+                                    "externalValue": "./examples/postFscmRestApiResources11_13_18_05ProjectBillingEvents2/request_application_json_vb.json"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "default": {
+                        "description": "Default response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/PostFscmRestApiResources11_13_18_05ProjectBillingEventsResponse"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "externalValue": "./examples/postFscmRestApiResources11_13_18_05ProjectBillingEvents2/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "create"
+                }
+            }
+        },
+        "/fscmRestApi/resources/11.13.18.05/erpintegrations": {
+            "post": {
+                "operationId": "postFscmRestApiResources11_13_18_05Erpintegrations",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/PostFscmRestApiResources11_13_18_05ErpintegrationsRequest"
+                            },
+                            "examples": {
+                                "vb": {
+                                    "externalValue": "./examples/postFscmRestApiResources11_13_18_05Erpintegrations/request_application_json_vb.json"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "default": {
+                        "description": "Default response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/PostFscmRestApiResources11_13_18_05ErpintegrationsResponse"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "externalValue": "./examples/postFscmRestApiResources11_13_18_05Erpintegrations/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/fscmRestApi/resources/11.13.18.05/projectsLOV": {
+            "get": {
+                "operationId": "getFscmRestApiResources11_13_18_05ProjectsLOV2",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetFscmRestApiResources11_13_18_05ProjectsLOV"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getFscmRestApiResources11_13_18_05ProjectsLOV2/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany",
+                    "queryParameters": {
+                        "limit": "10000",
+                        "orderBy": "ProjectNumber:asc"
+                    }
+                }
+            }
+        },
+        "/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV": {
+            "get": {
+                "operationId": "getFscmRestApiResources11_13_18_05ProjectOrganizationsLOV",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetFscmRestApiResources11_13_18_05ProjectOrganizationsLOV"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getFscmRestApiResources11_13_18_05ProjectOrganizationsLOV/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany",
+                    "queryParameters": {
+                        "limit": "10000",
+                        "q=ProjectOrganizationType": "PROJECTS"
+                    }
+                }
+            }
+        },
+        "/fscmRestApi/resources/11.13.18.05/valueSets/Service%20Type%20Summit/child/values": {
+            "get": {
+                "operationId": "getFscmRestApiResources11_13_18_05ValueSetsService20Type20SummitChildValues",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetFscmRestApiResources11_13_18_05ValueSetsService20Type20SummitChildValues"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getFscmRestApiResources11_13_18_05ValueSetsService20Type20SummitChildValues/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany",
+                    "queryParameters": {
+                        "limit": "1000"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "GetFscmRestApiResources11_13_18_05Projects": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "AllowCapitalizedInterestFlag": {
+                                    "type": "boolean"
+                                },
+                                "AllowCrossChargeFlag": {
+                                    "type": "boolean"
+                                },
+                                "AssetAllocationMethodCode": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "BillingFlag": {
+                                    "type": "boolean"
+                                },
+                                "BurdenScheduleId": {
+                                    "nullable": true
+                                },
+                                "BurdenScheduleFixedDate": {
+                                    "nullable": true
+                                },
+                                "BurdenScheduleName": {
+                                    "nullable": true
+                                },
+                                "BurdeningFlag": {
+                                    "type": "boolean"
+                                },
+                                "BusinessUnitId": {
+                                    "type": "integer"
+                                },
+                                "BusinessUnitName": {
+                                    "type": "string"
+                                },
+                                "CapitalEventProcessingMethodCode": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "CapitalizableFlag": {
+                                    "type": "boolean"
+                                },
+                                "CIntRateSchName": {
+                                    "nullable": true
+                                },
+                                "CIntStopDate": {
+                                    "nullable": true
+                                },
+                                "CIntRateSchId": {
+                                    "nullable": true
+                                },
+                                "CrossChargeLaborFlag": {
+                                    "type": "boolean"
+                                },
+                                "CrossChargeNonLaborFlag": {
+                                    "type": "boolean"
+                                },
+                                "CurrencyConvRateType": {
+                                    "type": "string"
+                                },
+                                "CurrencyConvDateTypeCode": {
+                                    "type": "string"
+                                },
+                                "CurrencyConvDate": {
+                                    "nullable": true
+                                },
+                                "EnableBudgetaryControlFlag": {
+                                    "type": "boolean"
+                                },
+                                "ExternalProjectId": {
+                                    "nullable": true
+                                },
+                                "HoursPerDay": {
+                                    "type": "integer"
+                                },
+                                "IncludeNotesInKPINotificationsFlag": {
+                                    "type": "boolean"
+                                },
+                                "IntegrationApplicationCode": {
+                                    "nullable": true
+                                },
+                                "IntegrationProjectReference": {
+                                    "nullable": true
+                                },
+                                "KPINotificationEnabledFlag": {
+                                    "type": "boolean"
+                                },
+                                "LaborTpFixedDate": {
+                                    "nullable": true
+                                },
+                                "LaborTpSchedule": {
+                                    "nullable": true
+                                },
+                                "LaborTpScheduleId": {
+                                    "nullable": true
+                                },
+                                "LegalEntityId": {
+                                    "type": "integer"
+                                },
+                                "LegalEntityName": {
+                                    "type": "string"
+                                },
+                                "NlTransferPriceFixedDate": {
+                                    "nullable": true
+                                },
+                                "NlTransferPriceSchedule": {
+                                    "nullable": true
+                                },
+                                "NlTransferPriceScheduleId": {
+                                    "nullable": true
+                                },
+                                "NumberAttr01": {
+                                    "nullable": true
+                                },
+                                "NumberAttr02": {
+                                    "nullable": true
+                                },
+                                "NumberAttr03": {
+                                    "nullable": true
+                                },
+                                "NumberAttr04": {
+                                    "nullable": true
+                                },
+                                "NumberAttr05": {
+                                    "nullable": true
+                                },
+                                "NumberAttr06": {
+                                    "nullable": true
+                                },
+                                "NumberAttr07": {
+                                    "nullable": true
+                                },
+                                "NumberAttr08": {
+                                    "nullable": true
+                                },
+                                "NumberAttr09": {
+                                    "nullable": true
+                                },
+                                "NumberAttr10": {
+                                    "nullable": true
+                                },
+                                "OwningOrganizationId": {
+                                    "type": "integer"
+                                },
+                                "OwningOrganizationName": {
+                                    "type": "string"
+                                },
+                                "PlanningProjectFlag": {
+                                    "type": "boolean"
+                                },
+                                "ProjectCalendarId": {
+                                    "type": "integer"
+                                },
+                                "ProjectCalendarName": {
+                                    "type": "string"
+                                },
+                                "ProjectCode01": {
+                                    "nullable": true
+                                },
+                                "ProjectCode02": {
+                                    "nullable": true
+                                },
+                                "ProjectCode03": {
+                                    "nullable": true
+                                },
+                                "ProjectCode04": {
+                                    "nullable": true
+                                },
+                                "ProjectCode05": {
+                                    "nullable": true
+                                },
+                                "ProjectCode06": {
+                                    "nullable": true
+                                },
+                                "ProjectCode07": {
+                                    "nullable": true
+                                },
+                                "ProjectCode08": {
+                                    "nullable": true
+                                },
+                                "ProjectCode09": {
+                                    "nullable": true
+                                },
+                                "ProjectCode10": {
+                                    "nullable": true
+                                },
+                                "ProjectCode11": {
+                                    "nullable": true
+                                },
+                                "ProjectCode12": {
+                                    "nullable": true
+                                },
+                                "ProjectCode13": {
+                                    "nullable": true
+                                },
+                                "ProjectCode14": {
+                                    "nullable": true
+                                },
+                                "ProjectCode15": {
+                                    "nullable": true
+                                },
+                                "ProjectCode16": {
+                                    "nullable": true
+                                },
+                                "ProjectCode17": {
+                                    "nullable": true
+                                },
+                                "ProjectCode18": {
+                                    "nullable": true
+                                },
+                                "ProjectCode19": {
+                                    "nullable": true
+                                },
+                                "ProjectCode20": {
+                                    "nullable": true
+                                },
+                                "ProjectCode21": {
+                                    "nullable": true
+                                },
+                                "ProjectCode22": {
+                                    "nullable": true
+                                },
+                                "ProjectCode23": {
+                                    "nullable": true
+                                },
+                                "ProjectCode24": {
+                                    "nullable": true
+                                },
+                                "ProjectCode25": {
+                                    "nullable": true
+                                },
+                                "ProjectCode26": {
+                                    "nullable": true
+                                },
+                                "ProjectCode27": {
+                                    "nullable": true
+                                },
+                                "ProjectCode28": {
+                                    "nullable": true
+                                },
+                                "ProjectCode29": {
+                                    "nullable": true
+                                },
+                                "ProjectCode30": {
+                                    "nullable": true
+                                },
+                                "ProjectCode31": {
+                                    "nullable": true
+                                },
+                                "ProjectCode32": {
+                                    "nullable": true
+                                },
+                                "ProjectCode33": {
+                                    "nullable": true
+                                },
+                                "ProjectCode34": {
+                                    "nullable": true
+                                },
+                                "ProjectCode35": {
+                                    "nullable": true
+                                },
+                                "ProjectCode36": {
+                                    "nullable": true
+                                },
+                                "ProjectCode37": {
+                                    "nullable": true
+                                },
+                                "ProjectCode38": {
+                                    "nullable": true
+                                },
+                                "ProjectCode39": {
+                                    "nullable": true
+                                },
+                                "ProjectCode40": {
+                                    "nullable": true
+                                },
+                                "ProjectCurrencyCode": {
+                                    "type": "string"
+                                },
+                                "ProjectDescription": {
+                                    "nullable": true
+                                },
+                                "ProjectEndDate": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "ProjectId": {
+                                    "type": "integer"
+                                },
+                                "ProjectLedgerCurrencyCode": {
+                                    "type": "string"
+                                },
+                                "ProjectManagerEmail": {
+                                    "type": "string"
+                                },
+                                "ProjectManagerName": {
+                                    "type": "string"
+                                },
+                                "ProjectManagerResourceId": {
+                                    "type": "integer"
+                                },
+                                "ProjectName": {
+                                    "type": "string"
+                                },
+                                "ProjectNumber": {
+                                    "type": "string"
+                                },
+                                "ProjectPlanViewAccessCode": {
+                                    "type": "string"
+                                },
+                                "ProjectPriorityCode": {
+                                    "nullable": true
+                                },
+                                "ProjectStartDate": {
+                                    "type": "string"
+                                },
+                                "ProjectStatus": {
+                                    "type": "string"
+                                },
+                                "ProjectStatusCode": {
+                                    "type": "string"
+                                },
+                                "ProjectTypeId": {
+                                    "type": "integer"
+                                },
+                                "ProjectTypeName": {
+                                    "type": "string"
+                                },
+                                "ProjectUnitId": {
+                                    "type": "integer"
+                                },
+                                "ProjectUnitName": {
+                                    "type": "string"
+                                },
+                                "ScheduleTypeCode": {
+                                    "type": "string"
+                                },
+                                "ServiceType": {
+                                    "nullable": true
+                                },
+                                "ServiceTypeCode": {
+                                    "nullable": true
+                                },
+                                "SourceApplicationCode": {
+                                    "type": "string"
+                                },
+                                "SourceProjectReference": {
+                                    "type": "string"
+                                },
+                                "SourceTemplateId": {
+                                    "type": "integer"
+                                },
+                                "SourceTemplateName": {
+                                    "type": "string"
+                                },
+                                "SponsoredFlag": {
+                                    "type": "boolean"
+                                },
+                                "TextAttr01": {
+                                    "nullable": true
+                                },
+                                "TextAttr02": {
+                                    "nullable": true
+                                },
+                                "TextAttr03": {
+                                    "nullable": true
+                                },
+                                "TextAttr04": {
+                                    "nullable": true
+                                },
+                                "TextAttr05": {
+                                    "nullable": true
+                                },
+                                "TextAttr06": {
+                                    "nullable": true
+                                },
+                                "TextAttr07": {
+                                    "nullable": true
+                                },
+                                "TextAttr08": {
+                                    "nullable": true
+                                },
+                                "TextAttr09": {
+                                    "nullable": true
+                                },
+                                "TextAttr10": {
+                                    "nullable": true
+                                },
+                                "TextAttr11": {
+                                    "nullable": true
+                                },
+                                "TextAttr12": {
+                                    "nullable": true
+                                },
+                                "TextAttr13": {
+                                    "nullable": true
+                                },
+                                "TextAttr14": {
+                                    "nullable": true
+                                },
+                                "TextAttr15": {
+                                    "nullable": true
+                                },
+                                "TextAttr16": {
+                                    "nullable": true
+                                },
+                                "TextAttr17": {
+                                    "nullable": true
+                                },
+                                "TextAttr18": {
+                                    "nullable": true
+                                },
+                                "TextAttr19": {
+                                    "nullable": true
+                                },
+                                "TextAttr20": {
+                                    "nullable": true
+                                },
+                                "TransactionControlFlag": {
+                                    "type": "boolean"
+                                },
+                                "WorkplanTemplateId": {
+                                    "nullable": true
+                                },
+                                "WorkplanTemplateName": {
+                                    "nullable": true
+                                },
+                                "WorkType": {
+                                    "nullable": true
+                                },
+                                "WorkTypeId": {
+                                    "nullable": true
+                                },
+                                "CreationDate": {
+                                    "type": "string"
+                                },
+                                "CreatedBy": {
+                                    "type": "string"
+                                },
+                                "LastUpdateDate": {
+                                    "type": "string"
+                                },
+                                "LastUpdatedBy": {
+                                    "type": "string"
+                                },
+                                "links": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "rel": {
+                                                "type": "string"
+                                            },
+                                            "href": {
+                                                "type": "string"
+                                            },
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "kind": {
+                                                "type": "string"
+                                            },
+                                            "properties": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "changeIndicator": {
+                                                        "type": "string"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "kind": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "PostFscmRestApiResources11_13_18_05ProjectBillingEventsRequest": {
+                "type": "object",
+                "properties": {
+                    "SourceName": {
+                        "type": "string"
+                    },
+                    "SourceReference": {
+                        "type": "string"
+                    },
+                    "ContractTypeName": {
+                        "type": "string"
+                    },
+                    "ContractNumber": {
+                        "type": "string"
+                    },
+                    "ContractLineNumber": {
+                        "type": "string"
+                    },
+                    "EventTypeName": {
+                        "type": "string"
+                    },
+                    "EventDescription": {
+                        "type": "string"
+                    },
+                    "BusinessUnitName": {
+                        "type": "string"
+                    },
+                    "BillTrnsAmount": {
+                        "type": "integer"
+                    }
+                }
+            },
+            "PostFscmRestApiResources11_13_18_05ProjectBillingEventsResponse": {
+                "type": "object",
+                "properties": {
+                    "EventId": {
+                        "type": "integer"
+                    },
+                    "SourceName": {
+                        "type": "string"
+                    },
+                    "SourceReference": {
+                        "type": "string"
+                    },
+                    "ContractTypeName": {
+                        "type": "string"
+                    },
+                    "ContractNumber": {
+                        "type": "string"
+                    },
+                    "ContractLineNumber": {
+                        "type": "string"
+                    },
+                    "EventNumber": {
+                        "type": "integer"
+                    },
+                    "OrganizationName": {
+                        "type": "string"
+                    },
+                    "EventTypeName": {
+                        "type": "string"
+                    },
+                    "EventDescription": {
+                        "type": "string"
+                    },
+                    "RevenueHold": {
+                        "type": "string"
+                    },
+                    "BillHold": {
+                        "type": "string"
+                    },
+                    "ProjectNumber": {
+                        "nullable": true
+                    },
+                    "CompletionDate": {
+                        "nullable": true
+                    },
+                    "TaskNumber": {
+                        "nullable": true
+                    },
+                    "BillTrnsAmount": {
+                        "type": "integer"
+                    },
+                    "ReverseAccrual": {
+                        "type": "string"
+                    },
+                    "EventTypeId": {
+                        "type": "integer"
+                    },
+                    "ContractTypeId": {
+                        "type": "integer"
+                    },
+                    "OrganizationId": {
+                        "type": "integer"
+                    },
+                    "ProjectId": {
+                        "nullable": true
+                    },
+                    "TaskId": {
+                        "nullable": true
+                    },
+                    "BillTrnsCurrencyCode": {
+                        "type": "string"
+                    },
+                    "EventTypeCode": {
+                        "type": "string"
+                    },
+                    "ContractId": {
+                        "type": "integer"
+                    },
+                    "Version": {
+                        "type": "integer"
+                    },
+                    "ContractLineId": {
+                        "type": "integer"
+                    },
+                    "BusinessUnitName": {
+                        "type": "string"
+                    },
+                    "BusinessUnitId": {
+                        "type": "integer"
+                    },
+                    "Automatic": {
+                        "type": "string"
+                    },
+                    "BillingResourceId": {
+                        "nullable": true
+                    },
+                    "AdjustedEventId": {
+                        "nullable": true
+                    },
+                    "EventNumberReversed": {
+                        "nullable": true
+                    },
+                    "ContractCurrencyAmount": {
+                        "type": "integer"
+                    },
+                    "ContractCurrencyExchgRate": {
+                        "type": "integer"
+                    },
+                    "Invoiced": {
+                        "type": "string"
+                    },
+                    "InvoiceCurrencyCode": {
+                        "type": "string"
+                    },
+                    "InvoicedAmount": {
+                        "nullable": true
+                    },
+                    "InvoicedPercentage": {
+                        "nullable": true
+                    },
+                    "RevenueRecognized": {
+                        "type": "string"
+                    },
+                    "RevenueRecognizedPercentage": {
+                        "nullable": true
+                    },
+                    "RevenueAmount": {
+                        "nullable": true
+                    },
+                    "LedgerCurrencyCode": {
+                        "type": "string"
+                    },
+                    "LedgerRevenueAmount": {
+                        "nullable": true
+                    },
+                    "LedgerInvoiceAmount": {
+                        "nullable": true
+                    },
+                    "RevenueException": {
+                        "type": "string"
+                    },
+                    "InvoiceException": {
+                        "type": "string"
+                    },
+                    "CreatedRequestId": {
+                        "nullable": true
+                    },
+                    "ContractCurrencyCode": {
+                        "type": "string"
+                    },
+                    "ContractCurrencyExchgDate": {
+                        "nullable": true
+                    },
+                    "ContractRateDateType": {
+                        "type": "string"
+                    },
+                    "ContractCurrencyRateType": {
+                        "type": "string"
+                    },
+                    "BillCurrencyOptCode": {
+                        "type": "string"
+                    },
+                    "InvoiceCurrencyDateType": {
+                        "type": "string"
+                    },
+                    "InvoiceCurrencyExchgDate": {
+                        "nullable": true
+                    },
+                    "InvoiceCurrencyExchgRate": {
+                        "type": "integer"
+                    },
+                    "InvoicePotentialAmount": {
+                        "type": "integer"
+                    },
+                    "InvoiceCurrencyRateType": {
+                        "type": "string"
+                    },
+                    "RevenueCurrencyCode": {
+                        "nullable": true
+                    },
+                    "ProjectInvoiceAmount": {
+                        "nullable": true
+                    },
+                    "ProjectRevenueAmount": {
+                        "nullable": true
+                    },
+                    "LinkedTaskId": {
+                        "nullable": true
+                    },
+                    "ProjectCurrencyCode": {
+                        "nullable": true
+                    },
+                    "BillingResource": {
+                        "nullable": true
+                    },
+                    "RevenueStatusMeaning": {
+                        "nullable": true
+                    },
+                    "InvoiceStatusMeaning": {
+                        "nullable": true
+                    },
+                    "RevenueHoldMeaning": {
+                        "nullable": true
+                    },
+                    "BillHoldMeaning": {
+                        "nullable": true
+                    },
+                    "InvCurrencyDateTypeMeaning": {
+                        "nullable": true
+                    },
+                    "ContractRateDateTypeMeaning": {
+                        "nullable": true
+                    },
+                    "ConversionRateTypeMeaning": {
+                        "type": "string"
+                    },
+                    "InvCurrencyRateTypeMeaning": {
+                        "type": "string"
+                    },
+                    "ItemEventFlag": {
+                        "type": "boolean"
+                    },
+                    "Quantity": {
+                        "nullable": true
+                    },
+                    "ItemNumber": {
+                        "nullable": true
+                    },
+                    "InventoryItemId": {
+                        "nullable": true
+                    },
+                    "ItemOrganizationId": {
+                        "nullable": true
+                    },
+                    "UOMCode": {
+                        "nullable": true
+                    },
+                    "UOMName": {
+                        "nullable": true
+                    },
+                    "UnitPrice": {
+                        "nullable": true
+                    },
+                    "UnitPriceCurrency": {
+                        "nullable": true
+                    },
+                    "QuantityBilled": {
+                        "nullable": true
+                    },
+                    "QuantityRevenueRecognzd": {
+                        "nullable": true
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "kind": {
+                                    "type": "string"
+                                },
+                                "properties": {
+                                    "type": "object",
+                                    "properties": {
+                                        "changeIndicator": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "PostFscmRestApiResources11_13_18_05ErpintegrationsResponse": {
+                "type": "object",
+                "properties": {
+                    "OperationName": {
+                        "type": "string"
+                    },
+                    "DocumentId": {
+                        "nullable": true
+                    },
+                    "DocumentContent": {
+                        "nullable": true
+                    },
+                    "FileName": {
+                        "nullable": true
+                    },
+                    "ContentType": {
+                        "nullable": true
+                    },
+                    "FileType": {
+                        "nullable": true
+                    },
+                    "DocumentAccount": {
+                        "nullable": true
+                    },
+                    "Comments": {
+                        "nullable": true
+                    },
+                    "ProcessName": {
+                        "nullable": true
+                    },
+                    "LoadRequestId": {
+                        "nullable": true
+                    },
+                    "JobPackageName": {
+                        "type": "string"
+                    },
+                    "JobDefName": {
+                        "type": "string"
+                    },
+                    "ReqstId": {
+                        "type": "string"
+                    },
+                    "RequestStatus": {
+                        "nullable": true
+                    },
+                    "JobName": {
+                        "nullable": true
+                    },
+                    "ParameterList": {
+                        "nullable": true
+                    },
+                    "NotificationCode": {
+                        "nullable": true
+                    },
+                    "CallbackURL": {
+                        "nullable": true
+                    },
+                    "JobOptions": {
+                        "nullable": true
+                    },
+                    "StatusCode": {
+                        "nullable": true
+                    },
+                    "ESSParameters": {
+                        "type": "string"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "kind": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "PostFscmRestApiResources11_13_18_05ErpintegrationsRequest": {
+                "type": "object",
+                "properties": {
+                    "OperationName": {
+                        "type": "string"
+                    },
+                    "JobPackageName": {
+                        "type": "string"
+                    },
+                    "JobDefName": {
+                        "type": "string"
+                    },
+                    "ESSParameters": {
+                        "type": "string"
+                    }
+                }
+            },
+            "GetFscmRestApiResources11_13_18_05ProjectOrganizationsLOV": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "OrganizationName": {
+                                    "type": "string"
+                                },
+                                "OrganizationId": {
+                                    "type": "integer"
+                                },
+                                "BusinessUnitId": {
+                                    "type": "integer"
+                                },
+                                "FromDate": {
+                                    "type": "string"
+                                },
+                                "ToDate": {
+                                    "type": "string"
+                                },
+                                "ActiveStatusFlag": {
+                                    "type": "boolean"
+                                },
+                                "ProjectOrganizationType": {
+                                    "type": "string"
+                                },
+                                "links": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "rel": {
+                                                "type": "string"
+                                            },
+                                            "href": {
+                                                "type": "string"
+                                            },
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "kind": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "kind": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetFscmRestApiResources11_13_18_05ProjectsLOV": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "ProjectId": {
+                                    "type": "integer"
+                                },
+                                "ProjectNumber": {
+                                    "type": "string"
+                                },
+                                "ProjectStartDate": {
+                                    "type": "string"
+                                },
+                                "ProjectFinishDate": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "ProjectName": {
+                                    "type": "string"
+                                },
+                                "links": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "rel": {
+                                                "type": "string"
+                                            },
+                                            "href": {
+                                                "type": "string"
+                                            },
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "kind": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "kind": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetFscmRestApiResources11_13_18_05ValueSetsService20Type20SummitChildValues": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "ValueId": {
+                                    "type": "integer"
+                                },
+                                "IndependentValue": {
+                                    "nullable": true
+                                },
+                                "IndependentValueNumber": {
+                                    "nullable": true
+                                },
+                                "IndependentValueDate": {
+                                    "nullable": true
+                                },
+                                "IndependentValueTimestamp": {
+                                    "nullable": true
+                                },
+                                "Value": {
+                                    "type": "string"
+                                },
+                                "ValueNumber": {
+                                    "nullable": true
+                                },
+                                "ValueDate": {
+                                    "nullable": true
+                                },
+                                "ValueTimestamp": {
+                                    "nullable": true
+                                },
+                                "TranslatedValue": {
+                                    "nullable": true
+                                },
+                                "Description": {
+                                    "type": "string"
+                                },
+                                "EnabledFlag": {
+                                    "type": "string"
+                                },
+                                "StartDateActive": {
+                                    "nullable": true
+                                },
+                                "EndDateActive": {
+                                    "nullable": true
+                                },
+                                "SortOrder": {
+                                    "nullable": true
+                                },
+                                "SummaryFlag": {
+                                    "type": "string"
+                                },
+                                "DetailPostingAllowed": {
+                                    "type": "string"
+                                },
+                                "DetailBudgetingAllowed": {
+                                    "type": "string"
+                                },
+                                "AccountType": {
+                                    "nullable": true
+                                },
+                                "ControlAccount": {
+                                    "nullable": true
+                                },
+                                "ReconciliationFlag": {
+                                    "nullable": true
+                                },
+                                "FinancialCategory": {
+                                    "nullable": true
+                                },
+                                "ExternalDataSource": {
+                                    "nullable": true
+                                },
+                                "CreationDate": {
+                                    "type": "string"
+                                },
+                                "CreatedBy": {
+                                    "type": "string"
+                                },
+                                "LastUpdateDate": {
+                                    "type": "string"
+                                },
+                                "LastUpdatedBy": {
+                                    "type": "string"
+                                },
+                                "links": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "rel": {
+                                                "type": "string"
+                                            },
+                                            "href": {
+                                                "type": "string"
+                                            },
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "kind": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "kind": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

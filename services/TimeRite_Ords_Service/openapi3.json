@@ -1,0 +1,4515 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Ords Timerite",
+        "version": "1.0.0",
+        "x-vb": {
+            "transforms": {
+                "path": "../Transform.js"
+            }
+        }
+    },
+    "servers": [
+        {
+            "url": "vb-catalog://backends/TimeRite_Ords"
+        }
+    ],
+    "paths": {
+        "/getCustomerDetails": {
+            "get": {
+                "operationId": "getGetCustomerDetails",
+                "parameters": [
+                    {
+                        "name": "CUSTOMER_NAME",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "CONTRACT_NUMBER",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "PROJECT_NUMBER",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "Search_Date",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "CREW_NAME",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetGetCustomerDetails"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getGetCustomerDetails/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/getContractDetails": {
+            "get": {
+                "operationId": "getGetContractDetails",
+                "parameters": [
+                    {
+                        "name": "CUSTOMER_NUMBER",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetGetContractDetails"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getGetContractDetails/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/getTimeSheetTbl": {
+            "get": {
+                "operationId": "getGetTimeSheetTbl",
+                "parameters": [
+                    {
+                        "name": "customer_name",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "contract_number",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "project_number",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "crew_name",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "search_date",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetGetTimeSheetTbl"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getGetTimeSheetTbl/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/updatetimeSheetTime": {
+            "put": {
+                "operationId": "UpdatetimeSheetTime",
+                "parameters": [
+                ],
+                "responses": {},
+                "x-vb": {
+                    "actionHint": "update"
+                },
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/PutUpdatetimeSheetTimeRequest"
+                            },
+                            "examples": {
+                                "vb": {
+                                    "externalValue": "./examples/UpdatetimeSheetTime/request_application_json_vb.json"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/getProjectDetails": {
+            "get": {
+                "operationId": "getGetProjectDetails",
+                "parameters": [
+                    {
+                        "name": "contract_id",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetGetProjectDetails"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getGetProjectDetails/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/getCrewSetUpLines/": {
+            "get": {
+                "operationId": "getGetCrewSetUpLines2",
+                "parameters": [
+{
+                        "name": "crewsetup_id",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "resource_id",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetGetCrewSetUpLines"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getGetCrewSetUpLines2/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            },
+            "post": {
+                "operationId": "postGetCrewSetUpLines",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/PostGetCrewSetUpLinesRequest"
+                            },
+                            "examples": {
+                                "vb": {
+                                    "externalValue": "./examples/postGetCrewSetUpLines/request_application_json_vb.json"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {},
+                "x-vb": {
+                    "actionHint": "create"
+                }
+            }
+        },
+        "/getCrewNameLOV": {
+            "get": {
+                "operationId": "getGetCrewNameLOV",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetGetCrewNameLOV"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getGetCrewNameLOV/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/SubmitTimeSheet": {
+            "post": {
+                "operationId": "postSubmitTimeSheet",
+                "parameters": [
+                ],
+                "responses": {},
+                "x-vb": {
+                    "actionHint": "create"
+                }
+            }
+        },
+        "/getCrewSetupHeader/": {
+            "get": {
+                "operationId": "getGetCrewSetupHeader",
+                "parameters": [
+                    {
+                        "name": "CREW_NAME",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetGetCrewSetupHeader"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getGetCrewSetupHeader/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            },
+            "post": {
+                "operationId": "postCrewSetupHeader",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/PostGetCrewSetupHeaderRequest"
+                            },
+                            "examples": {
+                                "vb": {
+                                    "externalValue": "./examples/postCrewSetupHeader/request_application_json_vb.json"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {},
+                "x-vb": {
+                    "actionHint": "create"
+                }
+            },
+            "put": {
+                "operationId": "putGetCrewSetupHeader",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/PutGetCrewSetupHeaderRequest"
+                            },
+                            "examples": {
+                                "vb": {
+                                    "externalValue": "./examples/putGetCrewSetupHeader/request_application_json_vb.json"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {},
+                "x-vb": {
+                    "actionHint": "update"
+                }
+            }
+        },
+        "/getProjects": {
+        },
+        "/Timekeepers": {
+            "get": {
+                "operationId": "getTimekeepers",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetTimekeepers"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getTimekeepers/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/updateContractDetails": {
+            "put": {
+                "operationId": "putUpdateContractDetails",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/PutUpdateContractDetailsRequest"
+                            },
+                            "examples": {
+                                "vb": {
+                                    "externalValue": "./examples/putUpdateContractDetails/request_application_json_vb.json",
+                                    "summary": "Example stored by VB User"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {},
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/updateProjectDetails": {
+            "put": {
+                "operationId": "putUpdateProjectDetails",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/PutUpdateProjectDetailsRequest"
+                            },
+                            "examples": {
+                                "vb": {
+                                    "externalValue": "./examples/putUpdateProjectDetails/request_application_json_vb.json",
+                                    "summary": "Example stored by VB User"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {},
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/setUpCustomerDetails": {
+            "get": {
+                "operationId": "getSetUpCustomerDetails",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetSetUpCustomerDetails"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getSetUpCustomerDetails/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                },
+                "parameters": [
+                ]
+            }
+        },
+        "/setUpContractDetails": {
+            "get": {
+                "operationId": "getSetUpContractDetails",
+                "parameters": [
+                    {
+                        "name": "customer_id",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetSetUpContractDetails"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getSetUpContractDetails/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/setUpProjectDeatils": {
+            "get": {
+                "operationId": "getSetUpProjectDeatils",
+                "parameters": [
+                    {
+                        "name": "contract_number",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetSetUpProjectDeatils"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getSetUpProjectDeatils/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/tasks": {
+            "get": {
+                "operationId": "getTasks",
+                "parameters": [
+                    {
+                        "name": "project_number",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetTasks"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getTasks/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/searchTimeEntryTbl": {
+            "get": {
+                "operationId": "getSearchTimeEntryTbl",
+                "parameters": [
+                    {
+                        "name": "crewsetup_id",
+                        "in": "query",
+                        "schema": {
+                            "type": "number"
+                        }
+                    },
+{
+                        "name": "timesheet_week_id",
+                        "in": "query",
+                        "schema": {
+                            "type": "number"
+                        }
+                    },
+{
+                        "name": "crew_date",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "crew_week",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetSearchTimeEntryTbl"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getSearchTimeEntryTbl/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/resourcesDetails": {
+            "get": {
+                "operationId": "getResourcesDetails",
+                "parameters": [
+{
+                        "name": "project_id",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "res_name",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetResourcesDetails"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getResourcesDetails/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/ResourceMetedata": {
+            "get": {
+                "operationId": "getResourceMetedata",
+                "parameters": [
+                    {
+                        "name": "resource_name",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetResourceMetedata"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getResourceMetedata/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/custDetails": {
+            "get": {
+                "operationId": "CustDetails",
+                "parameters": [
+                    {
+                        "name": "customer_number",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetCustDetails"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/CustDetails/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/getTimeweekId": {
+            "get": {
+                "operationId": "getGetTimeweekId",
+                "parameters": [
+{
+                        "name": "crewsetup_id",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "week",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }                    ,
+                    {
+                        "name": "crew_date",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetGetTimeweekId"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getGetTimeweekId/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/updateCustomerDetails": {
+            "put": {
+                "operationId": "putUpdateCustomerDetails",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/PutUpdateCustomerDetailsRequest"
+                            },
+                            "examples": {
+                                "vb": {
+                                    "externalValue": "./examples/putUpdateCustomerDetails/request_application_json_vb.json"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {},
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/ExpenditureType": {
+            "get": {
+                "operationId": "getExpenditureType",
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetExpenditureType"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getExpenditureType/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/defaultCustomerDataUpdate": {
+            "put": {
+                "operationId": "DefaultCustomerDataUpdate",
+                "parameters": [
+                    {
+                        "name": "customer_number",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {},
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/updateheaderSet": {
+            "put": {
+                "operationId": "putUpdateheaderSet",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "examples": {
+                                "vb": {
+                                    "externalValue": "./examples/putUpdateheaderSet/request_application_json_vb.json"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {},
+                "x-vb": {
+                    "actionHint": "update"
+                },
+                "parameters": [
+                    {
+                        "name": "crewsetup_id",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "time_entry_id",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "crewsetup_line_id",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ]
+            }
+        },
+        "/getMasterData/": {
+            "get": {
+                "operationId": "getGetMasterData",
+                "parameters": [
+                    {
+                        "name": "party_id",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "contract_num",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "project_num",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetGetMasterData"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getGetMasterData/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany",
+                    "queryParameters": {
+                        "limit": "10000"
+                    }
+                }
+            }
+        },
+        "/getTimeEntryId": {
+            "get": {
+                "operationId": "GetTimeEntryId",
+                "parameters": [
+                    {
+                        "name": "crew_week",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+{
+                        "name": "crewsetup_id",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "crew_date",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetGetTimeEntryId"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/GetTimeEntryId/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/updateApproval": {
+            "put": {
+                "operationId": "UpdateApproval",
+                "parameters": [
+                    {
+                        "name": "time_entry_id",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {},
+                "x-vb": {
+                    "actionHint": "update"
+                }
+            }
+        },
+        "/ResourceNamebyCrewId": {
+            "get": {
+                "operationId": "ResourceNamebyCrewId",
+                "parameters": [
+                    {
+                        "name": "crewsetup_id",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetResourceNamebyCrewId"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/ResourceNamebyCrewId/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/FetchcrewSechedule": {
+            "get": {
+                "operationId": "getFetchcrewSechedule",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetFetchcrewSechedule"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getFetchcrewSechedule/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany",
+                    "queryParameters": {
+                        "limit": "10000"
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "crewId",
+                        "in": "query",
+                        "schema": {
+                            "type": "number"
+                        },
+                        "x-vb": {}
+                    },
+                    {
+                        "name": "crewDate",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "x-vb": {}
+                    },
+                    {
+                        "name": "resourceId",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ]
+            }
+        },
+        "/fetchScheduleDetails": {
+            "get": {
+                "operationId": "FetchScheduleDetails",
+                "parameters": [
+                    {
+                        "name": "resource_id",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "crewsetup_id",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "input_date",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetFetchScheduleDetails"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/FetchScheduleDetails/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/adminCustomerLOV": {
+            "get": {
+                "operationId": "getAdminCustomerLOV",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetAdminCustomerLOV"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getAdminCustomerLOV/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany",
+                    "queryParameters": {
+                        "limit": "500"
+                    }
+                }
+            }
+        },
+        "/adminProjectLOV": {
+            "get": {
+                "operationId": "getAdminProjectLOV",
+                "parameters": [
+                    {
+                        "name": "CONTRACT_NUMBER",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetAdminProjectLOV"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getAdminProjectLOV/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany",
+                    "queryParameters": {
+                        "limit": "500"
+                    }
+                }
+            }
+        },
+        "/adminContractLOV": {
+            "get": {
+                "operationId": "getAdminContractLOV",
+                "parameters": [
+                    {
+                        "name": "PARTY_NAME",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetAdminContractLOV"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getAdminContractLOV/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany",
+                    "queryParameters": {
+                        "limit": "500"
+                    }
+                }
+            }
+        },
+        "/payrollLockUnlock": {
+            "post": {
+                "operationId": "PayrollLockUnlock",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/PostPayrollLockUnlockRequest"
+                            },
+                            "examples": {
+                                "vb": {
+                                    "externalValue": "./examples/PayrollLockUnlock/request_application_json_vb.json"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {},
+                "x-vb": {
+                    "actionHint": "create"
+                }
+            }
+        },
+        "/disbandCrew": {
+            "post": {
+                "operationId": "DisbandCrew",
+                "responses": {},
+                "x-vb": {
+                    "actionHint": "create"
+                }
+            }
+        },
+        "/getMaxWeekid": {
+            "get": {
+                "operationId": "GetMaxWeekid",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetGetMaxWeekid"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/GetMaxWeekid/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                },
+                "parameters": [
+                    {
+                        "name": "crew_week",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "crewsetup_id",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ]
+            }
+        },
+        "/updateRejected": {
+            "put": {
+                "operationId": "UpdateRejected",
+                "parameters": [
+                    {
+                        "name": "time_entry_id",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {},
+                "x-vb": {
+                    "actionHint": "update"
+                }
+            }
+        },
+        "/SearchupdateAll": {
+            "put": {
+                "operationId": "SearchupdateAll",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/PutSearchupdateAllRequest"
+                            },
+                            "examples": {
+                                "vb": {
+                                    "externalValue": "./examples/SearchupdateAll/request_application_json_vb.json"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {},
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "GetGetCustomerDetails": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "crewsetup_id": {
+                                    "type": "integer"
+                                },
+                                "crew_name": {
+                                    "type": "string"
+                                },
+                                "customer_name": {
+                                    "type": "string"
+                                },
+                                "contract_number": {
+                                    "type": "string"
+                                },
+                                "project_number": {
+                                    "type": "string"
+                                },
+                                "resource_number": {
+                                    "type": "string"
+                                },
+                                "resource_name": {
+                                    "type": "string"
+                                },
+                                "resource_role": {
+                                    "type": "string"
+                                },
+                                "bill_rate": {
+                                    "type": "string"
+                                },
+                                "pay_rate": {
+                                    "type": "string"
+                                },
+                                "ot_rate": {
+                                    "type": "string"
+                                },
+                                "resource_location": {
+                                    "type": "string"
+                                },
+                                "equipment_category": {
+                                    "nullable": true
+                                },
+                                "equipment_rate": {
+                                    "nullable": true
+                                },
+                                "crew_day": {
+                                    "nullable": true
+                                },
+                                "in_time": {
+                                    "nullable": true
+                                },
+                                "day": {
+                                    "nullable": true
+                                },
+                                "out_time": {
+                                    "nullable": true
+                                },
+                                "active_flag": {
+                                    "type": "string"
+                                }
+
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetGetContractDetails": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "customer_number": {
+                                    "type": "string"
+                                },
+                                "customer_name": {
+                                    "type": "string"
+                                },
+                                "contract_id": {
+                                    "type": "integer"
+                                },
+                                "contract_number": {
+                                    "type": "string"
+                                },
+                                "week_start_day": {
+                                    "type": "string"
+                                },
+                                "week_end_day": {
+                                    "type": "string"
+                                },
+                                "no_of_days": {
+                                    "type": "integer"
+                                },
+                                "ot_allowed": {
+                                    "type": "string"
+                                },
+                                "ot_threshold_measure": {
+                                    "type": "string"
+                                },
+                                "ot_threshold_limit": {
+                                    "type": "string"
+                                },
+                                "active_flag": {
+                                    "nullable": true
+                                },
+                                "billing_frequency": {
+                                    "type": "string"
+                                },
+                                "ot_shift_name": {
+                                    "nullable": true
+                                },
+                                "time_entry_method": {
+                                    "nullable": true
+                                },
+                                "effective_start_date": {
+                                    "type": "string"
+                                },
+                                "effective_end_date": {
+                                    "type": "string"
+                                },
+                                "per_diem": {
+                                    "type": "string"
+                                },
+                                "per_diem_hours": {
+                                    "type": "integer"
+                                },
+                                "bonus": {
+                                    "type": "string"
+                                },
+                                "safety_bonus": {
+                                    "type": "string"
+                                }
+
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetGetTimeSheetTbl": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "crewsetup_id": {
+                                    "type": "integer"
+                                },
+                                "crewsetup_line_id": {
+                                    "type": "integer"
+                                },
+                                "primary_timekeeper_id": {
+                                    "type": "integer"
+                                },
+                                "secondary_timekeeper_id": {
+                                    "type": "integer"
+                                },
+                                "supervisor": {
+                                    "nullable": true
+                                },
+                                "resource_number": {
+                                    "type": "string"
+                                },
+                                "assignment_number": {
+                                    "type": "string"
+                                },
+                                "resource_name": {
+                                    "type": "string"
+                                },
+                                "resource_role": {
+                                    "type": "string"
+                                },
+                                "bill_rate": {
+                                    "type": "string"
+                                },
+                                "pay_rate": {
+                                    "type": "string"
+                                },
+                                "ot_rate": {
+                                    "type": "string"
+                                },
+                                "project_id": {
+                                    "nullable": true
+                                },
+                                "project_number": {
+                                    "type": "string"
+                                },
+                                "project_name": {
+                                    "nullable": true
+                                },
+                                "customer_id": {
+                                    "type": "integer"
+                                },
+                                "contract_id": {
+                                    "nullable": true
+                                },
+                                "task_id": {
+                                    "type": "integer"
+                                },
+                                "task_name": {
+                                    "type": "string"
+                                },
+                                "resource_type": {
+                                    "type": "string"
+                                },
+                                "po": {
+                                    "nullable": true
+                                },
+                                "po_line": {
+                                    "nullable": true
+                                },
+                                "resource_location": {
+                                    "type": "string"
+                                },
+                                "equipment_category": {
+
+                                    "nullable": true
+                                },
+                                "equipment_rate": {
+
+                                    "nullable": true
+                                },
+                                "crew_week": {
+                                    "nullable": true
+                                },
+                                "sun_in_time": {
+                                    "type": "string"
+                                },
+                                "sun_out_time": {
+                                    "type": "string"
+                                },
+                                "mon_in_time": {
+                                    "type": "string"
+                                },
+                                "mon_out_time": {
+                                    "type": "string"
+                                },
+                                "tue_in_time": {
+                                    "type": "string"
+                                },
+                                "tue_out_time": {
+                                    "type": "string"
+                                },
+                                "wed_in_time": {
+                                    "type": "string"
+                                },
+                                "wed_out_time": {
+                                    "type": "string"
+                                },
+                                "thu_in_time": {
+                                    "type": "string"
+                                },
+                                "thu_out_time": {
+                                    "type": "string"
+                                },
+                                "fri_in_time": {
+                                    "type": "string"
+                                },
+                                "fri_out_time": {
+                                    "type": "string"
+                                },
+                                "sat_in_time": {
+                                    "type": "string"
+                                },
+                                "sat_out_time": {
+                                    "type": "string"
+                                },
+                                "active_flag": {
+                                    "type": "string"
+                                },
+                                "start_date": {
+                                    "type": "string"
+                                },
+                                "end_date": {
+                                    "type": "string"
+                                },
+                                "week_start_date": {
+                                    "nullable": true
+                                },
+                                "week_end_date": {
+                                    "nullable": true
+                                },
+                                "total_hours": {
+                                    "type": "integer"
+                                },
+                                "sun_total_hours": {
+                                    "type": "integer"
+                                },
+                                "mon_total_hours": {
+                                    "type": "integer"
+                                },
+                                "tue_total_hours": {
+                                    "type": "integer"
+                                },
+                                "wed_total_hours": {
+                                    "type": "integer"
+                                },
+                                "thu_total_hours": {
+                                    "type": "integer"
+                                },
+                                "fri_total_hours": {
+                                    "type": "integer"
+                                },
+                                "sat_total_hours": {
+                                    "type": "integer"
+                                }
+
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetGetProjectDetails": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "project_id": {
+                                    "type": "integer"
+                                },
+                                "projec_number": {
+                                    "type": "string"
+                                },
+                                "project_name": {
+                                    "type": "string"
+                                },
+                                "customer_id": {
+                                    "type": "integer"
+                                },
+                                "customer_number": {
+                                    "type": "string"
+                                },
+                                "contract_id": {
+                                    "type": "integer"
+                                },
+                                "contract_number": {
+                                    "type": "string"
+                                },
+                                "cost_rate": {
+                                    "nullable": true
+                                },
+                                "contract_start_date": {
+                                    "nullable": true
+                                },
+                                "contract_end_date": {
+                                    "nullable": true
+                                },
+                                "shift_enabled": {
+                                    "nullable": true
+                                },
+                                "po_number": {
+                                    "nullable": true
+                                },
+                                "quantity": {
+                                    "nullable": true
+                                },
+                                "week_start_day": {
+                                    "type": "string"
+                                },
+                                "week_end_day": {
+                                    "type": "string"
+                                },
+                                "no_of_days": {
+                                    "type": "integer"
+                                },
+                                "ot_allowed": {
+                                    "type": "string"
+                                },
+                                "ot_threshold_measure": {
+                                    "type": "string"
+                                },
+                                "ot_threshold_limit": {
+                                    "type": "string"
+                                },
+                                "active_flag": {
+                                    "nullable": true
+                                },
+                                "billing_frequency": {
+                                    "type": "string"
+                                },
+                                "ot_shift_name": {
+                                    "nullable": true
+                                },
+                                "time_entry_method": {
+                                    "nullable": true
+                                },
+                                "effective_start_date": {
+                                    "type": "string"
+                                },
+                                "effective_end_date": {
+                                    "type": "string"
+                                },
+                                "per_diem": {
+                                    "type": "string"
+                                },
+                                "per_diem_hours": {
+                                    "type": "integer"
+                                },
+                                "bonus": {
+                                    "type": "string"
+                                },
+                                "safety_bonus": {
+                                    "type": "string"
+                                },
+                                "project_unit_id": {
+                                    "type": "integer"
+                                }
+
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetGetMasterData": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "party_id": {
+                                    "type": "integer"
+                                },
+                                "party_number": {
+                                    "type": "string"
+                                },
+                                "party_name": {
+                                    "type": "string"
+                                },
+                                "status": {
+                                    "type": "string"
+                                },
+                                "email_address": {
+                                    "nullable": true
+                                },
+                                "primary_phone_number": {
+                                    "type": "string"
+                                },
+                                "contract_id": {
+                                    "type": "integer"
+                                },
+                                "contract_number": {
+                                    "type": "string"
+                                },
+                                "major_version": {
+                                    "type": "integer"
+                                },
+                                "start_date": {
+                                    "type": "string"
+                                },
+                                "end_date": {
+                                    "nullable": true
+                                },
+                                "sts_code": {
+                                    "type": "string"
+                                },
+                                "currency_code": {
+                                    "type": "string"
+                                },
+                                "date_approved": {
+                                    "type": "string"
+                                },
+                                "contract_amount": {
+                                    "type": "integer"
+                                },
+                                "project_id": {
+                                    "type": "integer"
+                                },
+                                "project_number": {
+                                    "type": "string"
+                                },
+                                "project_name": {
+                                    "type": "string"
+                                },
+                                "project_status_code": {
+                                    "type": "string"
+                                },
+                                "organization_name": {
+                                    "type": "string"
+                                },
+                                "description": {
+                                    "type": "string"
+                                },
+                                "contract_type": {
+                                    "type": "string"
+                                },
+                                "project_type": {
+                                    "type": "string"
+                                },
+                                "completion_date": {
+                                    "nullable": true
+                                },
+                                "closed_date": {
+                                    "type": "string"
+                                },
+                                "task_id": {
+                                    "type": "integer"
+                                },
+                                "task_number": {
+                                    "type": "string"
+                                },
+                                "task_name": {
+                                    "type": "string"
+                                },
+                                "team_member_number": {
+                                    "type": "string"
+                                },
+                                "team_member_name": {
+                                    "type": "string"
+                                },
+                                "project_unit_id": {
+                                    "type": "integer"
+                                },
+                                "expenditure_type_id": {
+                                    "type": "integer"
+                                },
+                                "expenditure_type_name": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "PutUpdatetimeSheetTimeRequest": {
+                "type": "object",
+                "properties": {
+                    "sun_in_time  ": {
+                        "type": "string"
+                    },
+                    "sun_out_time ": {
+                        "type": "string"
+                    },
+                    "mon_in_time  ": {
+                        "type": "string"
+                    },
+                    "mon_out_time ": {
+                        "type": "string"
+                    },
+                    "tue_in_time  ": {
+                        "type": "string"
+                    },
+                    "tue_out_time ": {
+                        "type": "string"
+                    },
+                    "wed_in_time  ": {
+                        "type": "string"
+                    },
+                    "wed_out_time ": {
+                        "type": "string"
+                    },
+                    "thu_in_time  ": {
+                        "type": "string"
+                    },
+                    "thu_out_time ": {
+                        "type": "string"
+                    },
+                    "fri_in_time  ": {
+                        "type": "string"
+                    },
+                    "fri_out_time ": {
+                        "type": "string"
+                    },
+                    "sat_in_time  ": {
+                        "type": "string"
+                    },
+                    "sat_out_time ": {
+                        "type": "string"
+                    },
+                    "last_updated_by": {
+                        "type": "string"
+                    },
+                    "last_updated_date": {
+                        "type": "string"
+                    },
+                    "crewsetup_line_id": {
+                        "type": "string"
+                    }
+                }
+            },
+            "GetGetCrewSetupHeader": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "crewsetup_id": {
+                                    "type": "integer"
+                                },
+                                "crew_name": {
+                                    "type": "string"
+                                },
+                                "crew_specific": {
+                                    "nullable": true
+                                },
+                                "crew_measure": {
+                                    "nullable": true
+                                },
+                                "crew_type": {
+                                    "type": "string"
+                                },
+                                "crew_scope": {
+                                    "type": "string"
+                                },
+                                "time_entry_method": {
+                                    "type": "string"
+                                },
+                                "primary_timekeeper_id": {
+                                    "type": "integer"
+                                },
+                                "secondary_timekeeper_id": {
+                                    "type": "integer"
+                                },
+                                "supervisor": {
+                                    "type": "string"
+                                },
+                                "start_date": {
+                                    "type": "string"
+                                },
+                                "end_date": {
+                                    "type": "string"
+                                },
+                                "crew_start_week": {
+                                    "type": "string"
+                                },
+                                "crew_end_week": {
+                                    "type": "string"
+                                },
+                                "customer_id": {
+                                    "type": "integer"
+                                },
+                                "contract_id": {
+                                    "type": "integer"
+                                },
+                                "project_id": {
+                                    "type": "integer"
+                                },
+                                "sun_in_time": {
+                                    "type": "string"
+                                },
+                                "sun_out_time": {
+                                    "type": "string"
+                                },
+                                "mon_in_time": {
+                                    "type": "string"
+                                },
+                                "mon_out_time": {
+                                    "type": "string"
+                                },
+                                "tue_in_time": {
+                                    "type": "string"
+                                },
+                                "tue_out_time": {
+                                    "type": "string"
+                                },
+                                "wed_in_time": {
+                                    "type": "string"
+                                },
+                                "wed_out_time": {
+                                    "type": "string"
+                                },
+                                "thu_in_time": {
+                                    "type": "string"
+                                },
+                                "thu_out_time": {
+                                    "type": "string"
+                                },
+                                "fri_in_time": {
+                                    "type": "string"
+                                },
+                                "fri_out_time": {
+                                    "type": "string"
+                                },
+                                "sat_in_time": {
+                                    "type": "string"
+                                },
+                                "sat_out_time": {
+                                    "type": "string"
+                                },
+                                "mon_quantity": {
+                                    "nullable": true
+                                },
+                                "tue_quantity": {
+                                    "nullable": true
+                                },
+                                "wed_quantity": {
+                                    "nullable": true
+                                },
+                                "thu_quantity": {
+                                    "nullable": true
+                                },
+                                "fri_quantity": {
+                                    "nullable": true
+                                },
+                                "sat_quantity": {
+                                    "nullable": true
+                                },
+                                "sun_quantity": {
+                                    "nullable": true
+                                },
+                                "customer_name": {
+                                    "type": "string"
+                                },
+                                "contract_number": {
+                                    "type": "string"
+                                },
+                                "contract_amount": {
+                                    "nullable": true
+                                },
+                                "po_number": {
+                                    "nullable": true
+                                },
+                                "po_quantity": {
+                                    "nullable": true
+                                },
+                                "po_quantity_measure": {
+                                    "nullable": true
+                                },
+                                "project_number": {
+                                    "type": "string"
+                                },
+                                "project_type": {
+                                    "nullable": true
+                                },
+                                "project_start_date": {
+                                    "nullable": true
+                                },
+                                "project_close_date": {
+                                    "nullable": true
+                                },
+                                "week": {
+                                    "nullable": true
+                                },
+                                "last_updated_by": {
+                                    "type": "string"
+                                },
+                                "last_update_date": {
+                                    "type": "string"
+                                },
+                                "created_by": {
+                                    "type": "string"
+                                },
+                                "creation_date": {
+                                    "type": "string"
+                                }
+
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetGetCrewSetUpLines": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "crewsetup_id": {
+                                    "type": "integer"
+                                },
+                                "customer_id": {
+                                    "type": "integer"
+                                },
+                                "contract_id": {
+                                    "type": "integer"
+                                },
+                                "project_id": {
+                                    "nullable": true
+                                },
+                                "project_number": {
+                                    "type": "string"
+                                },
+                                "task_id": {
+                                    "type": "integer"
+                                },
+                                "task_name": {
+                                    "type": "string"
+                                },
+                                "po": {
+                                    "nullable": true
+                                },
+                                "po_line": {
+                                    "nullable": true
+                                },
+                                "resource_type": {
+                                    "type": "string"
+                                },
+                                "resource_number": {
+                                    "type": "string"
+                                },
+                                "resource_name": {
+                                    "type": "string"
+                                },
+                                "resource_role": {
+                                    "type": "string"
+                                },
+                                "resource_location": {
+                                    "type": "string"
+                                },
+                                "assignment_number": {
+                                    "type": "string"
+                                },
+                                "equipment_category": {
+                                    "type": "string"
+                                },
+                                "equipment_rate": {
+                                    "type": "string"
+                                },
+                                "bill_rate": {
+                                    "type": "string"
+                                },
+                                "pay_rate": {
+                                    "type": "string"
+                                },
+                                "ot_rate": {
+                                    "type": "string"
+                                },
+                                "active_flag": {
+                                    "type": "string"
+                                },
+                                "effective_start_date": {
+                                    "type": "string"
+                                },
+                                "effective_end_date": {
+                                    "type": "string"
+                                },
+                                "start_date": {
+                                    "type": "string"
+                                },
+                                "end_date": {
+                                    "type": "string"
+                                },
+                                "time_entry_mode": {
+                                    "type": "string"
+                                },
+                                "sun_in_time": {
+                                    "type": "string"
+                                },
+                                "sun_out_time": {
+                                    "type": "string"
+                                },
+                                "mon_in_time": {
+                                    "type": "string"
+                                },
+                                "mon_out_time": {
+                                    "type": "string"
+                                },
+                                "tue_in_time": {
+                                    "type": "string"
+                                },
+                                "tue_out_time": {
+                                    "type": "string"
+                                },
+                                "wed_in_time": {
+                                    "type": "string"
+                                },
+                                "wed_out_time": {
+                                    "type": "string"
+                                },
+                                "thu_in_time": {
+                                    "type": "string"
+                                },
+                                "thu_out_time": {
+                                    "type": "string"
+                                },
+                                "fri_in_time": {
+                                    "type": "string"
+                                },
+                                "fri_out_time": {
+                                    "type": "string"
+                                },
+                                "sat_in_time": {
+                                    "type": "string"
+                                },
+                                "sat_out_time": {
+                                    "type": "string"
+                                },
+                                "sun_quantity": {
+                                    "type": "string"
+                                },
+                                "mon_quantity": {
+                                    "type": "string"
+                                },
+                                "tue_quantity": {
+                                    "type": "string"
+                                },
+                                "wed_quantity": {
+                                    "type": "string"
+                                },
+                                "thu_quantity": {
+                                    "type": "string"
+                                },
+                                "fri_quantity": {
+                                    "type": "string"
+                                },
+                                "sat_quantity": {
+                                    "type": "string"
+                                },
+                                "creation_date": {
+                                    "type": "string"
+                                },
+                                "last_updated_date": {
+                                    "type": "string"
+                                },
+                                "last_updated_by": {
+                                    "type": "string"
+                                },
+                                "created_by": {
+                                    "type": "string"
+                                },
+                                "project_assigned": {
+                                    "type": "string"
+                                },
+                                "resource_id": {
+                                    "type": "integer"
+                                },
+                                "expenditure_type_id": {
+                                    "nullable": true
+                                },
+                                "expenditure_type_name": {
+                                    "nullable": true
+                                }
+
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetGetCrewNameLOV": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "crewsetup_id": {
+                                    "type": "integer"
+                                },
+                                "crew_name": {
+                                    "type": "string"
+                                }
+
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "PostGetCrewSetupHeaderRequest": {
+                "type": "object",
+                "properties": {
+                    "contract_amount ": {
+                        "type": "string"
+                    },
+                    "contract_number": {
+                        "type": "string"
+                    },
+                    "created_by": {
+                        "type": "string"
+                    },
+                    "creation_date": {
+                        "type": "string"
+                    },
+                    "crew_end_week": {
+                        "type": "string"
+                    },
+                    "crew_name": {
+                        "type": "string"
+                    },
+                    "crew_scope": {
+                        "type": "string"
+                    },
+                    "crew_start_week": {
+                        "type": "string"
+                    },
+                    "crew_type": {
+                        "type": "string"
+                    },
+                    "crewsetup_id": {
+                        "type": "string"
+                    },
+                    "customer_name": {
+                        "type": "string"
+                    },
+                    "end_date": {
+                        "type": "string"
+                    },
+                    "fri_in_time": {
+                        "type": "string"
+                    },
+                    "fri_out_time": {
+                        "type": "string"
+                    },
+                    "last_update_date": {
+                        "type": "string"
+                    },
+                    "last_updated_by": {
+                        "type": "string"
+                    },
+                    "mon_in_time": {
+                        "type": "string"
+                    },
+                    "mon_out_time": {
+                        "type": "string"
+                    },
+                    "po_number": {
+                        "type": "string"
+                    },
+                    "po_quantity": {
+                        "type": "string"
+                    },
+                    "po_quantity_measure": {
+                        "type": "string"
+                    },
+                    "primary_timekeeper_id": {
+                        "type": "string"
+                    },
+                    "project_close_date": {
+                        "type": "string"
+                    },
+                    "project_number": {
+                        "type": "string"
+                    },
+                    "project_start_date": {
+                        "type": "string"
+                    },
+                    "project_type": {
+                        "type": "string"
+                    },
+                    "sat_in_time": {
+                        "type": "string"
+                    },
+                    "sat_out_time": {
+                        "type": "string"
+                    },
+                    "secondary_timekeeper_id": {
+                        "type": "string"
+                    },
+                    "start_date": {
+                        "type": "string"
+                    },
+                    "sun_in_time": {
+                        "type": "string"
+                    },
+                    "sun_out_time": {
+                        "type": "string"
+                    },
+                    "supervisor": {
+                        "type": "string"
+                    },
+                    "thu_in_time": {
+                        "type": "string"
+                    },
+                    "thu_out_time": {
+                        "type": "string"
+                    },
+                    "time_entry_method": {
+                        "type": "string"
+                    },
+                    "tue_in_time": {
+                        "type": "string"
+                    },
+                    "tue_out_time": {
+                        "type": "string"
+                    },
+                    "wed_in_time": {
+                        "type": "string"
+                    },
+                    "wed_out_time": {
+                        "type": "string"
+                    },
+                    "week": {
+                        "type": "string"
+                    }
+                }
+            },
+            "PostGetCrewSetUpLinesRequest": {
+                "type": "object",
+                "properties": {
+                    "crewsetup_id": {
+                        "type": "string"
+                    },
+                    "customer_id": {
+                        "type": "string"
+                    },
+                    "contract_id ": {
+                        "type": "string"
+                    },
+                    "project_id": {
+                        "type": "string"
+                    },
+                    "project_number": {
+                        "type": "string"
+                    },
+                    "task_id": {
+                        "type": "string"
+                    },
+                    "task_name ": {
+                        "type": "string"
+                    },
+                    "po": {
+                        "type": "string"
+                    },
+                    "po_line": {
+                        "type": "string"
+                    },
+                    "resource_type": {
+                        "type": "string"
+                    },
+                    "resource_number": {
+                        "type": "string"
+                    },
+                    "resource_name": {
+                        "type": "string"
+                    },
+                    "resource_role": {
+                        "type": "string"
+                    },
+                    "resource_location": {
+                        "type": "string"
+                    },
+                    "assignment_number": {
+                        "type": "string"
+                    },
+                    "equipment_category": {
+                        "type": "string"
+                    },
+                    "equipment_rate": {
+                        "type": "string"
+                    },
+                    "bill_rate": {
+                        "type": "string"
+                    },
+                    "pay_rate": {
+                        "type": "string"
+                    },
+                    "ot_rate": {
+                        "type": "string"
+                    },
+                    "active_flag": {
+                        "type": "string"
+                    },
+                    "effective_start_date": {
+                        "type": "string"
+                    },
+                    "effective_end_date": {
+                        "type": "string"
+                    },
+                    "crew_week": {
+                        "type": "string"
+                    },
+                    "time_entry_mode": {
+                        "type": "string"
+                    },
+                    "sun_in_time": {
+                        "type": "string"
+                    },
+                    "sun_out_time": {
+                        "type": "string"
+                    },
+                    "mon_in_time": {
+                        "type": "string"
+                    },
+                    "mon_out_time": {
+                        "type": "string"
+                    },
+                    "tue_in_time": {
+                        "type": "string"
+                    },
+                    "tue_out_time": {
+                        "type": "string"
+                    },
+                    "wed_in_time": {
+                        "type": "string"
+                    },
+                    "wed_out_time": {
+                        "type": "string"
+                    },
+                    "thu_in_time": {
+                        "type": "string"
+                    },
+                    "thu_out_time": {
+                        "type": "string"
+                    },
+                    "fri_in_time": {
+                        "type": "string"
+                    },
+                    "fri_out_time": {
+                        "type": "string"
+                    },
+                    "sat_in_time": {
+                        "type": "string"
+                    },
+                    "sat_out_time": {
+                        "type": "string"
+                    },
+                    "creation_date": {
+                        "type": "string"
+                    },
+                    "last_updated_date": {
+                        "type": "string"
+                    },
+                    "last_updated_by": {
+                        "type": "string"
+                    },
+                    "created_by": {
+                        "type": "string"
+                    }
+                }
+            },
+            "GetGetProjects": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "project_id": {
+                                    "type": "integer"
+                                },
+                                "project_number": {
+                                    "type": "string"
+                                },
+                                "project_name": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetTimekeepers": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "person_name": {
+                                    "nullable": true
+                                },
+                                "person_number": {
+                                    "type": "string"
+                                },
+                                "person_id": {
+                                    "type": "integer"
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "PutUpdateContractDetailsRequest": {
+                "type": "object",
+                "properties": {
+                    "week_start_day": {
+                        "type": "string"
+                    },
+                    "week_end_day": {
+                        "type": "string"
+                    },
+                    "no_of_days": {
+                        "type": "string"
+                    },
+                    "ot_allowed": {
+                        "type": "string"
+                    },
+                    "ot_threshold_measure": {
+                        "type": "string"
+                    },
+                    "ot_threshold_limit": {
+                        "type": "string"
+                    },
+                    "billing_frequency": {
+                        "type": "string"
+                    },
+                    "active_flag": {
+                        "type": "string"
+                    },
+                    "ot_shift_name": {
+                        "type": "string"
+                    },
+                    "time_entry_method": {
+                        "type": "string"
+                    },
+                    "effective_start_date": {
+                        "type": "string"
+                    },
+                    "effective_end_date": {
+                        "type": "string"
+                    },
+                    "per_diem": {
+                        "type": "string"
+                    },
+                    "bonus": {
+                        "type": "string"
+                    },
+                    "safety_bonus": {
+                        "type": "string"
+                    },
+                    "last_updated_by": {
+                        "type": "string"
+                    },
+                    "last_update_date": {
+                        "type": "string"
+                    },
+                    "contract_id": {
+                        "type": "string"
+                    }
+                }
+            },
+            "PutUpdateProjectDetailsRequest": {
+                "type": "object",
+                "properties": {
+                    "week_start_day": {
+                        "type": "string"
+                    },
+                    "week_end_day": {
+                        "type": "string"
+                    },
+                    "no_of_days": {
+                        "type": "string"
+                    },
+                    "ot_allowed": {
+                        "type": "string"
+                    },
+                    "ot_threshold_measure": {
+                        "type": "string"
+                    },
+                    "ot_threshold_limit": {
+                        "type": "string"
+                    },
+                    "billing_frequency": {
+                        "type": "string"
+                    },
+                    "active_flag": {
+                        "type": "string"
+                    },
+                    "ot_shift_name": {
+                        "type": "string"
+                    },
+                    "time_entry_method": {
+                        "type": "string"
+                    },
+                    "effective_start_date": {
+                        "type": "string"
+                    },
+                    "effective_end_date": {
+                        "type": "string"
+                    },
+                    "per_diem": {
+                        "type": "string"
+                    },
+                    "bonus": {
+                        "type": "string"
+                    },
+                    "safety_bonus": {
+                        "type": "string"
+                    },
+                    "last_updated_by": {
+                        "type": "string"
+                    },
+                    "last_update_date": {
+                        "type": "string"
+                    },
+                    "project_id": {
+                        "type": "string"
+                    }
+                }
+            },
+            "GetSetUpCustomerDetails": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "customer_id": {
+                                    "type": "integer"
+                                },
+                                "customer_number": {
+                                    "type": "string"
+                                },
+                                "customer_name": {
+                                    "type": "string"
+                                },
+                                "week_start_day": {
+                                    "type": "string"
+                                },
+                                "week_end_day": {
+                                    "type": "string"
+                                },
+                                "effective_start_date": {
+                                    "type": "string"
+                                },
+                                "effective_end_date": {
+                                    "type": "string"
+                                },
+                                "start_time": {
+                                    "type": "string"
+                                },
+                                "end_time": {
+                                    "type": "string"
+                                },
+                                "mon_in_time": {
+                                    "type": "string"
+                                },
+                                "mon_out_time": {
+                                    "type": "string"
+                                },
+                                "tue_in_time": {
+                                    "type": "string"
+                                },
+                                "tue_out_time": {
+                                    "type": "string"
+                                },
+                                "wed_in_time": {
+                                    "type": "string"
+                                },
+                                "wed_out_time": {
+                                    "type": "string"
+                                },
+                                "thu_in_time": {
+                                    "type": "string"
+                                },
+                                "thu_out_time": {
+                                    "type": "string"
+                                },
+                                "fri_in_time": {
+                                    "type": "string"
+                                },
+                                "fri_out_time": {
+                                    "type": "string"
+                                },
+                                "sat_in_time": {
+                                    "type": "string"
+                                },
+                                "sat_out_time": {
+                                    "type": "string"
+                                },
+                                "sun_in_time": {
+                                    "type": "string"
+                                },
+                                "sun_out_time": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetSetUpContractDetails": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "contract_id": {
+                                    "type": "integer"
+                                },
+                                "contract_number": {
+                                    "type": "string"
+                                },
+                                "customer_id": {
+                                    "type": "integer"
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetSetUpProjectDeatils": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "customer_id": {
+                                    "type": "integer"
+                                },
+                                "contract_id": {
+                                    "type": "integer"
+                                },
+                                "project_id": {
+                                    "type": "integer"
+                                },
+                                "projec_number": {
+                                    "type": "string"
+                                },
+                                "project_name": {
+                                    "type": "string"
+                                },
+                                "task_id": {
+                                    "type": "integer"
+                                },
+                                "task_number": {
+                                    "type": "string"
+                                },
+                                "task_name": {
+                                    "type": "string"
+                                },
+                                "resource_number": {
+                                    "nullable": true
+                                },
+                                "resource_name": {
+                                    "nullable": true
+                                },
+                                "resource_type": {
+                                    "nullable": true
+                                },
+                                "resource_role": {
+                                    "nullable": true
+                                },
+                                "resource_location": {
+                                    "nullable": true
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetTasks": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "task_id": {
+                                    "type": "integer"
+                                },
+                                "task_number": {
+                                    "type": "string"
+                                },
+                                "task_name": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "PutGetCrewSetupHeaderRequest": {
+                "type": "object",
+                "properties": {
+                    "primary_timekeeper_id": {
+                        "type": "string"
+                    },
+                    "secondary_timekeeper_id": {
+                        "type": "string"
+                    },
+                    "start_date": {
+                        "type": "string"
+                    },
+                    "end_date": {
+                        "type": "string"
+                    },
+                    "last_updated_by": {
+                        "type": "string"
+                    },
+                    "last_update_date": {
+                        "type": "string"
+                    },
+                    "crewsetup_id": {
+                        "type": "string"
+                    }
+                }
+            },
+            "GetSearchTimeEntryTbl": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "time_entry_id": {
+                                    "type": "integer"
+                                },
+                                "timeentry_week_id": {
+                                    "type": "integer"
+                                },
+                                "crewsetup_id": {
+                                    "type": "integer"
+                                },
+                                "crewsetup_line_id": {
+                                    "type": "integer"
+                                },
+                                "timesheet_week_id": {
+                                    "type": "integer"
+                                },
+                                "crew_name": {
+                                    "type": "string"
+                                },
+                                "crew_week": {
+                                    "type": "string"
+                                },
+                                "time_keeper_id": {
+                                    "type": "string"
+                                },
+                                "secondary_timekeeper_id": {
+                                    "type": "string"
+                                },
+                                "supervisor_id": {
+                                    "type": "string"
+                                },
+                                "customer_name": {
+                                    "type": "string"
+                                },
+                                "contract_number": {
+                                    "type": "string"
+                                },
+                                "project_name": {
+                                    "type": "string"
+                                },
+                                "project_number": {
+                                    "type": "string"
+                                },
+                                "task_name": {
+                                    "type": "string"
+                                },
+                                "person_id": {
+                                    "type": "string"
+                                },
+                                "assignment_number": {
+                                    "type": "string"
+                                },
+                                "resource_type": {
+                                    "type": "string"
+                                },
+                                "resource_name": {
+                                    "type": "string"
+                                },
+                                "resource_role": {
+                                    "type": "string"
+                                },
+                                "bill_rate": {
+                                    "type": "string"
+                                },
+                                "pay_rate": {
+                                    "type": "string"
+                                },
+                                "ot_rate": {
+                                    "type": "string"
+                                },
+                                "equipment_category": {
+                                    "type": "string"
+                                },
+                                "equipment_rate": {
+                                    "type": "string"
+                                },
+                                "sun_in_time": {
+                                    "type": "string"
+                                },
+                                "sun_out_time": {
+                                    "type": "string"
+                                },
+                                "sun_total_hours": {
+                                    "type": "string"
+                                },
+                                "mon_in_time": {
+                                    "type": "string"
+                                },
+                                "mon_out_time": {
+                                    "type": "string"
+                                },
+                                "mon_total_hours": {
+                                    "type": "string"
+                                },
+                                "tue_in_time": {
+                                    "type": "string"
+                                },
+                                "tue_out_time": {
+                                    "type": "string"
+                                },
+                                "tue_total_hours": {
+                                    "type": "string"
+                                },
+                                "wed_in_time": {
+                                    "type": "string"
+                                },
+                                "wed_out_time": {
+                                    "type": "string"
+                                },
+                                "wed_total_hours": {
+                                    "type": "string"
+                                },
+                                "thu_in_time": {
+                                    "type": "string"
+                                },
+                                "thu_out_time": {
+                                    "type": "string"
+                                },
+                                "thu_total_hours": {
+                                    "type": "string"
+                                },
+                                "fri_in_time": {
+                                    "type": "string"
+                                },
+                                "fri_out_time": {
+                                    "type": "string"
+                                },
+                                "fri_total_hours": {
+                                    "type": "string"
+                                },
+                                "sat_in_time": {
+                                    "type": "string"
+                                },
+                                "sat_out_time": {
+                                    "type": "string"
+                                },
+                                "sat_total_hours": {
+                                    "type": "string"
+                                },
+                                "start_time": {
+                                    "nullable": true
+                                },
+                                "stop_time": {
+                                    "nullable": true
+                                },
+                                "total_hours": {
+                                    "type": "integer"
+                                },
+                                "status": {
+                                    "type": "string"
+                                },
+                                "comments": {
+                                    "nullable": true
+                                },
+                                "ext_time_diff_flag": {
+                                    "type": "string"
+                                }
+
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetResourcesDetails": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "resource_number": {
+                                    "type": "string"
+                                },
+                                "resource_name": {
+                                    "type": "string"
+                                },
+                                "resource_job": {
+                                    "nullable": true
+                                },
+                                "resource_location": {
+                                    "type": "string"
+                                },
+                                "project_assigned": {
+                                    "type": "string"
+                                },
+                                "project_id": {
+                                    "nullable": true
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetResourceMetedata": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "resource_id": {
+                                    "type": "integer"
+                                },
+                                "resource_number": {
+                                    "type": "string"
+                                },
+                                "resource_name": {
+                                    "type": "string"
+                                },
+                                "resource_job": {
+                                    "nullable": true
+                                },
+                                "resource_location": {
+                                    "nullable": true
+                                },
+                                "project_assigned": {
+                                    "type": "string"
+                                },
+                                "project_id": {
+                                    "nullable": true
+                                }
+
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetCustDetails": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "customer_id": {
+                                    "type": "integer"
+                                },
+                                "customer_number": {
+                                    "type": "string"
+                                },
+                                "customer_name": {
+                                    "type": "string"
+                                },
+                                "start_time": {
+                                    "nullable": true
+                                },
+                                "end_time": {
+                                    "nullable": true
+                                },
+                                "customer_email_address": {
+                                    "type": "string"
+                                },
+                                "customer_mobile_number": {
+                                    "type": "string"
+                                },
+                                "po_number": {
+                                    "nullable": true
+                                },
+                                "po_start_date": {
+                                    "nullable": true
+                                },
+                                "po_end_date": {
+                                    "nullable": true
+                                },
+                                "quantity": {
+                                    "nullable": true
+                                },
+                                "equipment_module": {
+                                    "type": "string"
+                                },
+                                "material_usage": {
+                                    "type": "string"
+                                },
+                                "cus_wrkweek_start_date": {
+                                    "nullable": true
+                                },
+                                "cus_wrkweek_end_date": {
+                                    "nullable": true
+                                },
+                                "week_start_day": {
+                                    "type": "string"
+                                },
+                                "week_end_day": {
+                                    "type": "string"
+                                },
+                                "no_of_days": {
+                                    "type": "integer"
+                                },
+                                "ot_allowed": {
+                                    "type": "string"
+                                },
+                                "ot_threshold_measure": {
+                                    "type": "string"
+                                },
+                                "ot_threshold_limit": {
+                                    "type": "string"
+                                },
+                                "time_card_apr_req_flag": {
+                                    "type": "string"
+                                },
+                                "billing_frequency": {
+                                    "type": "string"
+                                },
+                                "active_flag": {
+                                    "nullable": true
+                                },
+                                "timecard_collation": {
+                                    "type": "string"
+                                },
+                                "client_erp_system": {
+                                    "type": "string"
+                                },
+                                "timecard_balancing": {
+                                    "nullable": true
+                                },
+                                "client_ers_enabled": {
+                                    "type": "string"
+                                },
+                                "effective_start_date": {
+                                    "type": "string"
+                                },
+                                "effective_end_date": {
+                                    "type": "string"
+                                },
+                                "per_diem": {
+                                    "type": "string"
+                                },
+                                "per_diem_hours": {
+                                    "nullable": true
+                                },
+                                "bonus": {
+                                    "type": "string"
+                                },
+                                "safety_bonus": {
+                                    "nullable": true
+                                }
+
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetGetTimeweekId": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "timesheet_week_id": {
+                                    "type": "integer"
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "PutUpdateCustomerDetailsRequest": {
+                "type": "object",
+                "properties": {
+                    "week_start_day": {
+                        "type": "string"
+                    },
+                    "week_end_day": {
+                        "type": "string"
+                    },
+                    "no_of_days": {
+                        "type": "string"
+                    },
+                    "equipment_module": {
+                        "type": "string"
+                    },
+                    "material_usage": {
+                        "type": "string"
+                    },
+                    "ot_threshold_measure": {
+                        "type": "string"
+                    },
+                    "ot_threshold_limit": {
+                        "type": "string"
+                    },
+                    "billing_frequency": {
+                        "type": "string"
+                    },
+                    "client_erp_system": {
+                        "type": "string"
+                    },
+                    "effective_start_date": {
+                        "type": "string"
+                    },
+                    "effective_end_date": {
+                        "type": "string"
+                    },
+                    "ot_allowed": {
+                        "type": "string"
+                    },
+                    "time_card_apr_req_flag": {
+                        "type": "string"
+                    },
+                    "timecard_collation": {
+                        "type": "string"
+                    },
+                    "timecard_balancing": {
+                        "type": "string"
+                    },
+                    "active_flag": {
+                        "type": "string"
+                    },
+                    "client_ers_enabled": {
+                        "type": "string"
+                    },
+                    "per_diem": {
+                        "type": "string"
+                    },
+                    "bonus": {
+                        "type": "string"
+                    },
+                    "safety_bonus": {
+                        "type": "string"
+                    },
+                    "last_updated_by": {
+                        "type": "string"
+                    },
+                    "last_update_date": {
+                        "type": "string"
+                    },
+                    "customer_number": {
+                        "type": "string"
+                    }
+                }
+            },
+            "GetExpenditureType": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "expenditure_type_id": {
+                                    "type": "integer"
+                                },
+                                "expenditure_type_name": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetGetTimeEntryId": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "time_entry_id": {
+                                    "type": "integer"
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetResourceNamebyCrewId": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+
+                                "resource_name": {
+                                    "type": "string"
+                                },
+                                "resource_id": {
+                                    "type": "integer"
+                                },
+                                "resource_number": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetFetchcrewSechedule": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "count1": {
+                                    "type": "integer"
+                                },
+                                "crew_name": {
+                                    "type": "string"
+                                },
+                                "crewsetup_id": {
+                                    "type": "integer"
+                                },
+                                "crewsetup_line_id": {
+                                    "type": "integer"
+                                },
+                                "effective_start_date": {
+                                    "type": "string"
+                                },
+                                "effective_end_date": {
+                                    "type": "string"
+                                },
+                                "resource_name": {
+                                    "type": "string"
+                                },
+                                "resource_number": {
+                                    "type": "string"
+                                },
+                                "resource_id": {
+                                    "type": "integer"
+                                },
+                                "dates": {
+                                    "type": "string"
+                                },
+                                "engaged": {
+                                    "type": "string"
+                                }
+
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetFetchScheduleDetails": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "resource_number": {
+                                    "type": "string"
+                                },
+                                "resource_name": {
+                                    "type": "string"
+                                },
+                                "effective_start_date": {
+                                    "type": "string"
+                                },
+                                "effective_end_date": {
+                                    "type": "string"
+                                },
+                                "customer_name": {
+                                    "type": "string"
+                                },
+                                "project_number": {
+                                    "type": "string"
+                                },
+                                "task": {
+                                    "nullable": true
+                                },
+                                "bill_rate": {
+                                    "nullable": true
+                                },
+                                "pay_rate": {
+                                    "nullable": true
+                                },
+                                "ot_rate": {
+                                    "nullable": true
+                                }
+
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetAdminCustomerLOV": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "party_id": {
+                                    "type": "integer"
+                                },
+                                "party_number": {
+                                    "type": "string"
+                                },
+                                "party_name": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetAdminProjectLOV": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "project_id": {
+                                    "type": "integer"
+                                },
+                                "project_number": {
+                                    "type": "string"
+                                },
+                                "project_name": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetAdminContractLOV": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "contract_number": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "PostPayrollLockUnlockRequest": {
+                "type": "object",
+                "properties": {
+                    "crew_setup_id": {
+                        "type": "string"
+                    },
+                    "crew_week": {
+                        "type": "string"
+                    },
+                    "crew_date": {
+                        "type": "string"
+                    },
+                    "lock_status": {
+                        "type": "string"
+                    }
+                }
+            },
+            "GetGetMaxWeekid": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "weekid": {
+                                    "nullable": true
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "PutSearchupdateAllRequest": {
+                "type": "object",
+                "properties": {
+                    "person_id": {
+                        "type": "string"
+                    },
+                    "crewsetup_id": {
+                        "type": "string"
+                    },
+                    "crewsetup_line_id": {
+                        "type": "string"
+                    },
+                    "crew_week": {
+                        "type": "string"
+                    },
+                    "crew_date": {
+                        "type": "string"
+                    },
+                    "timeentry_week_id": {
+                        "type": "string"
+                    },
+                    "mon_in_time": {
+                        "type": "string"
+                    },
+                    "mon_out_time": {
+                        "type": "string"
+                    },
+                    "tue_in_time": {
+                        "type": "string"
+                    },
+                    "tue_out_time": {
+                        "type": "string"
+                    },
+                    "wed_in_time": {
+                        "type": "string"
+                    },
+                    "wed_out_time": {
+                        "type": "string"
+                    },
+                    "thu_in_time": {
+                        "type": "string"
+                    },
+                    "thu_out_time": {
+                        "type": "string"
+                    },
+                    "fri_in_time": {
+                        "type": "string"
+                    },
+                    "fri_out_time": {
+                        "type": "string"
+                    },
+                    "sat_in_time": {
+                        "type": "string"
+                    },
+                    "sat_out_time": {
+                        "type": "string"
+                    },
+                    "sun_in_time": {
+                        "type": "string"
+                    },
+                    "sun_out_time": {
+                        "type": "string"
+                    },
+                    "comments": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}

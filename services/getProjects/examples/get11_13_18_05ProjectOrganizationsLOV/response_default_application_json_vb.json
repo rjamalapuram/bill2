@@ -1,0 +1,591 @@
+{
+    "items": [
+        {
+            "OrganizationName": "OAK Purchasing",
+            "OrganizationId": 300000301890854,
+            "BusinessUnitId": 300000075888561,
+            "FromDate": "1951-01-01",
+            "ToDate": "4712-12-31",
+            "ActiveStatusFlag": true,
+            "ProjectOrganizationType": "EXPENDITURES",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9436D3D260000000EACED00057708000110D935F4B7B10000000C455850454E44495455524553",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9436D3D260000000EACED00057708000110D935F4B7B10000000C455850454E44495455524553",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "OrganizationName": "OAK_FIN",
+            "OrganizationId": 300000301890759,
+            "BusinessUnitId": 300000075888561,
+            "FromDate": "2024-08-05",
+            "ToDate": "4712-12-31",
+            "ActiveStatusFlag": true,
+            "ProjectOrganizationType": "EXPENDITURES",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9436D3CC70000000EACED00057708000110D935F4B7B10000000C455850454E44495455524553",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9436D3CC70000000EACED00057708000110D935F4B7B10000000C455850454E44495455524553",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "OrganizationName": "OAK PPM",
+            "OrganizationId": 300000301890664,
+            "BusinessUnitId": 300000075888561,
+            "FromDate": "2024-06-17",
+            "ToDate": "4712-12-31",
+            "ActiveStatusFlag": true,
+            "ProjectOrganizationType": "EXPENDITURES",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9436D3C680000000EACED00057708000110D935F4B7B10000000C455850454E44495455524553",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9436D3C680000000EACED00057708000110D935F4B7B10000000C455850454E44495455524553",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "OrganizationName": "US1 Division",
+            "OrganizationId": 300000050619940,
+            "BusinessUnitId": 300000075888561,
+            "FromDate": "1951-01-01",
+            "ToDate": "4712-12-31",
+            "ActiveStatusFlag": true,
+            "ProjectOrganizationType": "EXPENDITURES",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9347326240000000EACED00057708000110D935F4B7B10000000C455850454E44495455524553",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9347326240000000EACED00057708000110D935F4B7B10000000C455850454E44495455524553",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "OrganizationName": "Accounting US",
+            "OrganizationId": 300000047013600,
+            "BusinessUnitId": 300000075888561,
+            "FromDate": "1951-01-01",
+            "ToDate": "4712-12-31",
+            "ActiveStatusFlag": true,
+            "ProjectOrganizationType": "EXPENDITURES",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9343C1EE00000000EACED00057708000110D935F4B7B10000000C455850454E44495455524553",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9343C1EE00000000EACED00057708000110D935F4B7B10000000C455850454E44495455524553",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "OrganizationName": "Human Resources UK",
+            "OrganizationId": 300000047597408,
+            "BusinessUnitId": 300000078974743,
+            "FromDate": "1951-01-01",
+            "ToDate": "4712-12-31",
+            "ActiveStatusFlag": true,
+            "ProjectOrganizationType": "PROJECTS",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9344507600000000EACED00057708000110D93623CF170000000850524F4A45435453",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9344507600000000EACED00057708000110D93623CF170000000850524F4A45435453",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "OrganizationName": "US1 Business Unit",
+            "OrganizationId": 300000046987012,
+            "BusinessUnitId": 300000078974743,
+            "FromDate": "0001-01-01",
+            "ToDate": "4712-12-31",
+            "ActiveStatusFlag": true,
+            "ProjectOrganizationType": "PROJECTS",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9343BB7040000000EACED00057708000110D93623CF170000000850524F4A45435453",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9343BB7040000000EACED00057708000110D93623CF170000000850524F4A45435453",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "OrganizationName": "Human Resources US",
+            "OrganizationId": 300000047013715,
+            "BusinessUnitId": 300000078974743,
+            "FromDate": "1951-01-01",
+            "ToDate": "4712-12-31",
+            "ActiveStatusFlag": true,
+            "ProjectOrganizationType": "PROJECTS",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9343C1F530000000EACED00057708000110D93623CF170000000850524F4A45435453",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9343C1F530000000EACED00057708000110D93623CF170000000850524F4A45435453",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "OrganizationName": "111-FINANCE",
+            "OrganizationId": 300000304107099,
+            "BusinessUnitId": 300000078974743,
+            "FromDate": "1951-01-01",
+            "ToDate": "4712-12-31",
+            "ActiveStatusFlag": true,
+            "ProjectOrganizationType": "PROJECTS",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9438F0E5B0000000EACED00057708000110D93623CF170000000850524F4A45435453",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9438F0E5B0000000EACED00057708000110D93623CF170000000850524F4A45435453",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "OrganizationName": "OAK Purchasing",
+            "OrganizationId": 300000301890854,
+            "BusinessUnitId": 300000078974743,
+            "FromDate": "1951-01-01",
+            "ToDate": "4712-12-31",
+            "ActiveStatusFlag": true,
+            "ProjectOrganizationType": "PROJECTS",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9436D3D260000000EACED00057708000110D93623CF170000000850524F4A45435453",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9436D3D260000000EACED00057708000110D93623CF170000000850524F4A45435453",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "OrganizationName": "OAK_FIN",
+            "OrganizationId": 300000301890759,
+            "BusinessUnitId": 300000078974743,
+            "FromDate": "2024-08-05",
+            "ToDate": "4712-12-31",
+            "ActiveStatusFlag": true,
+            "ProjectOrganizationType": "PROJECTS",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9436D3CC70000000EACED00057708000110D93623CF170000000850524F4A45435453",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9436D3CC70000000EACED00057708000110D93623CF170000000850524F4A45435453",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "OrganizationName": "OAK PPM",
+            "OrganizationId": 300000301890664,
+            "BusinessUnitId": 300000078974743,
+            "FromDate": "2024-06-17",
+            "ToDate": "4712-12-31",
+            "ActiveStatusFlag": true,
+            "ProjectOrganizationType": "PROJECTS",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9436D3C680000000EACED00057708000110D93623CF170000000850524F4A45435453",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9436D3C680000000EACED00057708000110D93623CF170000000850524F4A45435453",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "OrganizationName": "US1 Division",
+            "OrganizationId": 300000050619940,
+            "BusinessUnitId": 300000078974743,
+            "FromDate": "1951-01-01",
+            "ToDate": "4712-12-31",
+            "ActiveStatusFlag": true,
+            "ProjectOrganizationType": "PROJECTS",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9347326240000000EACED00057708000110D93623CF170000000850524F4A45435453",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9347326240000000EACED00057708000110D93623CF170000000850524F4A45435453",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "OrganizationName": "Accounting US",
+            "OrganizationId": 300000047013600,
+            "BusinessUnitId": 300000078974743,
+            "FromDate": "1951-01-01",
+            "ToDate": "4712-12-31",
+            "ActiveStatusFlag": true,
+            "ProjectOrganizationType": "PROJECTS",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9343C1EE00000000EACED00057708000110D93623CF170000000850524F4A45435453",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9343C1EE00000000EACED00057708000110D93623CF170000000850524F4A45435453",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "OrganizationName": "Human Resources UK",
+            "OrganizationId": 300000047597408,
+            "BusinessUnitId": 300000078974743,
+            "FromDate": "1951-01-01",
+            "ToDate": "4712-12-31",
+            "ActiveStatusFlag": true,
+            "ProjectOrganizationType": "EXPENDITURES",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9344507600000000EACED00057708000110D93623CF170000000C455850454E44495455524553",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9344507600000000EACED00057708000110D93623CF170000000C455850454E44495455524553",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "OrganizationName": "US1 Business Unit",
+            "OrganizationId": 300000046987012,
+            "BusinessUnitId": 300000078974743,
+            "FromDate": "0001-01-01",
+            "ToDate": "4712-12-31",
+            "ActiveStatusFlag": true,
+            "ProjectOrganizationType": "EXPENDITURES",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9343BB7040000000EACED00057708000110D93623CF170000000C455850454E44495455524553",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9343BB7040000000EACED00057708000110D93623CF170000000C455850454E44495455524553",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "OrganizationName": "Human Resources US",
+            "OrganizationId": 300000047013715,
+            "BusinessUnitId": 300000078974743,
+            "FromDate": "1951-01-01",
+            "ToDate": "4712-12-31",
+            "ActiveStatusFlag": true,
+            "ProjectOrganizationType": "EXPENDITURES",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9343C1F530000000EACED00057708000110D93623CF170000000C455850454E44495455524553",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9343C1F530000000EACED00057708000110D93623CF170000000C455850454E44495455524553",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "OrganizationName": "111-FINANCE",
+            "OrganizationId": 300000304107099,
+            "BusinessUnitId": 300000078974743,
+            "FromDate": "1951-01-01",
+            "ToDate": "4712-12-31",
+            "ActiveStatusFlag": true,
+            "ProjectOrganizationType": "EXPENDITURES",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9438F0E5B0000000EACED00057708000110D93623CF170000000C455850454E44495455524553",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9438F0E5B0000000EACED00057708000110D93623CF170000000C455850454E44495455524553",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "OrganizationName": "OAK Purchasing",
+            "OrganizationId": 300000301890854,
+            "BusinessUnitId": 300000078974743,
+            "FromDate": "1951-01-01",
+            "ToDate": "4712-12-31",
+            "ActiveStatusFlag": true,
+            "ProjectOrganizationType": "EXPENDITURES",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9436D3D260000000EACED00057708000110D93623CF170000000C455850454E44495455524553",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9436D3D260000000EACED00057708000110D93623CF170000000C455850454E44495455524553",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "OrganizationName": "OAK_FIN",
+            "OrganizationId": 300000301890759,
+            "BusinessUnitId": 300000078974743,
+            "FromDate": "2024-08-05",
+            "ToDate": "4712-12-31",
+            "ActiveStatusFlag": true,
+            "ProjectOrganizationType": "EXPENDITURES",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9436D3CC70000000EACED00057708000110D93623CF170000000C455850454E44495455524553",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9436D3CC70000000EACED00057708000110D93623CF170000000C455850454E44495455524553",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "OrganizationName": "OAK PPM",
+            "OrganizationId": 300000301890664,
+            "BusinessUnitId": 300000078974743,
+            "FromDate": "2024-06-17",
+            "ToDate": "4712-12-31",
+            "ActiveStatusFlag": true,
+            "ProjectOrganizationType": "EXPENDITURES",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9436D3C680000000EACED00057708000110D93623CF170000000C455850454E44495455524553",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9436D3C680000000EACED00057708000110D93623CF170000000C455850454E44495455524553",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "OrganizationName": "US1 Division",
+            "OrganizationId": 300000050619940,
+            "BusinessUnitId": 300000078974743,
+            "FromDate": "1951-01-01",
+            "ToDate": "4712-12-31",
+            "ActiveStatusFlag": true,
+            "ProjectOrganizationType": "EXPENDITURES",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9347326240000000EACED00057708000110D93623CF170000000C455850454E44495455524553",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9347326240000000EACED00057708000110D93623CF170000000C455850454E44495455524553",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "OrganizationName": "Accounting US",
+            "OrganizationId": 300000047013600,
+            "BusinessUnitId": 300000078974743,
+            "FromDate": "1951-01-01",
+            "ToDate": "4712-12-31",
+            "ActiveStatusFlag": true,
+            "ProjectOrganizationType": "EXPENDITURES",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9343C1EE00000000EACED00057708000110D93623CF170000000C455850454E44495455524553",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9343C1EE00000000EACED00057708000110D93623CF170000000C455850454E44495455524553",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "OrganizationName": "Human Resources UK",
+            "OrganizationId": 300000047597408,
+            "BusinessUnitId": 300000093962136,
+            "FromDate": "1951-01-01",
+            "ToDate": "4712-12-31",
+            "ActiveStatusFlag": true,
+            "ProjectOrganizationType": "PROJECTS",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9344507600000000EACED00057708000110D937087F980000000850524F4A45435453",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9344507600000000EACED00057708000110D937087F980000000850524F4A45435453",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "OrganizationName": "US1 Business Unit",
+            "OrganizationId": 300000046987012,
+            "BusinessUnitId": 300000093962136,
+            "FromDate": "0001-01-01",
+            "ToDate": "4712-12-31",
+            "ActiveStatusFlag": true,
+            "ProjectOrganizationType": "PROJECTS",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9343BB7040000000EACED00057708000110D937087F980000000850524F4A45435453",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV/00030000000EACED00057708000110D9343BB7040000000EACED00057708000110D937087F980000000850524F4A45435453",
+                    "name": "projectOrganizationsLOV",
+                    "kind": "item"
+                }
+            ]
+        }
+    ],
+    "count": 25,
+    "hasMore": true,
+    "limit": 25,
+    "offset": 0,
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projectOrganizationsLOV",
+            "name": "projectOrganizationsLOV",
+            "kind": "collection"
+        }
+    ]
+}

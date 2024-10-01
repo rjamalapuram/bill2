@@ -1,0 +1,204 @@
+<oj-drawer-layout class="oj-flex-item oj-sm-12 oj-md-12">
+<div class="oj-flex">
+  <oj-vb-fragment id="page-header" name="page-header" class="oj-flex-item oj-sm-12 oj-md-12">
+  
+    <oj-vb-fragment-param name="title" value="AIA Billing Workbench"></oj-vb-fragment-param>
+  
+    <template slot="actions">
+      <oj-button label="Done" chroming="callToAction" on-oj-action="[[$listeners.buttonAction6]]" class="oj-button-sm"></oj-button>
+  </template>
+
+  </oj-vb-fragment>
+</div>
+<div class="oj-flex">
+  
+  <oj-toolbar chroming="solid" class="oj-flex-item oj-sm-12 oj-md-12"></oj-toolbar>
+
+</div>
+<div class="oj-flex">
+  
+  <oj-toolbar chroming="solid" class="oj-flex-item oj-sm-12 oj-md-12"></oj-toolbar>
+
+</div>
+<div class="oj-flex">
+  
+  <div class="oj-flex-item oj-sm-12 oj-md-1"></div>
+  
+  <div class="oj-panel oj-flex-item oj-sm-12 oj-md-10 oj-panel-shadow-lg">
+    
+    <div class="oj-flex">
+      
+      <div class="oj-flex-item oj-sm-12 oj-md-6"></div>
+    
+    </div>
+    
+    <div class="oj-flex">
+      
+      <div class="oj-flex-item oj-sm-12 oj-md-1"></div>
+      
+      <div class="oj-flex-item oj-sm-12 oj-md-11">
+        
+        <oj-form-layout class="oj-formlayout-full-width oj-md-padding-5x" columns="4" max-columns="4">
+          
+          <oj-select-single label-hint="Contract Number" item-text="contractNumber"
+            data="[[$variables.getCONTRACTSLOV1GetContracts2ListSDP]]"
+            on-value-item-changed="[[$listeners.selectValueItem]]" required="true"></oj-select-single>
+          
+          <oj-select-single label-hint="Contract Line Number" item-text="lineNumber"
+            data="[[$variables.getCONTRACTSLINESLOV1GetContractLinesListSDP]]"
+            on-value-item-changed="[[$listeners.selectValueItem2]]"></oj-select-single>
+          
+          <oj-select-single label-hint="Project Number" item-text="project_number"
+            data="[[$variables.getPROJECTSLOV1GetProjectsLOVListSDP]]"
+            on-value-item-changed="[[$listeners.selectValueItem3]]"></oj-select-single>
+          
+          <oj-select-single label-hint="Retention Percentage" disabled="true"></oj-select-single>
+        
+        </oj-form-layout>
+      
+      </div>
+    
+    </div>
+  
+  
+    
+    <div class="oj-flex">
+      <div class="oj-flex-item oj-sm-12 oj-md-7"></div>
+      <div class="oj-flex-item oj-sm-12 oj-md-2">
+            <oj-button label="Generate G702 Report" class="oj-button-lg" chroming="callToAction"
+              on-oj-action="[[$listeners.buttonAction5]]">
+              <span class="oj-ux-ico-download" slot="startIcon"></span>
+           </oj-button>
+      </div>
+      <div class="oj-flex-item oj-sm-12 oj-md-1"></div>
+      
+      <div class="oj-flex-item oj-sm-12 oj-md-2">
+        
+        <oj-button label="Search" class="oj-button-lg" chroming="callToAction"
+          on-oj-action="[[$listeners.buttonAction]]">
+              
+          <span class="oj-ux-ico-search" slot="startIcon"></span>
+           
+        </oj-button>
+      
+      </div>
+    
+    </div>
+  
+  </div>
+
+</div>
+<div class="oj-flex">
+  
+  <oj-toolbar chroming="solid" class="oj-flex-item oj-sm-12 oj-md-12"></oj-toolbar>
+
+</div>
+<div class="oj-flex">
+  
+  <oj-toolbar chroming="solid" class="oj-flex-item oj-sm-12 oj-md-12"></oj-toolbar>
+
+</div>
+<div class="oj-flex">
+  <div class="oj-flex-item oj-sm-12 oj-md-11"></div>
+
+  <oj-sample-export-data chroming="callToAction" class="oj-button-lg oj-flex-item oj-sm-12 oj-md-1" data="[[ $variables.contractSearch ]]"
+    file-name="[[ $variables.contractNumber+'.csv' ]]">
+     <span class="oj-ux-ico-download" slot="startIcon"></span></oj-sample-export-data>
+</div>
+<div class="oj-flex">
+  <oj-table scroll-policy="loadMoreOnScroll"
+    columns='[  {    "headerText": "Contract Number",    "field": "contractNumber"  },  {    "headerText": "Contract Item",    "field": "contractItem"  },  {    "headerText": "Description",    "field": "description"  },  {    "headerText": "Revised Contract Amount (USD)",    "field": "revisedContractAmount",    "style": "text-align:right",    "template": "formatNumber"  },  {    "headerText": "Previously Billed Amount (USD)",    "field": "previouslyBilledAmount",    "style": "text-align:right",    "template": "formatNumber"  },  {    "headerText": "Amount To Bill This Period (USD)",    "field": "amountToBillThisPeriod",    "style": "text-align:right",    "template": "formatNumber"  },  {    "headerText": "Total Billed",    "field": "totalBilled",    "style": "text-align:right",    "template": "formatNumber"  },  {    "headerText": "Percent Billed",    "field": "percentBilled",    "style": "text-align:right",    "template": "formatPercent"  },  {    "headerText": "Retainage Held PTD",    "field": "retainageHeld",    "style": "text-align:right",    "template": "formatNumber"  },  {    "headerText": "Retention Percentage",    "field": "retentionPercentage",    "style": "text-align:right",    "template": "formatPercent"  },  {    "headerText": "Retainage Billed PTD",    "field": "retainageAmount",    "style": "text-align:right",    "template": "formatNumber"  },  {    "headerText": "Retainage Balance",    "field": "retainageBalance",    "style": "text-align:right",    "template": "formatNumber"  },  {    "headerText": "Billing Adjustments",    "field": "",    "template": "action"  }]'
+    id="RetCon" horizontal-grid-visible="enabled" vertical-grid-visible="enabled" selection-mode.row="single"
+    data="[[ $variables.contractSearch ]]" class="oj-flex-item oj-sm-12 oj-md-12">
+    <template slot="formatNumber" data-oj-as="cell">
+      <oj-bind-text value="[[ $functions.convertNumberToStr(cell.data) ]]"></oj-bind-text>
+    </template>
+    <template slot="formatPercent" data-oj-as="cell">
+      <oj-bind-text value="[[ $functions.convertNumberToPercent(cell.data) ]]"></oj-bind-text>
+    </template>
+    <template slot="action">
+      <span style="cursor:pointer;font-size:18px" class="oj-ux-ico-action" on-click="[[$listeners.iconClick]]"></span>
+    </template>
+  </oj-table>
+
+</div>
+
+
+<oj-dialog dialog-title="Dialog" id="oj-dialog--1856734826-1" style="max-width: 80%; width: 65%;">
+  
+  <div slot="body">
+    
+    <div class="oj-flex">
+      
+      <div class="oj-flex-item oj-sm-12 oj-md-4"></div>
+      
+      <h6 class="oj-header oj-flex-item oj-sm-12 oj-md-6">Bill Adjustment</h6>
+    
+    </div>
+    
+    <oj-form-layout class="oj-formlayout-full-width" columns="3" max-columns="3">
+      
+      <oj-input-text label-hint="Business Unit" readonly="true" value="{{ $variables.buName }}"></oj-input-text>
+      
+      <oj-input-text label-hint="Source Name" required="true" readonly="true" value="{{ $variables.SourceName }}"></oj-input-text>
+      
+      <oj-input-text label-hint="Source Reference" required="true" on-value-changed="[[$listeners.inputTextValue]]"></oj-input-text>
+      
+      <oj-input-text label-hint="Contract Number" readonly="true" value="{{ $variables.contractNumber }}"></oj-input-text>
+      
+      <oj-input-text label-hint="Contract Type Name" readonly="true" value="{{ $variables.contractTypeName }}"></oj-input-text>
+      
+      
+      <oj-input-text label-hint="Contract Line Number" readonly="true" value="{{ $variables.lineNumberDialog }}"></oj-input-text>
+      
+      
+      
+      <oj-select-single label-hint="Event Type Name" item-text="EventTypeName"
+        data="[[$variables.get1113185EventTypesLOVListSDP]]" on-value-item-changed="[[$listeners.selectValueItem5]]"
+        required="true"></oj-select-single>
+      
+      <oj-input-text label-hint="Event Description" readonly="true" id="desc_input"
+        value="{{ $variables.eventDescription }}"></oj-input-text>
+      
+      <oj-select-single label-hint="Percentage of" data="[[$variables.percentageOfListSDP]]" item-text="percentageOf"></oj-select-single>
+      
+      <oj-input-number label-hint="Percentage" placeholder="% of Contract Line Amount"
+        on-value-changed="[[$listeners.inputNumberValue]]"
+        converter='{"options":{"style":"percent","minimumFractionDigits":3},"type":"number"}'
+        value="{{ $variables.percentage }}"></oj-input-number>
+      
+      
+      
+      <oj-input-number label-hint="Bill Transaction Amount" required="true"
+        converter='{"options":{"style":"currency","currency":"USD"},"type":"number"}'
+        value="{{ $variables.billTrnsAmount }}" on-value-changed="[[$listeners.inputNumberValue2]]"></oj-input-number>
+    
+      <oj-input-text label-hint="Currency" readonly="true" value="USD"></oj-input-text>
+      <oj-input-date label-hint="Completion Date" converter='{"type": "datetime", "options": {"pattern":"yyyy-MM-dd"}}'
+        on-value-changed="[[$listeners.inputDateValue]]" required="true"></oj-input-date>
+    </oj-form-layout>
+  
+  </div>
+  
+  <div slot="footer">
+     
+     <oj-button label="Submit" class="" chroming="callToAction"
+          on-oj-action="[[$listeners.buttonAction3]]">
+              
+          <span class="oj-ux-ico-arrow-inline-right" slot="startIcon"></span>
+           
+        </oj-button>
+    <oj-button label="Generate Draft Invoice" class="" chroming="callToAction"
+      on-oj-action="[[$listeners.buttonAction4]]">
+
+      <span class="oj-ux-ico-invoice-create" slot="startIcon"></span>
+    </oj-button>
+    
+    <oj-button label="Close"  class="" chroming="callToAction" on-oj-action="[[$listeners.buttonAction2]]">
+      <span class="oj-ux-ico-close" slot="startIcon"></span>
+    </oj-button>
+  
+  </div>
+
+</oj-dialog>
+ </oj-drawer-layout>

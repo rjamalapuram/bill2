@@ -1,0 +1,13 @@
+{
+  "id": "crew_admin",
+  "description": "Flow main",
+  "defaultPage": "crew_admin-retention-search",
+  "services": {},
+  "types": {},
+  "variables": {},
+  "security": {
+    "access": {
+      "requiresAuthentication": false
+    }
+  }
+}

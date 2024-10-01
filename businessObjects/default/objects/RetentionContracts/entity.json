@@ -1,0 +1,111 @@
+{
+    "fields": [
+        {
+            "type": "number",
+            "name": "id",
+            "internal": false,
+            "key": true,
+            "oid": "bd6add3c-f779-4e31-a79c-643e91c68147",
+            "required": true,
+            "unique": true,
+            "displayLabel": "Id"
+        },
+        {
+            "type": "datetime",
+            "name": "creationDate",
+            "internal": false,
+            "oid": "ce76c11e-55b8-4272-b1ec-2514e948c512",
+            "displayLabel": "Created",
+            "historyType": "timeCreated"
+        },
+        {
+            "type": "datetime",
+            "name": "lastUpdateDate",
+            "internal": false,
+            "oid": "07ee0e05-5994-4e3a-956b-90d46a57de5b",
+            "displayLabel": "Last Updated",
+            "historyType": "timeUpdated"
+        },
+        {
+            "type": "string",
+            "name": "createdBy",
+            "internal": false,
+            "oid": "63a3a33e-231b-42f4-8640-4389f094fd05",
+            "displayLabel": "Created By",
+            "historyType": "createdBy"
+        },
+        {
+            "type": "string",
+            "name": "lastUpdatedBy",
+            "internal": false,
+            "oid": "8c3d1ff4-cdf5-4f1b-ad16-7db8e6994a50",
+            "displayLabel": "Last Updated By",
+            "historyType": "updatedBy"
+        },
+        {
+            "type": "number",
+            "name": "versionNumber",
+            "internal": false,
+            "oid": "d8bb5a04-2b79-46c2-8367-99279ebfc42a",
+            "displayLabel": "Version Number",
+            "historyType": "versionNumber"
+        },
+        {
+            "type": "string",
+            "name": "contractNumber",
+            "oid": "8487a6e8-3785-4bc1-8ddf-41cfdfb337fe",
+            "displayLabel": "Contract Number"
+        },
+        {
+            "type": "string",
+            "name": "contractLineNumber",
+            "oid": "0e55c571-5604-4fef-921b-43370614d4db",
+            "displayLabel": "Contract Line Number"
+        },
+        {
+            "type": "string",
+            "name": "projectNumber",
+            "oid": "49f384c0-bcb8-4736-9f74-b3e658ff9e7c",
+            "displayLabel": "Project Number"
+        },
+        {
+            "type": "string",
+            "name": "retention",
+            "oid": "2390ef81-6c57-4666-8c2d-d3414f23e28f",
+            "displayLabel": "Retention"
+        },
+        {
+            "type": "number",
+            "name": "retentionPercentage",
+            "oid": "0777beb2-992b-4f8a-aad7-d0cd2184d257",
+            "displayLabel": "Retention Percentage"
+        },
+        {
+            "type": "number",
+            "name": "workCompleted",
+            "oid": "b0f3e835-3302-41f9-b2e1-9f557d752c12",
+            "displayLabel": "Work completed"
+        },
+        {
+            "type": "number",
+            "name": "materialsStored",
+            "oid": "5c9a6383-d8d7-477e-b1c7-2d650ac5c09e",
+            "displayLabel": "Materials Stored"
+        },
+        {
+            "type": "number",
+            "name": "totalCompletedAndStored",
+            "oid": "014aca8e-35c6-44a0-8c8c-b66824fb275a",
+            "displayLabel": "Total Completed and Stored"
+        },
+        {
+            "type": "number",
+            "name": "retainageAmount",
+            "oid": "0479eea9-287e-4fe9-90ac-12262ef2f7b0",
+            "displayLabel": "Retainage Amount"
+        }
+    ],
+    "name": "RetentionContracts",
+    "oid": "dd08d38c-2f34-444b-a9c2-fb935340c5f1",
+    "displayLabel": "Retention Contracts"
+}

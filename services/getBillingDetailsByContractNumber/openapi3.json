@@ -1,0 +1,208 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Ords Timerite",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "vb-catalog://backends/ords_for_Retention_Module"
+        }
+    ],
+    "paths": {
+        "/getBillingEvents": {
+            "get": {
+                "operationId": "getGetBillingEvents",
+                "parameters": [
+                    {
+                        "name": "p_contract_number",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetGetBillingEvents"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getGetBillingEvents/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            },
+            "put": {
+                "operationId": "putGetBillingEvents",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/PutGetBillingEventsRequest"
+                            },
+                            "examples": {
+                                "vb": {
+                                    "externalValue": "./examples/putGetBillingEvents/request_application_json_vb.json"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {},
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            },
+            "post": {
+                "operationId": "postBillingEvents",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/PostGetBillingEventsRequest"
+                            },
+                            "examples": {
+                                "vb": {
+                                    "externalValue": "./examples/postBillingEvents/request_application_json_vb.json"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {},
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "GetGetBillingEvents": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "eventid": {
+                                    "type": "integer"
+                                },
+                                "sourcename": {
+                                    "type": "string"
+                                },
+                                "sourcereference": {
+                                    "type": "string"
+                                },
+                                "contracttypename": {
+                                    "type": "string"
+                                },
+                                "contractnumber": {
+                                    "type": "string"
+                                },
+                                "contractlinenumber": {
+                                    "type": "string"
+                                },
+                                "eventtypename": {
+                                    "type": "string"
+                                },
+                                "eventdescription": {
+                                    "type": "string"
+                                },
+                                "businessunitname": {
+                                    "type": "string"
+                                },
+                                "billtrnsamount": {
+                                    "type": "integer"
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "PostGetBillingEventsRequest": {
+                "type": "object",
+                "properties": {
+                    "p_source_name": {
+                        "type": "string"
+                    },
+                    "p_source_reference": {
+                        "type": "string"
+                    },
+                    "p_contract_type_name": {
+                        "type": "string"
+                    },
+                    "p_contract_number": {
+                        "type": "string"
+                    },
+                    "p_contract_line_number": {
+                        "type": "string"
+                    },
+                    "p_event_type_name": {
+                        "type": "string"
+                    },
+                    "p_event_description": {
+                        "type": "string"
+                    },
+                    "p_business_unit_name": {
+                        "type": "string"
+                    },
+                    "p_bill_trns_amount": {
+                        "type": "string"
+                    }
+                }
+            },
+            "PutGetBillingEventsRequest": {
+                "type": "object",
+                "properties": {
+                    "p_event_id": {
+                        "type": "integer"
+                    },
+                    "p_soruce_reference": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
